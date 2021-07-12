@@ -1,0 +1,19 @@
+@import "colors";
+
+.navbar{
+    width: 100vw;
+    height: 93px;
+    &__logo{
+        background-color: $color_base;
+        width: 40vw;
+        height: 100%;
+    }
+    &__menu{
+        background-color: rgba(255, 255, 255, 0.6);
+        width: 60vw;
+        height: 100%;
+    }
+    
+}
+
+    
