@@ -1,5 +1,11 @@
-@mixin desktop() {
-    @media (max-width: 600px) {
+@mixin mediaMovil() {
+    @media (max-width: 768px) {
       @content;
     }
-  }
+}
+
+@mixin mediaDesktop() {
+    @media (min-width: 769px) {
+      @content;
+    }
+}
