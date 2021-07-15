@@ -74,8 +74,6 @@ $height_navbar: 93px;
     display: none;
 }
 
-
-
 @include mediaMovil() {
     .navbar{
         background-color: $color_base;
@@ -107,7 +105,49 @@ $height_navbar: 93px;
     .btn_menu{
         display: block;
     }
-    
    
 }
+
+//Modal
+.modalBody{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    &__description{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 332px;
+        margin: 0.5rem auto;
+        p{
+            font-size: 16px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.menu-modal{
+    top:80px
+}
+
+.triangulo{
+    position: relative;
+    top:5px;
+    left: 150px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white;
+    border-left: 10px solid transparent;
+    z-index: 2000;
+}
+
+.modal-backdrop{
+    top:92px
+}
+
+
     
