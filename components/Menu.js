@@ -50,7 +50,7 @@ export function Menu() {
                 </div>
                 {
                     SUB_MENU_LIST.map(item => (
-                        <div className={`modalBody__item menu-${item.id}`}>
+                        <div className={`modalBody__item menu-${item.id}`} key={item.id}>
                             <Link href={item.path}>
                                 <a>
                                     <Image

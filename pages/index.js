@@ -1,8 +1,10 @@
 import Head from 'next/head'
 // import { fetchAPI } from "../lib/api";
 import { Layout } from "../components/Layout";
-
 import { Navbar } from "../components/Navbar";
+import { Banner } from "../components/Banner";
+import banner from "../public/images/banner-img/banner01.png";
+
 export default function Home() {
   // console.log("articles", articles)
   // console.log("categories", categories)
@@ -14,9 +16,8 @@ export default function Home() {
         <meta name="description" content="verificativa.com" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Layout>
-
-      </Layout>
+      <Banner img={banner} />
+      <Navbar />
 
     </div>
   )

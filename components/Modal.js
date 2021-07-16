@@ -1,6 +1,6 @@
 import React from 'react'
 import Modal from 'react-bootstrap/Modal'
-//navbar.scss
+//CSS FILE: navbar.scss
 
 export function CustomModal({ children, showModal, handleClose, ...restProps }) {
 
