@@ -17,12 +17,13 @@ export function Banner({ img }) {
             </div>
             <div className="banner__columnTwo">
                 <div className="banner__columnTwo__bg"></div>
-                <Image
-                    src={img}
-                    alt="banner"
-                    className="banner__columnTwo__img"
-                >
-                </Image>
+                <div className="banner__columnTwo__img">
+                    <Image
+                        src={img}
+                        alt="banner"
+
+                    />
+                </div>
                 <div className="banner__columnTwo__peopleImgs">
                     <div className="peopleImg__one">
                         <Image src={MenBrown} alt="men brow" />

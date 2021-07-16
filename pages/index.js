@@ -3,6 +3,7 @@ import Head from 'next/head'
 import { Layout } from "../components/Layout";
 import { Navbar } from "../components/Navbar";
 import { Banner } from "../components/Banner";
+import { TabsOurSolutions } from "../components/TabsOurSolutions";
 import banner from "../public/images/banner-img/banner01.png";
 
 export default function Home() {
@@ -18,6 +19,7 @@ export default function Home() {
       </Head>
       <Banner img={banner} />
       <Navbar />
+      {/* <TabsOurSolutions /> */}
 
     </div>
   )
