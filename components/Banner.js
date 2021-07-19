@@ -4,6 +4,7 @@ import Button from 'react-bootstrap/Button'
 import MenBrown from "../public/images/banner-img/men_brown.png";
 import MenSky from "../public/images/banner-img/men_sky.png";
 import WomenSky from "../public/images/banner-img/women_sky.png";
+import CicleSvg from "../public/images/banner-img/circle.svg";
 
 export function Banner({ img }) {
 
@@ -30,6 +31,9 @@ export function Banner({ img }) {
                     <div className="peopleImg__three">
                         <Image src={MenSky} alt="men sky" />
                     </div>
+                    {/* <div className="circleImg__four">
+                        <Image src={CicleSvg} />
+                    </div> */}
                 </div>
             </div>
         </div>
