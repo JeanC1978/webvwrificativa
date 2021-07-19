@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
       <Banner img={banner} />
       <Navbar />
-      {/* <TabsOurSolutions /> */}
+      <TabsOurSolutions />
 
     </div>
   )

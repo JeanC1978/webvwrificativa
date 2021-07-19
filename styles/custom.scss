@@ -8,11 +8,13 @@
 
 @import "../node_modules/bootstrap/scss/modal";
 
+//button
 $theme-colors: (
     "primary": #343843,
 );
 $btn-border-radius:30px;
 @import "../node_modules/bootstrap/scss/buttons";
 
-//navs & tabs
-// @import "../node_modules/bootstrap/scss/nav";
+// navs & tabs
+$nav-tabs-link-active-bg: #fff;
+@import "../node_modules/bootstrap/scss/nav";
