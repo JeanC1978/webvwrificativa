@@ -18,11 +18,7 @@ export function Banner({ img }) {
             <div className="banner__columnTwo">
                 <div className="banner__columnTwo__bg"></div>
                 <div className="banner__columnTwo__img">
-                    <Image
-                        src={img}
-                        alt="banner"
-
-                    />
+                    <Image src={img} alt="banner" />
                 </div>
                 <div className="banner__columnTwo__peopleImgs">
                     <div className="peopleImg__one">

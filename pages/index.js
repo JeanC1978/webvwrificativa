@@ -22,12 +22,9 @@ export default function Home() {
 			</Head>
 			<Banner img={banner} />
 			<Navbar />
-			<TabsOurSolutions />
-
 			<Card />
-
+			<TabsOurSolutions />
 			<SliderCliente />
-
 			<Footer />
 		</div>
 	);
