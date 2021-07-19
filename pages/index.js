@@ -1,8 +1,11 @@
 import Head from 'next/head'
+import { Footer } from '../components/Footer';
+import { Card } from '../components/Card';
 // import { fetchAPI } from "../lib/api";
 import { Layout } from "../components/Layout";
-
 import { Navbar } from "../components/Navbar";
+import { SliderCliente } from '../components/Slider_cliente';
+
 export default function Home() {
   // console.log("articles", articles)
   // console.log("categories", categories)
@@ -16,7 +19,14 @@ export default function Home() {
       </Head>
       <Layout>
 
+
       </Layout>
+
+      <Card />
+
+      <SliderCliente />
+
+      <Footer />
 
     </div>
   )

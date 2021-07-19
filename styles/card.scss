@@ -1,0 +1,41 @@
+@import 'colors';
+
+@media (max-width: 1900px) {
+	.container-cards {
+		width: 100vw;
+		height: 500px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+.card {
+	width: 291px;
+	height: 340px;
+	padding: inspect($value: 28px);
+	border-radius: 8px;
+	box-shadow: 3px 5px 20px #acb1bf;
+	display: grid;
+}
+
+@media (max-width: 992px) {
+	.container-cards {
+		width: 80vw;
+		height: 800px;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 600px) {
+	.container-cards {
+		width: 100vw;
+		height: 1550px;
+		// display: flex;
+		// justify-content: space-evenly;
+		// align-items: center;
+	}
+}

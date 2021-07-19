@@ -9,3 +9,7 @@ $modal-md:1000px;
 
 @import "../node_modules/bootstrap/scss/modal";
 @import "../node_modules/bootstrap/scss/buttons";
+
+$carousel-indicator-width: 30px;
+@import '../node_modules/bootstrap/scss/carousel';
+

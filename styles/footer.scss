@@ -1,0 +1,122 @@
+@import 'colors';
+
+@media (max-width: 1900px) {
+	.footer {
+		width: 100vw;
+		height: 532px;
+		color: #fff;
+		background-color: #343843;
+		display: grid;
+		margin: 0 auto;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(6, 1fr);
+	}
+
+	.logo-f {
+		color: #fff;
+		grid-column: 2 / 2;
+		grid-row: 2 / 3;
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-end;
+		width: 190px;
+	}
+
+	.slogan {
+		color: #fff;
+		grid-column: 2 / 5;
+		grid-row: 3 / 4;
+	}
+
+	.redes {
+		color: #fff;
+		grid-column: 2 /3;
+		grid-row: 5/6;
+		display: flex;
+		justify-content: space-between;
+	}
+
+	.containersecciones {
+		grid-column: 7 /12;
+		grid-row: 2/5;
+	}
+
+	.secciones {
+		color: #fff;
+	}
+
+	.Five {
+		display: flex;
+		align-content: center;
+		flex-direction: column;
+	}
+
+	ul.secciones {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		list-style: none;
+		align-items: flex-start;
+	}
+
+	.t-thin {
+		color: $color_ftext;
+		list-style: none;
+	}
+
+	ul {
+		padding-inline-start: 5px;
+	}
+
+	.dcontact {
+		grid-column: 7 /10;
+		grid-row: 5/6;
+		display: flex;
+		flex-direction: column;
+		text-decoration: none;
+	}
+	.ico_inline {
+		display: flex;
+	}
+
+	.mail {
+		grid-column: 10 /12;
+		grid-row: 5/6;
+	}
+
+	.contactoymail {
+		grid-column: 7/12;
+		grid-row: 5/6;
+	}
+}
+
+@media (max-width: 992px) {
+	.containersecciones {
+		grid-column: 6/12;
+		grid-row: 2/5;
+	}
+	.contactoymail {
+		grid-column: 6/12;
+		grid-row: 5/6;
+	}
+}
+
+@media (max-width: 768px) {
+	.containersecciones {
+		display: none;
+	}
+	.contactoymail {
+		grid-column: 2/13;
+		grid-row: 4/5;
+	}
+}
+
+@media (max-width: 600px) {
+	.containersecciones {
+		display: none;
+	}
+	.contactoymail {
+		grid-column: 2/6;
+		grid-row: 4/4;
+	}
+}
