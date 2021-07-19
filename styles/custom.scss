@@ -1,15 +1,22 @@
 /* import bootstrap to set changes */
 // @import "../node_modules/bootstrap/scss/bootstrap";
 
-$modal-md:1000px;
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
 
-@import "../node_modules/bootstrap/scss/functions";
-@import "../node_modules/bootstrap/scss/variables";
-@import "../node_modules/bootstrap/scss/mixins";
+@import '../node_modules/bootstrap/scss/modal';
 
-@import "../node_modules/bootstrap/scss/modal";
-@import "../node_modules/bootstrap/scss/buttons";
+//button
+$theme-colors: (
+	'primary': #343843,
+);
+$btn-border-radius: 30px;
+@import '../node_modules/bootstrap/scss/buttons';
 
 $carousel-indicator-width: 30px;
 @import '../node_modules/bootstrap/scss/carousel';
 
+// navs & tabs
+$nav-tabs-link-active-bg: #fff;
+@import '../node_modules/bootstrap/scss/nav';

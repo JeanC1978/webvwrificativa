@@ -1,13 +1,12 @@
-import '../styles/globals.scss'
-import '../styles/navbar.scss'
-import '../styles/footer.scss'
-import '../styles/App.scss'
-import '../styles/card.scss'
-import '../styles/slider_cliente.scss'
+import '../styles/globals.scss';
+import '../styles/footer.scss';
+import '../styles/App.scss';
+import '../styles/card.scss';
+import '../styles/slider_cliente.scss';
 // import 'bootstrap/dist/css/bootstrap.min.css'
 
 function MyApp({ Component, pageProps }) {
-  return <Component {...pageProps} />
+	return <Component {...pageProps} />;
 }
 
-export default MyApp
+export default MyApp;

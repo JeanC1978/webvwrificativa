@@ -1,0 +1,119 @@
+@import "colors";
+@import "mixins";
+@import "variables";
+
+.banner{
+    width: 100%;
+    height: 96vh;
+    display: grid;
+    grid-template-columns: 44% 56%;
+    &__columnOne{
+        background-color: $color_base;
+        display: flex;
+        align-items: center;
+        padding-left: 10rem;
+        &__content{
+            h1{
+                color:white;
+                font-size: 42px;
+                font-weight: 800;
+                line-height: 115%;
+            }
+            button{
+                width: 237px;
+                font-weight: bold;
+                font-size: 18px;
+            }
+        }
+    }
+    &__columnTwo{
+        &__bg{
+            width: 56%;
+            height: $height_navbar;
+            background-color: rgba(255, 255, 255, 0.6);;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+        &__img{
+            background-repeat: no-repeat;
+            background-size: cover;
+            object-fit: cover;
+        }
+    }
+}
+
+.peopleImg__one{
+    position: absolute;
+    top:120px;
+    left: 39%;
+    z-index: 15;
+}
+.peopleImg__two{
+    position: absolute;
+    top:270px;
+    left: 47%;
+    z-index: 15;
+
+}
+.peopleImg__three{
+    position: absolute;
+    top:140px;
+    left: 56%;
+    z-index: 15;
+}
+
+@include mediaMovil() {
+    .banner{
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        &__columnOne{
+            padding: 0;
+            height: 58vh;
+            &__content{
+                margin: 0 auto;
+                width: 90%;
+                h1{
+                    color:white;
+                    font-size: 35px;
+                    font-weight: 800;
+                    line-height: 115%;
+                }
+                button{
+                    width: 236px;
+                    height: 56px;
+                    font-weight: bold;
+                    font-size: 18px;
+                }
+            }
+        }
+        &__columnTwo{
+            height: 42vh;
+            &__bg{
+                display: none;
+            }
+            &__peopleImgs{
+                // display: none;
+                .peopleImg__one{
+                    top:50%;
+                    left: 10%;
+                    height: 140px;
+                    width: 140px;
+                }
+                .peopleImg__two{
+                    top:70%;
+                    left: 10%;
+                    height: 93px;
+                    width: 93px;
+                }
+                .peopleImg__three{
+                    top:55%;
+                    left: 65%;
+                    height: 114px;
+                    width: 114px;
+                }
+            }
+        }
+    }
+}

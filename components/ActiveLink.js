@@ -2,7 +2,7 @@ import React from 'react'
 import { useRouter } from 'next/router'
 
 const PATH_FIVE = "/five"
-const SUB_MENU_FIVE = ["/evaluativa", "/seleccion", "/verificaion"]
+const SUB_MENU_FIVE = ["/evaluativa", "/seleccion", "/verificacion"]
 
 export function ActiveLink({ children, path }) {
     const router = useRouter()

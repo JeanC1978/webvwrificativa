@@ -1,21 +1,12 @@
 @import "colors";
 @import "mixins";
-$height_navbar: 93px;
+@import "variables";
 
-.navbar{
-    width: 100vw;
-    height: $height_navbar;
-    &__columnOne{
-        background-color: $color_base;
-        width: 44vw;
-        height: 100%;
-    }
-    &__columnTwo{
-        background-color: rgba(255, 255, 255, 0.6);
-        width: 56vw;
-        height: 100%;
-    }
-    &__main{
+// .navbar{
+//     height:$height_navbar;
+//     display: flex;
+    .navbar__main{
+        z-index: 20;
         width:75vw;
         height:$height_navbar;
         background-color:transparent;
@@ -25,12 +16,22 @@ $height_navbar: 93px;
         margin: 0 auto;
         left: 0;
         right: 0;
-
+    
         display: flex;
-        align-items: center;
-        justify-content: space-between;
+        &__logo{
+            width:43vw;
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+        }
+        &__menu{
+            width:57vw;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
     }
-}
+// }
 
 .container-menuList{
     height: 100%;
@@ -42,7 +43,6 @@ $height_navbar: 93px;
     margin: 0;
     display: flex;
     align-items: center;
-
     &__item{
         height: 100%;
         display: flex;
@@ -74,31 +74,24 @@ $height_navbar: 93px;
     display: none;
 }
 
-
-
 @include mediaMovil() {
-    .navbar{
-        background-color: $color_base;
-        &__columnOne{
-            display: none;
-        }
-        &__columnTwo{
-            display: none;
-        }
-        &__main{
+    // .navbar{
+        .navbar__main{
+            background-color: $color_base;
             width:100vw;
             display: flex;
             justify-content: space-around;
             align-items: center;
+            padding: 0 1.5rem;
             &__logo{
                 width: 150px;
                 height: 23px;
             }
         }
-    }
-
+    // }
     .container-menuList{
         display: flex;
+        justify-content: space-between;
         align-items: center;
     }
     .menuList{
@@ -107,7 +100,49 @@ $height_navbar: 93px;
     .btn_menu{
         display: block;
     }
-    
    
 }
+
+//Modal
+.modalBody{
+    display: grid;
+    grid-template-columns: 3fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    &__description{
+        grid-column: 1/2;
+        grid-row: 1/3;
+        width: 332px;
+        margin: 0.5rem auto;
+        p{
+            font-size: 16px;
+        }
+    }
+    &__item{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.menu-modal{
+    top:80px
+}
+
+.triangulo{
+    position: relative;
+    top:5px;
+    left: 150px;
+    width: 0;
+    height: 0;
+    border-right: 10px solid transparent;
+    border-bottom: 15px solid white;
+    border-left: 10px solid transparent;
+    z-index: 2000;
+}
+
+.modal-backdrop{
+    top:92px
+}
+
+
     
