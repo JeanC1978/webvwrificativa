@@ -7,6 +7,7 @@ import { Navbar } from '../components/Navbar';
 import { SliderCliente } from '../components/Slider_cliente';
 import { Banner } from '../components/Banner';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
+import { CarouselHowWork } from '../components/CarouselHowWork';
 import banner from '../public/images/banner-img/banner01.png';
 
 export default function Home() {
@@ -23,9 +24,10 @@ export default function Home() {
 			<Banner img={banner} />
 			<Navbar />
 			<Card />
+			<CarouselHowWork />
 			<TabsOurSolutions />
-			<SliderCliente />
-			<Footer />
+			{/* <SliderCliente /> */}
+			{/* <Footer /> */}
 		</div>
 	);
 }
