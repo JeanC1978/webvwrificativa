@@ -1,15 +1,18 @@
 @import 'main';
+@import 'mixins';
+
+$height_carousel_how_work:550px;
 
 .carousel-how-work{
     width: 100%;
-    height: 550px;
+    height: $height_carousel_how_work;
     display: grid;
     grid-template-columns: 80% 20%;
+    margin-bottom: 5rem;
     &__content{
         display: grid;
         width: 100%;
         height: 100%;
-
     }
     &__img{
         display: flex;
@@ -19,7 +22,7 @@
 
 .carousel-item-content{
     width: 100%;
-    height: 550px;
+    height: $height_carousel_how_work;
     display: grid;
     grid-template-columns: 65% 35%;
     &__partOne{
@@ -36,7 +39,7 @@
             color:white;
             height: 550px;
             &__text{
-                max-height: 550px;
+                max-height: $height_carousel_how_work;
                 color:white;
                 grid-column: 2/3;
                 display: flex;
@@ -62,5 +65,64 @@
         width: 75%;
         margin: auto;
         text-align: left;
+    }
+}
+.prev-icon{
+    position: relative;
+    top:22%;
+    left: 45rem;
+}
+.next-icon{
+    position: relative;
+    top:22%;
+}
+
+@include mediaMovil(){
+    .carousel-how-work{
+        display: grid;
+        grid-template-columns: 100%;
+        &__img{
+            display: none;
+        }
+    }
+    .carousel-item-content{
+        grid-template-columns: 100%;
+        grid-template-rows: 60% 40%;
+        &__partOne{
+            border-radius: 0px 80px 30px 0px;
+            &__circleImg{
+                display: none;
+            }
+            &__content{
+                display: grid;
+                grid-template-columns: 4fr 2fr;
+                height: 100%;
+                padding: 0 2rem;
+                &__text{
+                    grid-column: 1/2;
+                    max-height: 100%;
+                    h1{
+                        font-size: 35px;
+                    }
+                }
+                &__number{
+                    grid-column: 2/3;
+                    h1{
+                        font-size: 225px;
+                        line-height: 0;
+                    }
+                }
+            }
+        }
+    }
+    .prev-icon{
+        position: relative;
+        top:50%;
+        left: 70%;
+    }
+    .next-icon{
+        position: relative;
+        top:50%;
+        right: 70%;
     }
 }

@@ -6,9 +6,10 @@ import SliderImg from "../public/images/carousel-how-work/slider-static.png";
 import CircleSvg from "../public/images/carousel-how-work/circle_white.svg";
 import VerificaIcon from "../public/images/carousel-how-work/verifica-icon.svg";
 import ReclutaIcon from "../public/images/carousel-how-work/recluta-icon.svg";
-import IndicatorIcon from "../public/images/carousel-how-work/indicator.svg";
+import ArrowLeftIcon from "../public/images/carousel-how-work/arrow-left.svg";
+import ArrowRightIcon from "../public/images/carousel-how-work/arrow-right.svg";
 
-// const INDICATORS = [<Image src={IndicatorIcon} />, <Image src={IndicatorIcon} />, <Image src={IndicatorIcon} />]
+
 export function CarouselHowWork(props) {
 
 
@@ -20,7 +21,8 @@ export function CarouselHowWork(props) {
                     nextLabel={null}
                     prevLabel={null}
                     indicators={true}
-                // bsPrefix="how-work-carousel"
+                    nextIcon={<div className="next-icon"><Image src={ArrowRightIcon} /></div>}
+                    prevIcon={<div className="prev-icon"><Image src={ArrowLeftIcon} /></div>}
                 >
                     <Carousel.Item>
                         <div className="carousel-item-content">
@@ -31,13 +33,12 @@ export function CarouselHowWork(props) {
                                 <div className="carousel-item-content__partOne__content">
                                     <div className="carousel-item-content__partOne__content__text">
                                         <h1 className="text-l margin-0">Cómo trabajamos</h1>
-                                        <p>Optimiza tus procesos de verificación, selección y evaluación de personas</p>
+                                        <p>Optimiza tus procesos de verificación, selección y evaluación de personas.</p>
                                     </div>
                                     <div className="carousel-item-content__partOne__content__number">
                                         <h1 className="number-xl margin-0">1</h1>
                                     </div>
                                 </div>
-
                             </div>
                             <div className="carousel-item-content__partTwo">
                                 <div className="carousel-item-content__partTwo__logo">
