@@ -1,13 +1,18 @@
 import React from 'react'
 import { Navbar } from "./Navbar";
+import { Footer } from "./Footer";
+import { BannerHome } from '../components/BannerHome';
 
-export function Layout(props) {
-    console.log(props)
-
+export function Layout({ bannerHome = null, children }) {
     return (
-        <div>
+        <>
+            {
+                !bannerHome &&
+                <BannerHome />
+            }
             <Navbar />
-            {props.children}
-        </div>
+            {children}
+            <Footer />
+        </>
     )
 }

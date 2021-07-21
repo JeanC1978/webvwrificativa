@@ -6,10 +6,9 @@ import { Layout } from '../components/Layout';
 import { Navbar } from '../components/Navbar';
 import { SliderCliente } from '../components/Slider_cliente';
 import { SliderLogos } from '../components/SliderLogos';
-import { Banner } from '../components/Banner';
+import { BannerHome } from '../components/BannerHome';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
-import banner from '../public/images/banner-img/banner01.png';
 
 export default function Home() {
 	// console.log("articles", articles)
@@ -22,17 +21,19 @@ export default function Home() {
 				<meta name="description" content="verificativa.com" />
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
-			<Banner img={banner} />
-			<Navbar />
-			<Card />
-			<CarouselHowWork />
-			<TabsOurSolutions />
+			<Layout>
+				{/* <Navbar /> */}
 
-			<SliderCliente />
+				<Card />
+				<CarouselHowWork />
+				<TabsOurSolutions />
 
-			<SliderLogos />
+				<SliderCliente />
 
-			<Footer />
+				<SliderLogos />
+
+				{/* <Footer /> */}
+			</Layout>
 		</div>
 	);
 }

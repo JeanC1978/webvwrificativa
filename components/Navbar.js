@@ -2,7 +2,7 @@ import React from 'react'
 import Image from 'next/image'
 import logo from "../public/images/logo.svg";
 import { Menu } from "./Menu";
-import { Banner } from "./Banner";
+import { Banner } from "./BannerHome";
 // import styles from '../styles/Navbar.module.scss'
 
 export function Navbar() {

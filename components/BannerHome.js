@@ -4,9 +4,9 @@ import Button from 'react-bootstrap/Button'
 import MenBrown from "../public/images/banner-img/men_brown.png";
 import MenSky from "../public/images/banner-img/men_sky.png";
 import WomenSky from "../public/images/banner-img/women_sky.png";
-import CicleSvg from "../public/images/banner-img/circle.svg";
+import banner from '../public/images/banner-img/banner01.png';
 
-export function Banner({ img }) {
+export function BannerHome() {
 
     return (
         <div className="banner">
@@ -19,7 +19,7 @@ export function Banner({ img }) {
             <div className="banner__columnTwo">
                 <div className="banner__columnTwo__bg"></div>
                 <div className="banner__columnTwo__img">
-                    <Image src={img} alt="banner" />
+                    <Image src={banner} alt="banner" />
                 </div>
                 <div className="banner__columnTwo__peopleImgs">
                     <div className="peopleImg__one">
