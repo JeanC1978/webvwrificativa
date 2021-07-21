@@ -5,6 +5,7 @@ import { Card } from '../components/Card';
 import { Layout } from '../components/Layout';
 import { Navbar } from '../components/Navbar';
 import { SliderCliente } from '../components/Slider_cliente';
+import { SliderLogos } from '../components/SliderLogos';
 import { Banner } from '../components/Banner';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
@@ -26,8 +27,12 @@ export default function Home() {
 			<Card />
 			<CarouselHowWork />
 			<TabsOurSolutions />
-			{/* <SliderCliente /> */}
-			{/* <Footer /> */}
+
+			<SliderCliente />
+
+			<SliderLogos />
+
+			<Footer />
 		</div>
 	);
 }
