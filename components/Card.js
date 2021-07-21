@@ -1,9 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import laptop_ico from '../public/images/laptop_ico.svg';
-import upgrade_ico from '../public/images/upgrade_ico.svg';
-import protect_ico from '../public/images/protect_ico.svg';
-import brinda_ico from '../public/images/brinda_ico.svg';
+import laptop_ico from '../public/images/cards-icons/laptop_ico.svg';
+import upgrade_ico from '../public/images/cards-icons/upgrade_ico.svg';
+import protect_ico from '../public/images/cards-icons/protect_ico.svg';
+import brinda_ico from '../public/images/cards-icons/brinda_ico.svg';
 export function Card(props) {
 	return (
 		<div className="container-cards">

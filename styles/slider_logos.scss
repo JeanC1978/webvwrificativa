@@ -1,0 +1,43 @@
+// @import 'colors';
+// @import 'mixins';
+
+// body {
+// 	// height: 500px;
+// 	min-height: 100vh;
+// 	display: grid;
+// 	place-items: center;
+// }
+.slider {
+	height: 250px;
+	margin: auto;
+	position: relative;
+	width: 90%;
+	display: grid;
+	place-items: center;
+	overflow: hidden;
+}
+.slide-track {
+	display: flex;
+	width: calc(250px * 18);
+	animation: scroll 40s linear infinite;
+}
+
+@keyframes scroll {
+	0% {
+		transform: translateX(0);
+	}
+	100% {
+		transform: translate(calc(-250px * 9));
+	}
+}
+
+.logos-continuo {
+	height: 200px;
+	width: 250px;
+	display: flex;
+	align-items: center;
+	padding: 15px;
+}
+image {
+	width: 100%;
+}

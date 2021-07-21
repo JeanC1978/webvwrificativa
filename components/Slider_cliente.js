@@ -1,17 +1,14 @@
 import React from 'react';
 import Image from 'next/image';
 import Carousel from 'react-bootstrap/Carousel';
-import points_iz from '../public/images/points_iz.svg';
-import points_der from '../public/images/points_der.svg';
-import miriam2 from '../public/images/miriam2.png';
-import luisa2 from '../public/images/luisa2.png';
-import nextSvg from '../public/images/next.svg';
-import prevSvg from '../public/images/prev.svg';
-import fgrissv from '../public/images/fgrissv.svg';
-
-// import { fgris } from '../public/images/fgrissv.png';
-
-// const DATA = [{name:"Manria", cargo:"Supervisroa", description:"la rapidez ....", img:mariam}]
+import points_iz from '../public/images/slidercliente/points_iz.svg';
+import points_der from '../public/images/slidercliente/points_der.svg';
+import miriam2 from '../public/images/slidercliente/miriam2.png';
+import luisa2 from '../public/images/slidercliente/luisa2.png';
+import nextSvg from '../public/images/slidercliente/next.svg';
+import prevSvg from '../public/images/slidercliente/prev.svg';
+import comilla1 from '../public/images/slidercliente/comilla1.svg';
+import comilla2 from '../public/images/slidercliente/comilla2.svg';
 
 export function SliderCliente(props) {
 	const nextIcon = <Image src={nextSvg} alt="siguiente" />;
@@ -47,11 +44,11 @@ export function SliderCliente(props) {
 				</div>
 
 				<div className="Texclient">
-					<p>Qué hablan de nosotros</p>
+					<h3>Qué hablan de nosotros</h3>
 				</div>
 				<div className="comilla1">
 					<Image
-						src="/images/comilla1.png"
+						src={comilla1}
 						alt="comilla1"
 						width={100}
 						automatically
@@ -63,7 +60,7 @@ export function SliderCliente(props) {
 				</div>
 				<div className="comilla2">
 					<Image
-						src="/images/comilla2.png"
+						src={comilla2}
 						alt="comilla2"
 						width={100}
 						automatically
@@ -74,13 +71,14 @@ export function SliderCliente(props) {
 					/>
 				</div>
 
-				<div className="Carrousel">
+				<div className="Carrouselc">
 					<Carousel
 						fade
 						nextIcon={nextIcon}
 						nextLabel={null}
 						prevIcon={previewIcon}
 						prevLabel={null}
+						// bsPrefix="carrousel-comments"
 					>
 						<Carousel.Item>
 							<div className="carrousel-main">
@@ -118,57 +116,8 @@ export function SliderCliente(props) {
 								</div>
 							</div>
 
-							{/* <div className="moverfoto">
-								<img
-									src="/images/miriam2.png"
-									alt="aure"
-									// width={180}
-									// automatically
-									// provided
-									// height={180}
-									// automatically
-									// provided
-								/>
-
-									Lucia Linares Tello <br></br>
-									<span>Reclutamiento y selección en Prosegur</span>
-								</h3>
-
-								<h3>
-								<p>
-									La rapidez de los datos y la facilidad de interpretación es
-									una herramienta muy ágil que <br></br>facilita la información
-									para la toma de decisiones y accionar oportunamente.
-								</p>
-							</div> */}
-
 							<Carousel.Caption></Carousel.Caption>
 						</Carousel.Item>
-						{/* <Carousel.Item>
-							<Image
-								src="/images/luisa2.png"
-								alt="aure"
-								width={180}
-								automatically
-								provided
-								height={180}
-								automatically
-								provided
-							/>
-
-							<h3>
-								Luisa Cornejo Rojas <br></br>
-								<span>Reclutamiento y selección en Prosegur</span>
-							</h3>
-
-							<p>
-								La rapidez de los datos y la facilidad de interpretación es una
-								herramienta muy ágil que <br></br>facilita la información para
-								la toma de decisiones y accionar oportunamente.
-							</p>
-
-							<Carousel.Caption></Carousel.Caption>
-						</Carousel.Item> */}
 					</Carousel>
 				</div>
 			</div>
