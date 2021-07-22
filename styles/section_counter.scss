@@ -1,0 +1,142 @@
+@import 'variables.scss';
+@import 'mixins';
+
+.section-counter{
+    width: $with_content;
+    margin: 5rem auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 5rem;
+    &__content{
+        // display: grid;
+        // grid-template-rows: 3fr 1fr;
+        &__text{
+            display: flex;
+        }
+        &__button{
+            // width: 100%;
+            // display: flex;
+            // justify-content: space-between;
+        }
+    }
+}
+
+.title-azul{
+    font-size: 2.8rem;
+    color: #4E51FE;
+    line-height: 115%;
+    font-weight: 800;
+    margin: 0;
+    
+}
+
+.text-azul{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #757E94;
+    line-height: 115%;
+}
+
+@include mediaMovil(){
+    .section-counter{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1rem;
+        &__content{
+            &__button{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    }
+}
+
+@property --client-counter {
+    syntax: "<integer>";
+    initial-value: 200;
+    inherits: false;
+};
+
+@property --test-counter {
+    syntax: "<integer>";
+    initial-value: 998;
+    inherits: false;
+};
+
+@property --users-counter {
+    syntax: "<integer>";
+    initial-value: 1000;
+    inherits: false;
+};
+// @supports (background: paint(houdini)) {
+// }
+
+//CSS para el contador de clientes
+.cliente-counter{
+    animation: mycountercliente 3s normal ease-in-out;
+    counter-reset: cliente var(--client-counter);
+    &:before{
+        content:"+"
+    }
+}
+
+.cliente-counter::after {
+    content: counter(cliente);
+    
+}
+  
+@keyframes mycountercliente {
+    from {
+        --client-counter: 0;
+    }
+    to {
+        --client-counter: 200;
+    }
+}
+
+//CSS para el contador de evaluaciones
+
+.test-counter{
+    animation: testcounter 3s normal ease-in-out;
+    counter-reset: test var(--test-counter);
+    &:before{
+        content:"+"
+    }
+}
+.test-counter::after {
+    content: counter(test);
+    
+}
+  
+  @keyframes testcounter {
+    from {
+        --test-counter: 0;
+    }
+    to {
+        --test-counter: 998;
+    }
+  }
+
+  //CSS para el contador de usuarios
+
+.users-counter{
+    animation: userscounter 3s normal ease-in-out;
+    counter-reset: users var(--users-counter);
+    &:before{
+        content:"+"
+    }
+}
+.users-counter::after {
+    content: counter(users);
+}
+  
+  @keyframes userscounter {
+    from {
+      --users-counter: 0;
+    }
+    to {
+        --users-counter: 1000;
+    }
+  }

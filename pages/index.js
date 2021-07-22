@@ -6,7 +6,7 @@ import { Layout } from '../components/Layout';
 import { Navbar } from '../components/Navbar';
 import { SliderCliente } from '../components/Slider_cliente';
 import { SliderLogos } from '../components/SliderLogos';
-import { BannerHome } from '../components/BannerHome';
+import { SectionCounter } from '../components/SectionCounter';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
 
@@ -25,9 +25,9 @@ export default function Home() {
 				{/* <Navbar /> */}
 
 				<Card />
-				<CarouselHowWork />
 				<TabsOurSolutions />
-
+				<CarouselHowWork />
+				<SectionCounter />
 				<SliderCliente />
 
 				<SliderLogos />

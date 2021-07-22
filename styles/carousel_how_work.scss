@@ -86,7 +86,7 @@ $height_carousel_how_work:550px;
         }
     }
     .carousel-item-content{
-        grid-template-columns: 100%;
+        grid-template-columns: 100vw;
         grid-template-rows: 60% 40%;
         &__partOne{
             border-radius: 0px 80px 30px 0px;
