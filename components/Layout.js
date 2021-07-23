@@ -1,13 +1,13 @@
-import React from 'react'
-import { Navbar } from "./Navbar";
+import React from 'react';
+import { Navbar } from './Navbar';
 
 export function Layout(props) {
-    console.log(props)
+	console.log(props);
 
-    return (
-        <div>
-            <Navbar />
-            {props.children}
-        </div>
-    )
+	return (
+		<div>
+			<Navbar />
+			{props.children}
+		</div>
+	);
 }

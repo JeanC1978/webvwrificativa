@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { Footer } from '../components/Footer';
 import { Card } from '../components/Card';
 // import { fetchAPI } from "../lib/api";
@@ -10,6 +11,7 @@ import { Banner } from '../components/Banner';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
 import banner from '../public/images/banner-img/banner01.png';
+import { Dimensiones } from '../components/Dimensiones';
 
 export default function Home() {
 	// console.log("articles", articles)
