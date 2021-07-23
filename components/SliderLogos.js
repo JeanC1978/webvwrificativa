@@ -10,68 +10,70 @@ import sodexo from '../public/images/logo-clientes/sodexo.png';
 
 export function SliderLogos(props) {
 	return (
-		// <div className="n">
-		<div className="slider">
-			<div className="slide-track">
-				<div className="logos-continuo">
-					<Image src={alicorp} alt="alicorp" />
-				</div>
-				<div className="logos-continuo">
-					<Image src={bmw} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={citibank} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={jockey} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={ripley} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={sodexo} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={alicorp} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={bmw} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={citibank} />
-				</div>
+		<div className="caja">
+			<div className="f1"></div>
+			<div className="f2"></div>
+			<div className="slider">
+				<div className="slide-track">
+					<div className="logos-continuo">
+						<Image src={alicorp} alt="alicorp" />
+					</div>
+					<div className="logos-continuo">
+						<Image src={bmw} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={citibank} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={jockey} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={ripley} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={sodexo} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={alicorp} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={bmw} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={citibank} />
+					</div>
 
-				{/* doubled */}
+					{/* doubled */}
 
-				<div className="logos-continuo">
-					<Image src={alicorp} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={bmw} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={citibank} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={jockey} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={ripley} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={sodexo} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={alicorp} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={bmw} />
-				</div>
-				<div className="logos-continuo">
-					<Image src={citibank} />
+					<div className="logos-continuo">
+						<Image src={alicorp} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={bmw} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={citibank} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={jockey} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={ripley} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={sodexo} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={alicorp} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={bmw} />
+					</div>
+					<div className="logos-continuo">
+						<Image src={citibank} />
+					</div>
 				</div>
 			</div>
 		</div>
-		// </div>
 	);
 }

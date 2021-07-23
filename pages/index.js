@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Image from 'next/image';
 import { Footer } from '../components/Footer';
 import { Card } from '../components/Card';
 // import { fetchAPI } from "../lib/api";

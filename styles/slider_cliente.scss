@@ -3,7 +3,7 @@
 
 .content-slider-cliente {
 	width: 100%;
-	height: 600px;
+	height: 550px;
 	background-color: $color_backgrey;
 	border-radius: 100px 100px 0px 0px;
 }
@@ -45,7 +45,7 @@
 }
 
 .Carrouselc {
-	grid-column: 4/10;
+	grid-column: 3/11;
 	grid-row: 3/11;
 }
 
@@ -86,5 +86,74 @@ Image.carousel-item {
 		}
 		position: relative;
 		top: -6rem;
+	}
+}
+
+@media (max-width: 600px) {
+	.pointiz {
+		grid-column: 3/5;
+		grid-row: 4/6;
+	}
+
+	.pointder {
+		grid-column: 9/11;
+		grid-row: 4/6;
+	}
+
+	.Texclient {
+		display: flex;
+		justify-content: center;
+		padding-top: 20px;
+		font-size: 32px;
+		font-weight: 700;
+		grid-column: 2/12;
+		grid-row: 1/1;
+	}
+
+	.comilla1 {
+		grid-column: 3/5;
+		grid-row: 9/11;
+	}
+
+	.comilla2 {
+		grid-column: 9/11;
+		grid-row: 10/11;
+	}
+
+	.Carrouselc {
+		grid-column: 2/12;
+		grid-row: 3/12;
+	}
+
+	.carrousel-main {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-content: center;
+
+		&__avatar {
+			width: 298px;
+			height: 290px;
+			margin: 0 auto;
+		}
+		&__description {
+			h3 {
+				margin-bottom: 0;
+			}
+			h4 {
+				margin-top: 0;
+				// margin-left: 20px;
+				// margin-right: 20px;
+				color: $color_t2grey;
+				font-weight: 500;
+			}
+			p {
+				width: 75%;
+				display: inline-block;
+			}
+			position: relative;
+			top: -5rem;
+		}
 	}
 }
