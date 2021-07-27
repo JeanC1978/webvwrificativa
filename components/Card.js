@@ -4,6 +4,9 @@ import laptop_ico from '../public/images/cards-icons/laptop_ico.svg';
 import upgrade_ico from '../public/images/cards-icons/upgrade_ico.svg';
 import protect_ico from '../public/images/cards-icons/protect_ico.svg';
 import brinda_ico from '../public/images/cards-icons/brinda_ico.svg';
+
+
+
 export function Card(props) {
 	return (
 		<div className="container-cards">

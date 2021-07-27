@@ -3,11 +3,11 @@
 
 @media (max-width: 1900px) {
 	.container-cards {
-		margin: 8em 5em 0em 14em;
+		margin: 5rem auto;
 		width: $with_content;
-		height: 21.25em;
-		display: flex;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: 251px 251px 251px 251px;
+		grid-gap: 1rem;
 	}
 
 	h2 {
@@ -21,26 +21,14 @@
 		font-size: 15px;
 	}
 }
-
-@media (max-width: 1600px) {
-	.container-cards {
-		margin: 8em 5em 0em 12em;
-	}
-}
-
-@media (max-width: 1360px) {
-	.container-cards {
-		margin: 3em 5em 0em 10em;
-	}
-
-	.card {
-		width: 15.4em;
-		height: 18.5em;
-		padding: inspect($value: 1.75em);
-		border-radius: 8px;
-		box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
-		display: grid;
-	}
+.card {
+	width: 251px;
+	height: 300px;
+	padding: inspect($value: 28px);
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	display: grid;
+	background-color: white;
 }
 
 @media (max-width: 992px) {
