@@ -7,11 +7,6 @@ import { Banner } from '../components/Banner';
 export function Layout({ children }) {
     return (
         <>
-            {/* {
-                banner ?
-                    <Banner /> :
-                    <BannerHome />
-            } */}
             <Navbar />
             {children}
             <Footer />
