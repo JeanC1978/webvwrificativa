@@ -1,0 +1,119 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+.banner-container-height{
+    height: 100vh;
+}
+
+.banner-main-height{
+    height: 90vh !important;
+}
+
+.banner-main{
+    width: 100%;
+    height: $height_banner_main;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: linear-gradient(180deg, #C60511 0%, #E20613 100%);
+    border-radius: 0px 0px 0px 140px;
+    z-index: 5;
+    &__columnOne{
+        color:white;
+        margin: 18% 10% 0 25%;
+
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+
+        &__title{
+            display: flex;
+            align-items: center;
+            h1{
+                margin-left: 1rem;
+            }
+        }
+    }
+    &__columnTwo{
+        &__bg{
+            width: 55%;
+            height: $height_navbar;
+            background-color: rgba(255, 255, 255, 0.6);
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+        &__img{
+            z-index: 8;
+            position: relative;
+            height: $height_banner_main;
+        }
+        &__button{
+            background-color: white;
+            border-top: 3px solid $color_blue;
+            cursor: pointer;
+
+            height: 2.8rem;
+            width: 30%;
+
+            position: relative;
+            bottom: 2.8rem;
+            left: 50%;
+            z-index: 10;
+            
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            h4{
+                font-weight: bold;
+                font-size: 18px;
+                color: $color_text_primary;
+                margin-right: 0.5rem;
+            }
+        }
+    }
+}
+
+.banner-cards{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    z-index: 15;
+    display: flex;
+    justify-content: center;
+    .container-cards{
+        margin: 0;
+    }
+}
+
+@include mediaMovil() {
+    .banner-main{
+        height: 100vh;
+        grid-template-columns: 100%;
+        grid-template-rows: 50vh 50vh;
+        background: transparent;
+        border-radius: none;
+        &__columnOne{
+            margin:0;
+            padding: 2rem;
+            justify-content: center;
+            background:linear-gradient(180deg, #C60511 0%, #E20613 100%);
+            &__title{
+                h1{
+                    font-size: 35px;
+                }
+            }
+        }
+        &__columnTwo{
+            border-radius: 0px 0px 0px 140px;
+            &__img{
+                height: 100%;
+                border-radius: 0px 0px 0px 140px;
+            }
+            &__button{
+                width: 60%;
+                left: 30%;
+            }
+        }
+    }
+}

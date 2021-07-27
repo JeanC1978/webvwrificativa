@@ -10,6 +10,7 @@ import { SliderLogos } from '../components/SliderLogos';
 import { SectionCounter } from '../components/SectionCounter';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
+import { BannerHome } from '../components/BannerHome';
 
 export default function Home() {
 	// console.log("articles", articles)
@@ -24,7 +25,7 @@ export default function Home() {
 			</Head>
 			<Layout>
 				{/* <Navbar /> */}
-
+				<BannerHome />
 				<Card />
 				<TabsOurSolutions />
 				<CarouselHowWork />
