@@ -1,0 +1,54 @@
+@import "colors";
+@import "mixins";
+
+.seleccion-tab-container{
+    padding: 1rem 0;
+    background: $color_backgrey;
+    border-radius: 0px 140px 0px 0px;
+    // background-color: #fff;
+}
+
+.seleccion-tab-item{
+    padding: 1rem 1.5rem;
+    display: grid;
+    grid-template-columns: 32% 68%;
+    grid-gap: 1rem;
+    &__columnOne{
+        p{
+            margin-bottom: 2rem;
+        }
+    }
+    &__columnTwo{
+        display: grid;
+        grid-auto-flow: column;
+        grid-template-rows: 1fr;
+        &__list{
+            color:#fff;
+            background: $color_blue;
+            padding: 1.5rem 0.8rem;
+            border-radius: 10px 0 0 10px;
+        }
+    }
+}
+
+.item-list{
+    display: flex;
+    p{
+        margin-left: 0.5rem;
+        font-size: 14px;
+    }
+}
+
+@include mediaMovil(){
+    .seleccion-tab-item{
+        padding: 1rem 1rem;
+        grid-template-columns: 100%;
+        &__columnTwo{
+            grid-template-columns: 100%;
+            grid-template-rows: 1fr 1fr;
+            &__list{
+                border-radius: 10px 10px 0 0;
+            }
+        }
+    }
+}
