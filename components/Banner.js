@@ -7,6 +7,8 @@ import { Card } from "./Card";
 import ArrowDownIcon from '../public/images/consultiva/arrow-down-icon.svg';
 import PlusIcon from '../public/images/consultiva/plus-icon.svg';
 
+//CSS: banner_main.scss
+
 export function Banner({ title = "Selección", description = text, icon, bannerImg }) {
     const [isActive, setIsActive] = useState(false)
 
