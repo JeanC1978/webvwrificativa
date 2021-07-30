@@ -4,7 +4,7 @@ import Image from "next/image";
 import Tab from 'react-bootstrap/Tab'
 import { Layout } from "../components/Layout";
 import { Banner } from "../components/Banner";
-import { CustomTabs } from "../components/Tabs";
+import { TabVertical } from "../components/TabVertical";
 import { TabContainer } from "../components/TabContainer";
 
 //Images
@@ -37,7 +37,7 @@ export default function Consultiva(props) {
     return (
         <Layout>
             <Banner title="Consultiva" icon={consultivaIco} description={text} bannerImg={consultivaBanner} />
-            <CustomTabs title={TITLE} defaultActiveKey="attention">
+            <TabVertical title={TITLE} defaultActiveKey="attention">
                 <Tab eventKey="attention" title="Atención al Cliente">
                     <div className="attention-client-tab">
                         <TabContainer navItems={ATTENTION_CLIENT_ITEMS} buttonText="Comunícate con un asesor" id="attention-client-tabs" defaultActiveKey="first">
@@ -86,7 +86,7 @@ export default function Consultiva(props) {
                         </TabContainer>
                     </div>
                 </Tab>
-            </CustomTabs>
+            </TabVertical>
         </Layout>
     )
 }

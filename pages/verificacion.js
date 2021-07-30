@@ -4,6 +4,7 @@ import Tab from 'react-bootstrap/Tab'
 import { Layout } from "../components/Layout";
 import { Banner } from "../components/Banner";
 import { TabContainer } from "../components/TabContainer";
+import { TabVertical } from "../components/TabVertical";
 
 //Images
 import verificacionBanner from "../public/images/pages/verificacion-banner.png";
@@ -24,31 +25,53 @@ const SERVICE_VERIFICATIONS_ITEMS = [
     { id: "5", eventKey: "five", title: "PLAFT", description: "Orientada a determinar operaciones sospechosas para oficiales de cumplimiento y funcionarios dentro de sus responsabilidades", duracion: "2 horas", img: tabImgFive },
 ]
 
+const TITLE = "Servicio de Verificaciones"
+const text = "Valida la información de tus postulantes y colaboradores con nuestras verificaciones de personal."
+
 export default function Verificacion() {
 
-    const text = "Valida la información de tus postulantes y colaboradores con nuestras verificaciones de personal."
     return (
         <Layout>
             <Banner title="Selección" icon={verificacionIcon} description={text} bannerImg={verificacionBanner} />
             <div className="verification-tab-container">
                 <div className="verification-tab-container__content">
-                    <h1>Servicio de Verificaciones</h1>
-                    <TabContainer navItems={SERVICE_VERIFICATIONS_ITEMS} buttonText="Solicita una demo" id="service-verification-tabs" defaultActiveKey="first">
-                        {
-                            SERVICE_VERIFICATIONS_ITEMS.map(item => (
-                                <Tab.Pane eventKey={item.eventKey} key={item.id}>
-                                    <div className="verificacion-tab-item">
-                                        <h2>Verificaciónes {item.id == 1 ? "de" : ""}</h2>
-                                        <h1>{item.title}</h1>
-                                        <div>
-                                            <Image src={item.img} />
+                    <div className="verification-tab-container__content__desktop">
+                        <h1>{TITLE}</h1>
+                        <TabContainer navItems={SERVICE_VERIFICATIONS_ITEMS} buttonText="Solicita una demo" id="service-verification-tabs" defaultActiveKey="first">
+                            {
+                                SERVICE_VERIFICATIONS_ITEMS.map(item => (
+                                    <Tab.Pane eventKey={item.eventKey} key={item.id}>
+                                        <div className="verificacion-tab-item">
+                                            <h2>Verificaciónes {item.id == 1 ? "de" : ""}</h2>
+                                            <h1>{item.title}</h1>
+                                            <div>
+                                                <Image src={item.img} />
+                                            </div>
+                                            <p>{item.description}</p>
                                         </div>
-                                        <p>{item.description}</p>
-                                    </div>
-                                </Tab.Pane>
-                            ))
-                        }
-                    </TabContainer>
+                                    </Tab.Pane>
+                                ))
+                            }
+                        </TabContainer>
+                    </div>
+                    <div className="verification-tab-container__content__movil">
+                        <TabVertical title={TITLE} defaultActiveKey="first">
+                            {
+                                SERVICE_VERIFICATIONS_ITEMS.map(item => (
+                                    <Tab eventKey={item.eventKey} title={item.title} key={item.id}>
+                                        <div className="verificacion-tab-item">
+                                            <h2>Verificaciónes {item.id == 1 ? "de" : ""}</h2>
+                                            <h1>{item.title}</h1>
+                                            <div>
+                                                <Image src={item.img} />
+                                            </div>
+                                            <p>{item.description}</p>
+                                        </div>
+                                    </Tab>
+                                ))
+                            }
+                        </TabVertical>
+                    </div>
                 </div>
             </div>
         </Layout>

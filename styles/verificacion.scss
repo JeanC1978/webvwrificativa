@@ -1,5 +1,6 @@
 @import "variables";
 @import "colors";
+@import "mixins";
 
 .verification-tab-container{
     padding: 2rem 0;
@@ -10,6 +11,9 @@
         width: $with_content;
         margin: 0 auto;
         color: $color_text_primary;
+        &__movil{
+            display: none;
+        }
     }
    
 }
@@ -25,4 +29,31 @@
         margin-top: 0;
     }
 
+}
+
+@include mediaMovil() {
+    
+    .verification-tab-container{
+        border-radius: 0;
+        padding: 0.5rem 0;
+        margin: 0;
+        &__content{
+            &__desktop{
+                display: none;
+            }
+            &__movil{
+                display: block;
+            }
+        }
+    }
+    .verificacion-tab-item{
+        padding: 1rem;
+        h2{
+            font-size: 24px;
+        }
+        h1{
+            font-size: 35px;
+            line-height: 115%;
+        }
+    }
 }

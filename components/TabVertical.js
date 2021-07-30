@@ -4,9 +4,9 @@ import Link from "next/link";
 //componentes
 import Tabs from 'react-bootstrap/Tabs'
 
-//CSS:custom_tabs.scss
+//CSS:tab_horizontal.scss
 
-export function CustomTabs({ title, subtitle = null, defaultActiveKey, children }) {
+export function TabVertical({ title, subtitle = null, defaultActiveKey, children }) {
 
     return (
         <div className="section-tabs">

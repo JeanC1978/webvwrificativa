@@ -32,14 +32,18 @@
     .section-tabs{
         h1{
             font-size: 35px;
-            
         }
         &__container{
             .nav-tabs{
                 display: grid;
-                grid-template-columns: 1fr 1fr;
+                grid-auto-flow: column;
+                overflow-x: scroll;
+                overflow-y: hidden;
+                margin-bottom: 0 !important;
                 .nav-item{
                     font-size: 18px;
+                    text-align: left;
+                    line-height: 115%;
                     &.active{
                         border-top: none;
                         border-bottom: 2px solid $color_blue;
