@@ -1,0 +1,28 @@
+@import "variables";
+@import "colors";
+
+.verification-tab-container{
+    padding: 2rem 0;
+    margin: 2rem 0;
+    background: $color_backgrey;
+    border-radius: 0px 140px 0px 0px;
+    &__content{
+        width: $with_content;
+        margin: 0 auto;
+        color: $color_text_primary;
+    }
+   
+}
+.verificacion-tab-item{
+    background: #fff;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 15px rgba(213, 216, 223, 0.5);
+    h2{
+        margin-bottom: 0;
+    }
+    h1{
+        margin-top: 0;
+    }
+
+}
