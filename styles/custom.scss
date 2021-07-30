@@ -20,3 +20,8 @@ $carousel-indicator-width: 30px;
 // navs & tabs
 $nav-tabs-link-active-bg: #fff;
 @import '../node_modules/bootstrap/scss/nav';
+
+// Container & Rows & Col
+@import '../node_modules/bootstrap/scss/containers';
+@import '../node_modules/bootstrap/scss/grid';
+@import '../node_modules/bootstrap/scss/bootstrap-grid.scss';

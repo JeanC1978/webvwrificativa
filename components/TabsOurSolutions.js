@@ -32,12 +32,12 @@ export function TabsOurSolutions(props) {
             <div className="container-our-solutions__tabs">
                 <Tabs defaultActiveKey="five" id="ourSolutions" className="mb-3">
                     <Tab eventKey="five" title={imgFive} tabClassName="nav-five">
-                        <div className="tab-content">
-                            <div className="tab-content__description">
-                                <div className="tab-content__description__info">
+                        <div className="tab-item-content">
+                            <div className="tab-item-content__description">
+                                <div className="tab-item-content__description__info">
                                     <h4>"Creando sinergia entre las personas, el talento y la tecnología"</h4>
                                     <p>Plataforma digital para tus procesos de selección, verificación y evaluación de personas</p>
-                                    <div className="tab-content__description__info__links">
+                                    <div className="tab-item-content__description__info__links">
                                         <Link href="/verificacion">
                                             <Image src={VerificacionSvg} alt="tab Five" />
                                         </Link>
@@ -49,53 +49,53 @@ export function TabsOurSolutions(props) {
                                         </Link>
                                     </div>
                                 </div>
-                                <div className="tab-content__description__button">
+                                <div className="tab-item-content__description__button">
                                     <Button variant="primary">Solicita una demo</Button>
                                 </div>
                             </div>
-                            <div className="tab-content__img">
+                            <div className="tab-item-content__img">
                                 <Image src={FiveImg} alt="tab Five" />
                             </div>
                         </div>
                     </Tab>
                     <Tab eventKey="consultiva" title={imgConsultiva}>
-                        <div className="tab-content">
-                            <div className="tab-content__description">
-                                <div className="tab-content__description__info">
+                        <div className="tab-item-content">
+                            <div className="tab-item-content__description">
+                                <div className="tab-item-content__description__info">
                                     <h4>"Tus colaboradores son lso embajadores de tu marca"</h4>
                                     <p>Potenciamos a tu colaboradores, entrenandolos para ser mas competitivos sumando valor a tu marca</p>
-                                    <div className="tab-content__description__links">
+                                    <div className="tab-item-content__description__links">
                                     </div>
                                     <Link href="/consultiva">
                                         <Image src={SeeMoreSvg} alt="ver más" />
                                     </Link>
                                 </div>
-                                <div className="tab-content__description__button">
+                                <div className="tab-item-content__description__button">
                                     <Button variant="primary">Comunicate con un asesor</Button>
                                 </div>
                             </div>
-                            <div className="tab-content__img">
+                            <div className="tab-item-content__img">
                                 <Image src={ConsultivaImg} alt="Consultiva" />
                             </div>
                         </div>
                     </Tab>
                     <Tab eventKey="operativa" title={imgOperativa}>
-                        <div className="tab-content">
-                            <div className="tab-content__description">
-                                <div className="tab-content__description__info">
+                        <div className="tab-item-content">
+                            <div className="tab-item-content__description">
+                                <div className="tab-item-content__description__info">
                                     <h4>"El Match perfecto con tu candidadto ideal"</h4>
                                     <p>Plataforma tecnológica con IA especializada en reclutamiento masivo de personal operario</p>
-                                    <div className="tab-content__description__links">
+                                    <div className="tab-item-content__description__links">
                                     </div>
                                     <Link href="/consultiva">
                                         <Image src={SeeMoreSvg} alt="ver más" />
                                     </Link>
                                 </div>
-                                <div className="tab-content__description__button">
+                                <div className="tab-item-content__description__button">
                                     <Button variant="primary">Solicita una demo</Button>
                                 </div>
                             </div>
-                            <div className="tab-content__img">
+                            <div className="tab-item-content__img">
                                 <Image src={OperativaImg} alt="Operativa" />
                             </div>
                         </div>

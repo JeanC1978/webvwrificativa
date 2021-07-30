@@ -1,0 +1,59 @@
+@import "colors";
+@import "mixins";
+
+.attention-client-tab, .soft-skills-tab{
+    padding: 0.5rem 1.5rem;
+}
+.subtitle{
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 115%;
+    color: $color_text_primary;
+    width: 70%;
+}
+.item-card-tab{
+    margin: 0.5rem 1rem;
+    padding: 0 0 0 2rem;
+    background: $color_backgrey;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: 65% 35%;
+    &__text{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem 0.5rem;
+        h1{
+            color: $color_text_primary;
+            margin-top: 0;
+        }
+        p{
+            color:$color_parrafo;
+        }
+    }
+}
+
+@include mediaMovil() {
+    .item-card-tab{
+        display: grid;
+        grid-template-columns: 100%;
+        grid-template-rows: 1fr 1fr;
+
+        margin: 0;
+        padding: 0.5rem;
+        &__text{
+            h2{
+                font-size: 24px;
+            }
+            h1{
+                font-size: 35px;
+                margin-bottom: 0;
+                font-weight: 800;
+                line-height: 115%;
+            }
+            p{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

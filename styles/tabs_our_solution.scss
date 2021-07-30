@@ -24,7 +24,7 @@
         }
     }
 }
-.tab-content{
+.tab-item-content{
     width: $with_content;
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -58,7 +58,7 @@
         height: 100%;
     }
 
-    .tab-content{
+    .tab-item-content{
         display: flex;
         flex-direction: column-reverse;
         &__description{

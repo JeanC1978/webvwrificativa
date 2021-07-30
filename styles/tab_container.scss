@@ -1,0 +1,45 @@
+@import "colors";
+@import "mixins";
+
+.nav-container{
+    .nav-item{
+        margin: 0.5rem 0;
+        a {
+            border-left: 4px solid #E3E5EA;
+            color: $color_text_primary;
+            font-size: 1rem;
+            &.active{
+                border-left: 4px solid $color_blue;
+                font-weight: bold;
+            }
+
+        }
+    }
+}
+
+.nav-item-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-action{
+    margin-top: 1rem;
+    font-weight: bold;
+    font-size: 0.95rem;
+}
+
+.button-movil{
+    display: none;
+}
+
+@include mediaMovil() {
+    .nav-container{
+        button{
+            display: none;
+        }
+    }
+    .button-action{
+        font-size: 18px;
+    }
+}
