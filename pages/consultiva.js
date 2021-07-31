@@ -13,6 +13,9 @@ import { TextSolutionseconsult } from '../components/TextSolutionseconsult';
 import consultivaBanner from "../public/images/consultiva/consultiva-banner.png";
 import consultivaIco from "../public/images/consultiva/consultiva-icon.svg";
 import AvatarOne from "../public/images/consultiva/avatar-1.png";
+import AvatarTwo from "../public/images/consultiva/avatar-2.png";
+import AvatarThree from "../public/images/consultiva/avatar-3.png";
+import AvatarFour from "../public/images/consultiva/avatar-4.png";
 
 import tabImgOne from "../public/images/pages/consultiva-tab-1.png";
 import tabImgTwo from "../public/images/pages/consultiva-tab-2.png";
@@ -36,9 +39,9 @@ const SOFT_SKILLS_ITEMS = [
 
 const WHO_EXPOSE = [
     { name: "Javier Lauz", description: "Fundador del área de Servicio al cliente en Wong.", img: AvatarOne },
-    { name: "Patricia Cáceres", description: "Consultora en Cultura organizacional.", img: AvatarOne },
-    { name: "Cecilia Rojas", description: "Especialista en Gestion Comercial y ventas.", img: AvatarOne },
-    { name: "Melisa Palomino", description: "Especialista en Experiencia de Cliente.", img: AvatarOne },
+    { name: "Patricia Cáceres", description: "Consultora en Cultura organizacional.", img: AvatarTwo },
+    { name: "Cecilia Rojas", description: "Especialista en Gestion Comercial y ventas.", img: AvatarThree },
+    { name: "Melisa Palomino", description: "Especialista en Experiencia de Cliente.", img: AvatarFour },
 ]
 
 const TITLE = "Entrenamiento en:"

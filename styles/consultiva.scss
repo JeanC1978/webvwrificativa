@@ -42,7 +42,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        width: 100%;
+        h2{
+            margin-bottom: 0;
+        }
+        p{
+            text-align: center;
+        }
 
     }
 }
@@ -70,4 +76,20 @@
             }
         }
     }
+
+    .section_who_expose{
+        width: 100%;
+        margin: 1rem auto;
+        display: grid;
+        grid-auto-flow: column;
+        scroll-snap-type: x mandatory;
+        overscroll-behavior-x: contain;
+        overflow-x: scroll;
+    &__card{
+        scroll-snap-align: center;
+        width: 74vw;
+        max-width: none;
+    }
+    }
+
 }
