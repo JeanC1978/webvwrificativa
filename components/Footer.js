@@ -76,7 +76,7 @@ export function Footer(props) {
 			</div>
 
 			<div className="contactoymail">
-				<li className="dcontact">
+				<div className="dcontact">
 					Datos de contacto
 					<div className="ico_inline">
 						<Image
@@ -107,24 +107,22 @@ export function Footer(props) {
 
 						<ul className="t-thin">Jr. Alfonso Ugarte 235, Of.103, Barranco</ul>
 					</div>
-				</li>
-
-				<div className="mail">
-					<div className="ico_inline">
-						<Image
-							src={mail_ico}
-							alt="mail_ico"
-							width={25}
-							automatically
-							provided
-							height={25}
-							automatically
-							provided
-						/>
-
-						<ul className="t-thin">comercial@verificativa.com</ul>
-					</div>
 				</div>
+			</div>
+			<div className="mail">
+				<Image
+					className="mailicono"
+					src={mail_ico}
+					alt="mail_ico"
+					width={25}
+					automatically
+					provided
+					height={25}
+					automatically
+					provided
+				/>
+
+				<div className="t-thin">comercial@verificativa.com</div>
 			</div>
 		</div>
 	);

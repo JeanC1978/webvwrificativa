@@ -7,6 +7,7 @@ import { Banner } from "../components/Banner";
 import { TabVertical } from "../components/TabVertical";
 import { TabContainer } from "../components/TabContainer";
 import { AvatarWithBg } from "../components/AvatarWithBg";
+import { TextSolutionseconsult } from '../components/TextSolutionseconsult';
 
 //Images
 import consultivaBanner from "../public/images/consultiva/consultiva-banner.png";
@@ -47,6 +48,7 @@ export default function Consultiva() {
     return (
         <Layout>
             <Banner title="Consultiva" icon={consultivaIco} description={text} bannerImg={consultivaBanner} />
+            <TextSolutionseconsult />
             <TabVertical title={TITLE} defaultActiveKey="attention">
                 <Tab eventKey="attention" title="Atención al Cliente">
                     <div className="attention-client-tab">

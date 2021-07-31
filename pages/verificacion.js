@@ -5,6 +5,7 @@ import { Layout } from "../components/Layout";
 import { Banner } from "../components/Banner";
 import { TabContainer } from "../components/TabContainer";
 import { TabVertical } from "../components/TabVertical";
+import { Textsolutionsblue } from '../components/Textsolutionsblue';
 
 //Images
 import verificacionBanner from "../public/images/pages/verificacion-banner.png";
@@ -33,6 +34,7 @@ export default function Verificacion() {
     return (
         <Layout>
             <Banner title="Selección" icon={verificacionIcon} description={text} bannerImg={verificacionBanner} />
+            <Textsolutionsblue />
             <div className="verification-tab-container">
                 <div className="verification-tab-container__content">
                     <div className="verification-tab-container__content__desktop">
@@ -74,6 +76,7 @@ export default function Verificacion() {
                     </div>
                 </div>
             </div>
+
         </Layout>
     )
 }

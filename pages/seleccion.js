@@ -5,6 +5,7 @@ import { Layout } from "../components/Layout";
 import { Banner } from "../components/Banner";
 import { TabVertical } from "../components/TabVertical";
 import { ButtonBlack } from "../components/ButtonBlack";
+import { Textsolutions } from '../components/TextSolutions';
 
 //imagenes
 import seleccionBanner from "../public/images/pages/seleccion-banner.png";
@@ -64,7 +65,7 @@ export default function Seleccion(props) {
     return (
         <Layout>
             <Banner title="Selección" icon={seleccionIcon} description={text} bannerImg={seleccionBanner} />
-            {/* <div className="section-tab"> */}
+            <Textsolutions />
             <div className="seleccion-tab-container">
                 <TabVertical title={TITLE} subtitle={SUBTITLE} defaultActiveKey="first">
                     {
@@ -94,7 +95,6 @@ export default function Seleccion(props) {
                     }
                 </TabVertical>
             </div>
-            {/* </div> */}
         </Layout>
     )
 }
