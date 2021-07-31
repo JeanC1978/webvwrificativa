@@ -5,6 +5,7 @@ import Link from "next/link";
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import Button from 'react-bootstrap/Button'
+import { ButtonBlack } from "./ButtonBlack";
 
 //images
 import FiveSvg from "../public/images/tabs-img/five.svg";
@@ -50,7 +51,7 @@ export function TabsOurSolutions(props) {
                                     </div>
                                 </div>
                                 <div className="tab-item-content__description__button">
-                                    <Button variant="primary">Solicita una demo</Button>
+                                    <ButtonBlack>Solicita una demo</ButtonBlack>
                                 </div>
                             </div>
                             <div className="tab-item-content__img">
@@ -71,7 +72,7 @@ export function TabsOurSolutions(props) {
                                     </Link>
                                 </div>
                                 <div className="tab-item-content__description__button">
-                                    <Button variant="primary">Comunicate con un asesor</Button>
+                                    <ButtonBlack>Comunicate con un asesor</ButtonBlack>
                                 </div>
                             </div>
                             <div className="tab-item-content__img">
@@ -92,7 +93,7 @@ export function TabsOurSolutions(props) {
                                     </Link>
                                 </div>
                                 <div className="tab-item-content__description__button">
-                                    <Button variant="primary">Solicita una demo</Button>
+                                    <ButtonBlack>Solicita una demo</ButtonBlack>
                                 </div>
                             </div>
                             <div className="tab-item-content__img">

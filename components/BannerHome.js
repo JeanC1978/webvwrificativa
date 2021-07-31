@@ -1,6 +1,9 @@
 import React from 'react'
 import Image from "next/image";
 import Button from 'react-bootstrap/Button'
+import { ButtonBlack } from "./ButtonBlack";
+
+//images
 import MenBrown from "../public/images/banner-img/men_brown.png";
 import MenSky from "../public/images/banner-img/men_sky.png";
 import WomenSky from "../public/images/banner-img/women_sky.png";
@@ -13,7 +16,7 @@ export function BannerHome() {
             <div className="banner__columnOne">
                 <div className="banner__columnOne__content">
                     <h1>Elegir personal confiable, no es cuestión de suerte</h1>
-                    <Button variant="primary">Solicita una demo</Button>
+                    <ButtonBlack>Solicita una demo</ButtonBlack>
                 </div>
             </div>
             <div className="banner__columnTwo">

@@ -8,6 +8,7 @@
     display: grid;
     grid-template-columns: 44% 56%;
     z-index: 5;
+
     &__columnOne{
         height: 99%;
         background-color: $color_base;
@@ -135,3 +136,4 @@
         }
     }
 }
+  
