@@ -4,6 +4,7 @@ import { Layout } from '../components/Layout';
 import { Banner } from '../components/Banner';
 import { Dimensiones } from '../components/Dimensiones';
 import { ButtonBlack } from '../components/ButtonBlack';
+import { Navigation } from '../components/Navigation';
 
 //imagenes
 import evaluativaBanner from "../public/images/pages/evaluativa-banner.png";
@@ -39,6 +40,7 @@ export default function Evaluativa(props) {
 				</div>
 				<Dimensiones />
 				<CardBennefits />
+				<Navigation prev="seleccion" next="verificacion" />
 			</Layout>
 		</div>
 	);

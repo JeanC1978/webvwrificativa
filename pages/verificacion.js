@@ -6,6 +6,7 @@ import { Banner } from "../components/Banner";
 import { TabContainer } from "../components/TabContainer";
 import { TabVertical } from "../components/TabVertical";
 import { Textsolutionsblue } from '../components/Textsolutionsblue';
+import { Navigation } from '../components/Navigation';
 
 //Images
 import verificacionBanner from "../public/images/pages/verificacion-banner.png";
@@ -76,7 +77,7 @@ export default function Verificacion() {
                     </div>
                 </div>
             </div>
-
+            <Navigation prev="seleccion" next="evaluativa" />
         </Layout>
     )
 }

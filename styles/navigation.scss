@@ -1,0 +1,14 @@
+.navigation{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0.1rem;
+}
+
+.navigation__prev, .navigation__next{
+    cursor: pointer;
+    height: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E3E5EA;
+}

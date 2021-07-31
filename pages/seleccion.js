@@ -6,6 +6,7 @@ import { Banner } from "../components/Banner";
 import { TabVertical } from "../components/TabVertical";
 import { ButtonBlack } from "../components/ButtonBlack";
 import { Textsolutions } from '../components/TextSolutions';
+import { Navigation } from '../components/Navigation';
 
 //imagenes
 import seleccionBanner from "../public/images/pages/seleccion-banner.png";
@@ -95,6 +96,7 @@ export default function Seleccion(props) {
                     }
                 </TabVertical>
             </div>
+            <Navigation prev="verificacion" next="evaluativa" />
         </Layout>
     )
 }
