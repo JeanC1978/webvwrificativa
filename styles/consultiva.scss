@@ -33,6 +33,20 @@
     }
 }
 
+.section_who_expose{
+    width: $with_content;
+    margin: 4rem auto;
+    display: grid;
+    grid-auto-flow: column;
+    &__card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+    }
+}
+
 @include mediaMovil() {
     .item-card-tab{
         display: grid;

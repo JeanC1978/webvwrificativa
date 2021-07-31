@@ -6,10 +6,13 @@ import { Layout } from "../components/Layout";
 import { Banner } from "../components/Banner";
 import { TabVertical } from "../components/TabVertical";
 import { TabContainer } from "../components/TabContainer";
+import { AvatarWithBg } from "../components/AvatarWithBg";
 
 //Images
 import consultivaBanner from "../public/images/consultiva/consultiva-banner.png";
 import consultivaIco from "../public/images/consultiva/consultiva-icon.svg";
+import AvatarOne from "../public/images/consultiva/avatar-1.png";
+
 import tabImgOne from "../public/images/pages/consultiva-tab-1.png";
 import tabImgTwo from "../public/images/pages/consultiva-tab-2.png";
 import tabImgThree from "../public/images/pages/consultiva-tab-3.png";
@@ -30,9 +33,16 @@ const SOFT_SKILLS_ITEMS = [
     { id: "3", eventKey: "third", title: "Todos somos uno", description: "Identificamos y desarrollamos habilidades para lograr la sinergia del equipo y aumentar la productividad.", img: tabImgThree },
 ]
 
+const WHO_EXPOSE = [
+    { name: "Javier Lauz", description: "Fundador del área de Servicio al cliente en Wong.", img: AvatarOne },
+    { name: "Patricia Cáceres", description: "Consultora en Cultura organizacional.", img: AvatarOne },
+    { name: "Cecilia Rojas", description: "Especialista en Gestion Comercial y ventas.", img: AvatarOne },
+    { name: "Melisa Palomino", description: "Especialista en Experiencia de Cliente.", img: AvatarOne },
+]
+
 const TITLE = "Entrenamiento en:"
 
-export default function Consultiva(props) {
+export default function Consultiva() {
 
     return (
         <Layout>
@@ -87,6 +97,17 @@ export default function Consultiva(props) {
                     </div>
                 </Tab>
             </TabVertical>
+            <div className="section_who_expose">
+                {
+                    WHO_EXPOSE.map(item => (
+                        <div className="section_who_expose__card" key={item.id}>
+                            <AvatarWithBg img={item.img} />
+                            <h2>{item.name}</h2>
+                            <p>{item.description}</p>
+                        </div>
+                    ))
+                }
+            </div>
         </Layout>
     )
 }
