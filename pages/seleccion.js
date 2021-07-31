@@ -16,7 +16,7 @@ export default function Seleccion(props) {
 				description={text}
 				bannerImg={seleccionBanner}
 			/>
-			<Textsolutions> ASKJHGKJD</Textsolutions>
+			<Textsolutions />
 		</Layout>
 	);
 }

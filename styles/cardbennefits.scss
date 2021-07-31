@@ -1,0 +1,70 @@
+@import 'colors';
+@import 'variables';
+@import 'mixins';
+
+@media (max-width: 1900px) {
+	.container-cardsbennefits {
+		margin: 5rem auto;
+		width: $with_content;
+		display: grid;
+		justify-content: space-between;
+		grid-template-columns: 251px 251px 251px 251px;
+		grid-template-rows: 4rem 13rem;
+		grid-gap: 1rem;
+
+		// position: relative;
+	}
+	.textcardbennefits {
+		// position: relative;
+	}
+	.circles {
+		position: relative;
+		top: 23rem;
+		left: 5%;
+	}
+	h1 {
+		grid-column: 1/5;
+		grid-row: 1/1;
+	}
+}
+
+.cardbennefits {
+	width: 251px;
+	height: 200px;
+	padding: inspect($value: 28px);
+	border-radius: 8px;
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+	display: grid;
+	background-color: white;
+}
+
+@media (max-width: 992px) {
+	.container-cards {
+		margin: 1em 1em 2em 9em;
+		width: 70vw;
+		height: 45em;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 768px) {
+	.container-cards {
+		margin: 12em 0em 0em 6em;
+		width: 75vw;
+		height: 50em;
+		display: flex;
+		justify-content: space-between;
+	}
+}
+@media (max-width: 600px) {
+	.container-cards {
+		margin: 5em 0em 0em 10em;
+		width: 50vw;
+		height: 90em;
+		display: flex;
+		justify-content: space-between;
+	}
+}
