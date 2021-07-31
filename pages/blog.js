@@ -1,22 +1,23 @@
 import React from 'react'
-import { BannerHome } from '../components/BannerHome';
+import { BannerBlog } from '../components/BannerBlog';
 import { Layout } from "../components/Layout";
 import BlogSec_1 from '../components/BlogSec_1';
 import BlogSec_2 from '../components/BlogSec_2';
-import BlogDetalle from '../components/BlogDetalle';
+
+//images
+import NoteIcon from "../public/images/blog/note-icon.svg";
 
 export default function Consultiva(props) {
 
 
     return (
         <Layout>
-            <BannerHome />
+            <BannerBlog title="Ideas, notas y más" icon={NoteIcon} />
 
             <div className="cotainer-blog">
                 <BlogSec_1 />
                 <BlogSec_2 titulo='¿Quienes Exponen?' />
             </div>
-            {/*  <BlogDetalle/> */}
         </Layout>
     )
 }

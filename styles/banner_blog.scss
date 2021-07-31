@@ -1,0 +1,72 @@
+@import "colors";
+@import "variables";
+@import "mixins";
+
+.banner-blog{
+    height: $height_banner_blog;
+    display: grid;
+    grid-template-columns: 45% 55%;
+    background: linear-gradient(180deg, #C60511 0%, #E20613 100%);
+    border-radius: 0px 0px 0px 140px;
+    &__columnOne{
+        color: #fff;
+        &__title{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            h1{
+                font-size: 40px;
+                font-weight: 800;
+            }
+        }
+        &__containerButton{
+            height: 100%;
+            display: flex;
+            align-items: center;
+            margin-left: 25%;
+            &__goBack{
+                display: flex;
+                cursor: pointer;
+                p {
+                    margin-left: 0.5rem;
+                    font-size: 18px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    &__columnTwo{
+        &__bg{
+            width: 55%;
+            height: $height_navbar;
+            background-color: #fff;
+            position: absolute;
+            top: 0;
+            z-index: 10;
+        }
+    }
+}
+
+@include mediaMovil(){
+    .banner-blog{
+        grid-template-columns: 100%;
+        &__columnOne{
+            &__title{
+                padding: 0 1rem;
+                h1{
+                    font-size: 35px;
+                    line-height: 115%;
+                }
+            }
+            &__containerButton{
+                margin-left: 1rem;
+                // display: flex;
+                // align-items: flex-start;
+            }
+        }
+        &__columnTwo{
+            display: none;
+        }
+    }
+}

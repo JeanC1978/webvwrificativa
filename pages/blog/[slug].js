@@ -3,7 +3,7 @@ import { fetchAPI } from "../../lib/api";
 import { getStrapiMedia } from "../../lib/media";
 import BlogDetalle from "../../components/BlogDetalle";
 import { Layout } from "../../components/Layout";
-import { BannerHome } from "../../components/BannerHome";
+import { BannerBlog } from "../../components/BannerBlog";
 
 const Article = () => {
     // console.log("article", article)
@@ -18,7 +18,7 @@ const Article = () => {
     // };
     return (
         <Layout>
-            <BannerHome />
+            <BannerBlog buttonGoBack />
             <BlogDetalle />
         </Layout>
     )
