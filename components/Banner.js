@@ -14,6 +14,10 @@ export function Banner({ title = "Selección", description = text, icon, bannerI
 
     const classes = isActive ? "banner-main-height" : ""
 
+    const handleMouseDown = () => {
+        setIsActive(false)
+    }
+
     return (
         <div className={`${isActive ? "banner-container-height" : ""}`}>
             <div className={`banner-main ${classes}`}>
@@ -37,7 +41,7 @@ export function Banner({ title = "Selección", description = text, icon, bannerI
                 </div>
                 {
                     isActive &&
-                    <div className="banner-cards">
+                    <div className="banner-cards" onMouseDown={handleMouseDown}>
                         <Card />
                     </div>
                 }

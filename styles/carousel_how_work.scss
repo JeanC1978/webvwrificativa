@@ -8,7 +8,8 @@ $height_carousel_how_work:550px;
     height: $height_carousel_how_work;
     display: grid;
     grid-template-columns: 80% 20%;
-    margin-bottom: 5rem;
+    margin: 5rem 0;
+    // margin-bottom: 5rem;
     &__content{
         display: grid;
         width: 100%;
