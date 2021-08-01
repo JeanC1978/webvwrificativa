@@ -77,11 +77,12 @@
 @include mediaMovil() {
     .banner{
         height: 100vh;
-        display: flex;
-        flex-direction: column;
+        grid-template-rows: 50vh 50vh;
+        grid-template-columns: 100%;
+        
         &__columnOne{
             padding: 0;
-            height: 58vh;
+            // height: 58vh;
             border-radius: 0px;
             &__content{
                 margin: 0 auto;
@@ -101,7 +102,12 @@
             }
         }
         &__columnTwo{
-            height: 42vh;
+            // height: 42vh;
+            border-radius: 0px 0px 0px 140px;
+            &__img{
+                height: 100%;
+                border-radius: 0px 0px 0px 140px;
+            }
             &__bg{
                 display: none;
             }

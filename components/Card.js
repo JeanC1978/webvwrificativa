@@ -9,8 +9,8 @@ import brinda_ico from '../public/images/cards-icons/brinda_ico.svg';
 
 export function Card(props) {
 	return (
-		<div className="container-cards">
-			<div className="card">
+		<div className="features-cards">
+			<div className="features-cards__item">
 				<div className="ico-card">
 					<Image
 						src={laptop_ico}
@@ -27,7 +27,7 @@ export function Card(props) {
 				</div>
 			</div>
 
-			<div className="card">
+			<div className="features-cards__item">
 				<div className="ico-card">
 					<Image
 						src={upgrade_ico}
@@ -49,7 +49,7 @@ export function Card(props) {
 				</div>
 			</div>
 
-			<div className="card">
+			<div className="features-cards__item">
 				<div className="ico-card">
 					<Image
 						src={protect_ico}
@@ -72,7 +72,7 @@ export function Card(props) {
 				</div>
 			</div>
 
-			<div className="card">
+			<div className="features-cards__item">
 				<div className="ico-card">
 					<Image
 						src={brinda_ico}
