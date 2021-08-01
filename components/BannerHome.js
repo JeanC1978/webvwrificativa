@@ -22,7 +22,7 @@ export function BannerHome() {
             <div className="banner__columnTwo">
                 <div className="banner__columnTwo__bg"></div>
                 <div className="banner__columnTwo__img">
-                    <Image src={banner} alt="banner" />
+                    <Image src={banner} alt="banner" layout="fill" objectFit="cover" />
                 </div>
                 <div className="banner__columnTwo__peopleImgs">
                     <div className="peopleImg__one">
