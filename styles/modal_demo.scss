@@ -1,0 +1,78 @@
+@import "variables";
+@import "colors";
+@import "mixins";
+
+.demo-modal{
+    width: $with_content;
+    margin: 1.5rem auto;
+    &__header{
+        display: flex;
+        justify-content: space-between;
+    }
+    &__content{
+        margin-top: 4rem;
+        &__title{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 2rem;
+            color: #343843;
+        }
+        &__form{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            &__inline{
+                display: flex;
+                align-items: center;
+            }
+            &__button{
+                margin-top: 2rem;
+            }
+        }
+    }
+}
+
+.input-form{
+    background: $color_backgrey;
+    border-radius: 5px;
+    height: 45px;
+    padding: 15px 24px;
+    margin: 0 0.5rem;
+    border: none;
+
+    color: #494f5f;
+    font-family: 'Poppins', sans-serif;
+    font-size: 0.9rem;
+    &:focus{
+        outline: none;
+    }
+}
+
+@include mediaMovil(){
+    .demo-modal{
+        width: 95%;
+        &__content{
+            margin-top: 2rem;
+            &__title{
+                margin-bottom: 1rem;
+                &__text{
+                    text-align: center;
+                    h1{
+                        font-size: 35px;
+                        line-height: 115%;
+                    }
+                }
+                &__point{
+                    display: none;
+                }
+            }
+            &__form{
+                &__inline{
+                    display: flex;
+                    flex-direction: column;
+                }
+            }
+        }
+    }
+}

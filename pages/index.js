@@ -1,10 +1,7 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Footer } from '../components/Footer';
 import { Card } from '../components/Card';
 // import { fetchAPI } from "../lib/api";
 import { Layout } from '../components/Layout';
-import { Navbar } from '../components/Navbar';
 import { SliderCliente } from '../components/Slider_cliente';
 import { SliderLogos } from '../components/SliderLogos';
 import { SectionCounter } from '../components/SectionCounter';
@@ -33,6 +30,7 @@ export default function Home() {
 				<SliderCliente />
 
 				<SliderLogos />
+
 
 				{/* <Footer /> */}
 			</Layout>

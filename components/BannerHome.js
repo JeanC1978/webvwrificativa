@@ -9,14 +9,19 @@ import MenSky from "../public/images/banner-img/men_sky.png";
 import WomenSky from "../public/images/banner-img/women_sky.png";
 import banner from '../public/images/banner-img/banner01.png';
 
-export function BannerHome() {
+export function BannerHome({ setOpenModal }) {
+
+    const handleClick = () => {
+        console.log("hice click")
+        //setOpenModal(true)
+    }
 
     return (
         <div className="banner">
             <div className="banner__columnOne">
                 <div className="banner__columnOne__content">
                     <h1>Elegir personal confiable, no es cuestión de suerte</h1>
-                    <ButtonBlack>Solicita una demo</ButtonBlack>
+                    <ButtonBlack handleClick={handleClick} withModal>Solicita una demo</ButtonBlack>
                 </div>
             </div>
             <div className="banner__columnTwo">
