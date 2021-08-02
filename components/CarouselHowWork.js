@@ -111,7 +111,7 @@ export function CarouselHowWork(props) {
                 </Carousel>
             </div>
             <div className="carousel-how-work__img">
-                <Image src={SliderImg} />
+                <Image src={SliderImg} alt="banner" layout="fill" objectFit="cover" />
             </div>
 
         </div>

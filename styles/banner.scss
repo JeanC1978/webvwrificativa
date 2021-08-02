@@ -85,7 +85,7 @@
             // height: 58vh;
             border-radius: 0px;
             &__content{
-                margin: 0 auto;
+                margin: 1.5rem auto 0 auto;                
                 width: 90%;
                 h1{
                     color:white;
@@ -136,6 +136,26 @@
                 }
             }
         }
+    }
+}
+
+@include mediaXL(){
+    .peopleImg__one{
+        left: 41%;
+    }
+
+    .banner__columnOne{
+        padding-right:2rem
+    }
+}
+
+@include mediaXXL(){
+    .peopleImg__one{
+        left: 42%;
+    }
+
+    .banner__columnOne{
+        padding-right:4rem
     }
 }
   

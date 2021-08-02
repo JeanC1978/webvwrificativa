@@ -7,7 +7,7 @@
 		margin: 5rem auto;
 		width: $with_content;
 		display: grid;
-		justify-content: space-between;
+		justify-content: space-around;
 		grid-template-columns: 251px 251px 251px 251px;
 		grid-template-rows: 4rem 13rem;
 		grid-gap: 1rem;
@@ -30,7 +30,7 @@
 
 .cardbennefits {
 	width: 251px;
-	height: 200px;
+	height: 230px;
 	padding: inspect($value: 28px);
 	border-radius: 8px;
 	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);

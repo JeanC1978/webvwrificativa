@@ -18,6 +18,10 @@ $height_carousel_how_work:550px;
     &__img{
         display: flex;
         align-items: center;
+        position: relative;
+        div{
+            border-radius: 30px 0px 0px 30px
+        }
     }
 }
 
@@ -132,6 +136,14 @@ $height_carousel_how_work:550px;
     .prev-icon{
         left: 50rem;
     }
+
+    .carousel-item-content{
+        &__partOne{
+            &__circleImg{
+                left: 45%;
+            }
+        }
+    }
 }
 
 @media (min-width: 1700px) {
@@ -148,5 +160,13 @@ $height_carousel_how_work:550px;
 @include mediaXXL(){
     .prev-icon{
         left: 60rem;
+    }
+
+    .carousel-item-content{
+        &__partOne{
+            &__circleImg{
+                left: 48%;
+            }
+        }
     }
 }
