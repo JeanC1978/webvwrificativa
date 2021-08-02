@@ -1,83 +1,198 @@
 @import "variables";
 @import "mixins";
+//<----------Modal--------------->
+.modalBody-detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: auto;
+  width: $with_content;
+  margin: 0 auto;
+  .email {
+  }
+  .email-text {
+    display: flex;
+    text-align: center;
+  }
+  .btn-modal-detalle {
+    margin-top: 1.5rem;
+    border-radius: 30px;
+    background-color: rgb(146, 146, 146);
+    color: white;
+    font-size: 24px;
+    border: none;
+  }
+  h2 {
+    text-align: center;
+    width: 366px;
+    font-size: 30px;
+    font-weight: 900;
+    color: rgb(78, 76, 76);
+  }
+  input {
+    width: 366px;
+    height: 44px;
+    border-radius: 5px;
+    border: none;
+  }
+  div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 366px;
+  }
+}
+
+@include mediaMovil() {
+  .modalBody-detalle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    width: $with_content;
+    padding-right: -3rem;
+    .email {
+    }
+    .email-text {
+      display: flex;
+      text-align: center;
+      font-size: 12px;
+    }
+    .btn-modal-detalle {
+      margin-top: 1.5rem;
+      border-radius: 30px;
+      background-color: rgb(146, 146, 146);
+      color: white;
+      font-size: 12px;
+      font-weight: 700;
+      border: none;
+    }
+    h2 {
+      text-align: center;
+      width: 220px;
+      font-size: 22px;
+      font-weight: 900;
+      color: rgb(78, 76, 76);
+      margin-top: 1rem;
+    }
+    label {
+      font-size: 13px;
+      text-align: center;
+    }
+    input {
+      width: 200px;
+      height: 34px;
+      border-radius: 5px;
+      border: none;
+      margin: 8px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 200px;
+    }
+  }
+}
 
 //<-------------Detalle Post------------->
-.container-blog-detalle{
+.container-blog-detalle {
   display: flex;
   flex-direction: column;
   height: auto;
   width: $with_content;
   margin: 0 auto;
 }
-.post-detalle-1{
+.post-detalle-1 {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-  grid-template-areas: 
-  "item titulo"
-  "item texto";
-  align-items: center;
-  justify-content: center;
+  grid-template-areas:
+    "img titulo"
+    "texto";
+  gap: 1rem;
   margin: 0 auto;
   margin-top: 10rem;
-  margin-bottom: 1rem;
+  margin-bottom: 2rem;
 }
-.redes-sociales{
+.post-detalle-2 {
+  padding-left: 4rem;
+}
+.redes-sociales {
   display: flex;
   flex-direction: row;
 
-  h5{
+  h5 {
     padding-right: 1rem;
   }
 }
-.icon{
+.icon {
   margin-right: 1rem;
   margin-top: 1.1rem;
 }
-.itemDetalle{
-  background-image: url("https://placeimg.com/620/493/people");
-  height: 366px;
-  width: 366px;
-  border-radius: 0.5rem;
-  grid-area: item;
+.avatar {
+  margin-top: 2rem;
 }
-.titulo-post{
+.titulo-post {
   font-size: 30px;
   margin-bottom: 3rem;
   grid-area: titulo;
+  margin-top: -30rem;
+  margin-bottom: 0;
 }
-.texto1{
+.img-detalle {
+  grid-area: img;
+}
+.texto1 {
   align-self: start;
+  margin-top: 5rem;
   grid-area: texto;
+  margin-top: -25rem;
 }
-.avatar_detalle{
+.avatar_detalle {
   margin-bottom: 3rem;
 }
-.parrafo-1{
+.parrafo-1 {
   text-align: start;
   margin-bottom: 1rem;
 }
-
-@include mediaMovil(){
-  .post-detalle-1{
+.redes-icon {
+  display: flex;
+  flex-direction: row;
+}
+@include mediaMovil() {
+  .post-detalle-1 {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     width: $with_content;
     margin: 0 auto;
-    margin-top: 1rem;
+    margin-top: 41rem;
     margin-bottom: 1rem;
   }
-  .itemDetalle{
-    background-image: url("https://placeimg.com/620/493/people");
-    height: 326px;
-    width: 326px;
-    border-radius: 0.5rem;
-    grid-area: item;
+  .post-detalle-2 {
+    padding-left: 0;
   }
-  .avatar{
+
+  .avatar_detalle {
+    margin-bottom: 10px;
+  }
+  .texto1 {
+    margin-top: 0;
+  }
+  .avatar {
     margin-top: 1rem;
+  }
+  .redes-sociales {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    .redes-icon {
+      display: flex;
+    }
+    h5 {
+      padding-right: 1rem;
+      margin: 0;
+    }
   }
 }
 
@@ -115,112 +230,94 @@
 }
 
 .cotainer-blog {
-  display: grid;
-  grid-template-rows: auto auto auto;
-  height: auto;
+  // display: grid;
+  // grid-template-rows: auto auto auto;
+  // gap: 2rem;
   width: $with_content;
+  height: auto;
   margin: 0 auto;
-  gap: 2rem;
   margin-bottom: 2rem;
 }
 
-// h6,
-// p {
-//   margin: 0;
-// }
-
-// p {
-//   text-align: center;
-// }
-
-.p{
+.p {
   font-size: 15px;
-  
+  font-weight: 600;
 }
 
 .h2 {
   width: $with_content;
   margin: 0 auto;
-  font-size: 30px;
+  font-size: 40px;
   margin-bottom: 1rem;
 }
 
 .item-post {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
+  // align-items: flex-start;
+  // justify-content: flex-start;
 }
 
 ._avatar {
   border-radius: 100%;
   width: 35px;
   height: 35px;
-  margin-top: 0rem;
+  margin-top: -0.5rem;
 }
 ._avat {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   margin-top: -0.8rem;
+  h6,
+  p {
+    margin: 0;
+  }
 }
 .avatar {
   display: flex;
+}
+.avatar0 {
+  display: flex;
   width: 100%;
+  margin-top: 1rem;
 }
 .avatar1 {
   display: flex;
+  margin-top: 1rem;
 }
 .avatar2 {
   display: flex;
-  margin-top: 1.5rem;
+  margin-top: 2rem;
+}
+.avatar3 {
+  display: flex;
+  margin-top: 0.8rem;
 }
 
 .item1 {
   display: flex;
+  align-items: flex-start;
   background-image: url("https://placeimg.com/620/490/people");
   grid-row: 1/4;
 }
 .item2 {
+  display: flex;
+  align-items: flex-start;
   background-image: url("https://placeimg.com/300/400/people");
   grid-row: 1/3;
 }
 .item3 {
+  display: flex;
+  align-items: flex-start;
   background-image: url("https://placeimg.com/305/400/people");
   grid-row: 1/3;
 }
 .item4 {
+  display: flex;
+  align-items: flex-start;
   background-image: url("https://placeimg.com/620/200/people");
   grid-column: 2/4;
-}
-
-.item-1 {
-  background-image: url("https://placeimg.com/620/493/people");
-  height: 240px;
-  width: 240px;
-  border-radius: 0.5rem;
-  
-}
-.item-2 {
-  background-image: url("https://placeimg.com/620/492/people");
-  height: 240px;
-  width: 250px;
-  border-radius: 0.5rem;
-  
-}
-.item-3 {
-  background-image: url("https://placeimg.com/620/491/people");
-  height: 240px;
-  width: 240px;
-  border-radius: 0.5rem;
-  
-}
-.item-4 {
-  background-image: url("https://placeimg.com/620/200/people");
-  height: 240px;
-  width: 240px;
-  border-radius: 0.5rem;
-  
 }
 
 @include mediaMovil() {
@@ -232,13 +329,28 @@
     margin: 0 auto;
     gap: 1rem;
   }
-  
+
   .post-container-2 {
-    display: flex;
-    flex-direction: column;
-    height: auto;
+    width: 100%;
+    margin: 1rem auto;
+
+    display: grid;
+    grid-auto-flow: column;
+
+    scroll-snap-type: x mandatory;
+    overscroll-behavior-x: contain;
+    overflow-x: scroll;
+
+    .item-post {
+      scroll-snap-align: center;
+      width: 70vw;
+    }
+  }
+
+  .h2 {
     width: $with_content;
     margin: 0 auto;
-    justify-content: center;
+    font-size: 46px;
+    margin-bottom: 1rem;
   }
 }
