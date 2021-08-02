@@ -10,6 +10,12 @@
     }
 }
 
+@mixin mediaXXL() {
+    @media (min-width: 1900px) {
+      @content;
+    }
+}
+
 @mixin mediaDesktop() {
     @media (min-width: 769px) {
       @content;
