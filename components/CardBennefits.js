@@ -8,23 +8,9 @@ import circles from '../public/images/cardbennefits/circles.svg';
 
 export function CardBennefits(props) {
 	return (
-		<div>
-			{/* <div className="circles">
-				<Image
-					src={circles}
-					alt="circles"
-					width={200}
-					automatically
-					provided
-					height={200}
-					automatically
-					provided
-				/>
-			</div> */}
-
+		<div className="section-bennefits">
+			<h1>¿Qué beneficios ofrece Evaluativa?</h1>
 			<div className="container-cardsbennefits">
-				<h1>¿Qué beneficios ofrece Evaluativa?</h1>
-
 				<div className="cardbennefits">
 					<div className="ico-card">
 						<Image
@@ -100,5 +86,6 @@ export function CardBennefits(props) {
 				</div>
 			</div>
 		</div>
+
 	);
 }

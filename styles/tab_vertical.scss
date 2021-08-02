@@ -32,6 +32,7 @@
 
 @include mediaMovil(){
     .section-tabs{
+        width: $with_content_movil;
         h1{
             font-size: 35px;
         }
@@ -48,7 +49,7 @@
                     line-height: 115%;
                     &.active{
                         border-top: none;
-                        border-bottom: 2px solid $color_blue;
+                        border-bottom: 4px solid $color_blue;
                         background-color: #fff;
                     }
                 }

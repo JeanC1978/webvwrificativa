@@ -70,7 +70,7 @@ export const ModalDemo = ({ ...props }) => {
         <div className="demo-modal__content__form__inline">
           <p>mi correo corporativo </p>
           <Input placeholder="Ingresa tu email" />
-          <p>y este es mu numero telefónico</p>
+          <p>y este es mi número telefónico</p>
           <Input placeholder="Ingresa tu teléfono" />
         </div>
         <div className="demo-modal__content__form__button">

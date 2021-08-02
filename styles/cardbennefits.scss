@@ -24,7 +24,10 @@
 		grid-row: 1/1;
 	}
 }
-
+.section-bennefits{
+	width: $with_content;
+	margin: 2rem auto;
+}
 .cardbennefits {
 	width: 251px;
 	height: 230px;
@@ -47,21 +50,47 @@
 	}
 }
 
+@include mediaMovil(){
+	.section-bennefits{
+		width: $with_content_movil;
+	}
+	.container-cardsbennefits {
+		width: 100%;
+		display: grid;
+		// grid-auto-flow: column;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-template-rows:  1fr;
+		justify-content: normal;
+		scroll-snap-type: x mandatory;
+    	overscroll-behavior-x: contain;
+    	overflow-x: scroll;
+		// margin: 12em 0em 0em 6em;
+		// width: 75vw;
+		// height: 50em;
+		// display: flex;
+		// justify-content: space-between;
+		.cardbennefits{
+			width: 70vw;
+			scroll-snap-align: center;
+			margin: 1rem 0;
+			.ico-card{
+				h1{
+					font-size: 30px;
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 768px) {
-	.container-cards {
-		margin: 12em 0em 0em 6em;
-		width: 75vw;
-		height: 50em;
-		display: flex;
-		justify-content: space-between;
-	}
+	
 }
-@media (max-width: 600px) {
-	.container-cards {
-		margin: 5em 0em 0em 10em;
-		width: 50vw;
-		height: 90em;
-		display: flex;
-		justify-content: space-between;
-	}
-}
+// @media (max-width: 600px) {
+// 	.container-cards {
+// 		margin: 5em 0em 0em 10em;
+// 		width: 50vw;
+// 		height: 90em;
+// 		display: flex;
+// 		justify-content: space-between;
+// 	}
+// }

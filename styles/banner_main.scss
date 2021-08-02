@@ -97,8 +97,8 @@
         border-radius: none;
         &__columnOne{
             margin:0;
-            padding: 2rem;
-            justify-content: center;
+            padding: 1rem 2rem;
+            justify-content: flex-end;
             background:linear-gradient(180deg, #C60511 0%, #E20613 100%);
             &__title{
                 h1{
