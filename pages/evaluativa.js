@@ -5,14 +5,19 @@ import { Banner } from '../components/Banner';
 import { Dimensiones } from '../components/Dimensiones';
 import { ButtonBlack } from '../components/ButtonBlack';
 import { Navigation } from '../components/Navigation';
+import { TextSolutionsevalua } from '../components/TextSolutionsevalua';
+import { CardBennefits } from '../components/CardBennefits';
+import { SectionOurSolutions } from '../components/SectionOurSolutions';
 
 //imagenes
 import evaluativaBanner from "../public/images/pages/evaluativa-banner.png";
 import evaluativaIcon from "../public/images/pages/evaluativa-icon.svg";
 import operarioIcon from "../public/images/evaluativa/operario-icon.svg";
 import personIcon from "../public/images/evaluativa/person-icon.svg";
-import { TextSolutionsevalua } from '../components/TextSolutionsevalua';
-import { CardBennefits } from '../components/CardBennefits';
+
+const SECTION_SOLUTIONS_TITLE = "Conoce nuestra solución"
+const SECTION_SOLUTIONS_SUBTITLE = '"La sinergia entre las personas, el talento y la tecnología"'
+const SECTION_SOLUTIONS_DESCRIPTION = <>Mediante nuestra Plataforma Evaluativa realizamos el <b>Test de Integridad y Honestidad</b>, filtro importante para prevenir riesgos de contratación.</>;
 
 export default function Evaluativa(props) {
 	const text =
@@ -21,7 +26,7 @@ export default function Evaluativa(props) {
 		<div>
 			<Layout>
 				<Banner title="Evaluativa" icon={evaluativaIcon} description={text} bannerImg={evaluativaBanner} />
-				<TextSolutionsevalua />
+				<SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} subtitle={SECTION_SOLUTIONS_SUBTITLE} description={SECTION_SOLUTIONS_DESCRIPTION} />
 				<div className="section-nivel-test">
 					<div className="section-nivel-test__columnOne">
 						<h1>Niveles del Test de Ingridad y Honestidad</h1>

@@ -7,6 +7,7 @@ import { TabVertical } from "../components/TabVertical";
 import { ButtonBlack } from "../components/ButtonBlack";
 import { Textsolutions } from '../components/TextSolutions';
 import { Navigation } from '../components/Navigation';
+import { SectionOurSolutions } from '../components/SectionOurSolutions';
 
 //imagenes
 import seleccionBanner from "../public/images/pages/seleccion-banner.png";
@@ -61,12 +62,17 @@ const SELECTION_TYPE_COMMAND_TAB = [
     },
 ]
 
+const SECTION_SOLUTIONS_TITLE = "Conoce nuestra solución"
+const SECTION_SOLUTIONS_SUBTITLE = '"Potenciamos tu recurso humano con el mejor talento"'
+const SECTION_SOLUTIONS_DESCRIPTION = <>Desarrollamos soluciones innovadoras <b>optimizando tus procesos de reclutamiento y selección</b> a través de la experiencia de nuestro equipo de consultores y nuestras plataformas de innovación tecnológica para elegir al mejor talento.</>;
+
 export default function Seleccion(props) {
 
     return (
         <Layout>
             <Banner title="Selección" icon={seleccionIcon} description={text} bannerImg={seleccionBanner} />
-            <Textsolutions />
+            <SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} subtitle={SECTION_SOLUTIONS_SUBTITLE} description={SECTION_SOLUTIONS_DESCRIPTION} />
+            {/* <Textsolutions /> */}
             <div className="seleccion-tab-container">
                 <TabVertical title={TITLE} subtitle={SUBTITLE} defaultActiveKey="first">
                     {
@@ -87,7 +93,7 @@ export default function Seleccion(props) {
                                             ))}
                                         </div>
                                         <div className="seleccion-tab-item__columnTwo__img">
-                                            <Image src={item.img} />
+                                            <Image src={item.img} layout="fill" objectFit="cover" />
                                         </div>
                                     </div>
                                 </div>

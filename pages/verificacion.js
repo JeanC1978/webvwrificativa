@@ -7,6 +7,7 @@ import { TabContainer } from "../components/TabContainer";
 import { TabVertical } from "../components/TabVertical";
 import { Textsolutionsblue } from '../components/Textsolutionsblue';
 import { Navigation } from '../components/Navigation';
+import { SectionOurSolutions } from '../components/SectionOurSolutions';
 
 //Images
 import verificacionBanner from "../public/images/pages/verificacion-banner.png";
@@ -30,12 +31,15 @@ const SERVICE_VERIFICATIONS_ITEMS = [
 const TITLE = "Servicio de Verificaciones"
 const text = "Valida la información de tus postulantes y colaboradores con nuestras verificaciones de personal."
 
+const SECTION_SOLUTIONS_TITLE = "Conoce nuestra solución"
+const SECTION_SOLUTIONS_DESCRIPTION = <>Contamos con más de <b>1'000.000.00</b> de consultas realizadas a nivel nacional, a través de nuestros Filtros de Verificación.</>;
+
 export default function Verificacion() {
 
     return (
         <Layout>
             <Banner title="Selección" icon={verificacionIcon} description={text} bannerImg={verificacionBanner} />
-            <Textsolutionsblue />
+            <SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} description={SECTION_SOLUTIONS_DESCRIPTION} card />
             <div className="verification-tab-container">
                 <div className="verification-tab-container__content">
                     <div className="verification-tab-container__content__desktop">

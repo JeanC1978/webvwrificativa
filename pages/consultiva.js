@@ -8,6 +8,7 @@ import { TabVertical } from "../components/TabVertical";
 import { TabContainer } from "../components/TabContainer";
 import { AvatarWithBg } from "../components/AvatarWithBg";
 import { TextSolutionseconsult } from '../components/TextSolutionseconsult';
+import { SectionOurSolutions } from '../components/SectionOurSolutions';
 
 //Images
 import consultivaBanner from "../public/images/consultiva/consultiva-banner.png";
@@ -46,12 +47,16 @@ const WHO_EXPOSE = [
 
 const TITLE = "Entrenamiento en:"
 
+const SECTION_SOLUTIONS_TITLE = "Conoce nuestra solución"
+const SECTION_SOLUTIONS_SUBTITLE = '"Tus colaboradores son los Embajadores de tu Marca"'
+const SECTION_SOLUTIONS_DESCRIPTION = "Potenciamos tu marca a través de tus colaboradores, entrenándolos para ser más competitivos y crear valor diferencial para tus clientes.";
+
 export default function Consultiva() {
 
     return (
         <Layout>
             <Banner title="Consultiva" icon={consultivaIco} description={text} bannerImg={consultivaBanner} />
-            <TextSolutionseconsult />
+            <SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} subtitle={SECTION_SOLUTIONS_SUBTITLE} description={SECTION_SOLUTIONS_DESCRIPTION} />
             <TabVertical title={TITLE} defaultActiveKey="attention">
                 <Tab eventKey="attention" title="Atención al Cliente">
                     <div className="attention-client-tab">
@@ -70,7 +75,7 @@ export default function Consultiva() {
                                                 <p><b>Duracion: </b>{item.duracion}</p>
                                             </div>
                                             <div className="item-card-tab__img">
-                                                <Image src={item.img} />
+                                                <Image src={item.img} layout="fill" objectFit="cover" />
                                             </div>
                                         </div>
                                     </Tab.Pane>
@@ -91,7 +96,7 @@ export default function Consultiva() {
                                                 <p>{item.description}</p>
                                             </div>
                                             <div className="item-card-tab__img">
-                                                <Image src={item.img} />
+                                                <Image src={item.img} layout="fill" objectFit="cover" />
                                             </div>
                                         </div>
                                     </Tab.Pane>

@@ -5,11 +5,14 @@
     padding: 1rem 0;
     background: $color_backgrey;
     border-radius: 0px 140px 0px 0px;
+    .nav-tabs .nav-item{
+        background: #E5E5E5;
+    }
     // background-color: #fff;
 }
 
 .seleccion-tab-item{
-    padding: 1rem 1.5rem;
+    padding: 1rem 2rem;
     display: grid;
     grid-template-columns: 32% 68%;
     grid-gap: 1rem;
@@ -20,13 +23,18 @@
     }
     &__columnTwo{
         display: grid;
-        grid-auto-flow: column;
+        grid-template-columns: 60% 40%;
+        // grid-auto-flow: column;
         grid-template-rows: 1fr;
         &__list{
             color:#fff;
             background: $color_blue;
             padding: 1.5rem 0.8rem;
             border-radius: 10px 0 0 10px;
+        }
+        &__img{
+            position: relative;
+            
         }
     }
 }

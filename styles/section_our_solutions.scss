@@ -1,0 +1,77 @@
+@import "variables";
+@import "mixins";
+
+.grid-card{
+    grid-template-rows: 1fr 1fr;
+}
+
+.section-our-solutions{
+    width: $with_content;
+    margin: 4rem auto;
+    display: grid;
+    grid-gap: 1rem;
+    grid-auto-flow: column;
+    // grid-template-rows: 1fr 1fr;
+    &__pointStart{
+        display: flex;
+        align-items: center;
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    &__content{
+        text-align: center;
+        margin: 0 2rem;
+        grid-column: 2/3;
+        grid-row: 1/2;
+    }
+    &__pointFinish{
+        display: flex;
+        align-items: center;
+        grid-column: 3/4;
+        grid-row: 1/2;
+    }
+    &__card{
+        grid-column: 2/3;
+        grid-row: 2/3;
+        background: $color_blue;
+        border-radius: 10px;
+        padding: 1rem;
+        display: grid;
+        grid-template-columns: 10% 90%;
+        color: #fff;
+        &__icon{
+            display: flex;
+            align-items: center;
+        }
+        &__text{
+            display: flex;
+            align-items: center;
+        }
+    }
+}
+
+@include mediaMovil(){
+    .section-our-solutions{
+        width: 85vw;
+        display: flex;
+        flex-direction: column;
+        &__pointStart{
+            justify-content: center;
+        }
+        &__content{
+            text-align: center;
+            margin: 0;
+            h1{
+               font-size: 35px; 
+               line-height: 115%;
+            }
+        }
+        &__card{
+            display: flex;
+            flex-direction: column;
+        }
+        &__pointFinish{
+            justify-content: center;
+        }
+    }
+}
