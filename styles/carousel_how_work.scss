@@ -2,6 +2,7 @@
 @import 'mixins';
 
 $height_carousel_how_work:550px;
+$height_carousel_how_work_movil:630px;
 
 .carousel-how-work{
     width: 100%;
@@ -74,18 +75,20 @@ $height_carousel_how_work:550px;
 }
 .prev-icon{
     position: relative;
-    top:22%;
-    left: 45rem;
+    top:9%;
+    left: 40rem;
 }
 .next-icon{
     position: relative;
-    top:22%;
+    top: 9%;
+    left: 3rem;
 }
 
 @include mediaMovil(){
     .carousel-how-work{
         display: grid;
         grid-template-columns: 100%;
+        height: $height_carousel_how_work_movil;
         &__img{
             display: none;
         }
@@ -93,6 +96,7 @@ $height_carousel_how_work:550px;
     .carousel-item-content{
         grid-template-columns: 100vw;
         grid-template-rows: 60% 40%;
+        grid-gap: 1rem;
         &__partOne{
             border-radius: 0px 80px 30px 0px;
             &__circleImg{
@@ -122,19 +126,19 @@ $height_carousel_how_work:550px;
     }
     .prev-icon{
         position: relative;
-        top:50%;
+        top:42%;
         left: 70%;
     }
     .next-icon{
         position: relative;
-        top:50%;
+        top:42%;
         right: 70%;
     }
 }
 
 @include mediaXL(){
     .prev-icon{
-        left: 50rem;
+        left: 48rem;
     }
 
     .carousel-item-content{
@@ -148,18 +152,18 @@ $height_carousel_how_work:550px;
 
 @media (min-width: 1700px) {
     .prev-icon{
-        left: 54rem;
+        left: 52rem;
     }
 }
 @media (min-width: 1800px) {
     .prev-icon{
-        left: 57rem;
+        left: 55rem;
     }
 }
 
 @include mediaXXL(){
     .prev-icon{
-        left: 60rem;
+        left: 57rem;
     }
 
     .carousel-item-content{
