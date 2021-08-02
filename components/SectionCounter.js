@@ -1,4 +1,5 @@
-import React, { useRef } from 'react'
+import React, { useRef, useState } from 'react';
+import { ModalDemo } from '../components/ModalDemo';
 
 //Components
 import Image from "next/image";
@@ -11,9 +12,13 @@ import CounterImg from "../public/images/counter-img.png";
 import { useIntersectionObserver } from "../lib/hooks/useIntersectionObserver";
 
 export function SectionCounter(props) {
+    const [openModal, setOpenModal] = useState(false)
     const elementRef = useRef(null);
     const [inView, entry] = useIntersectionObserver(elementRef, { threshold: 0 });
-    console.log("inView", inView)
+
+    const handleClick = () => {
+        setOpenModal(true)
+    }
 
     return (
         <div className="section-counter" ref={elementRef}>
@@ -36,9 +41,10 @@ export function SectionCounter(props) {
                     <p className="text-azul">Servicios satisfechos</p>
                 </div>
                 <div className="section-counter__content__button">
-                    <ButtonBlack>Solicita una demo</ButtonBlack>
+                    <ButtonBlack onClick={handleClick}>Solicita una demo</ButtonBlack>
                 </div>
             </div>
+            <ModalDemo showModal={openModal} handleClose={() => setOpenModal(false)} />
         </div>
     )
 }
