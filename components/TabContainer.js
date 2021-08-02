@@ -1,16 +1,18 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Tab from 'react-bootstrap/Tab'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import Nav from 'react-bootstrap/Nav'
 import Button from 'react-bootstrap/Button'
+import { ModalDemo } from '../components/ModalDemo';
 import { ButtonBlack } from "./ButtonBlack";
 
 //CSS: tab_container.scss
 import ArrowRightIcon from "../public/images/pages/arrow-right.svg";
 
 export function TabContainer({ children, navItems, buttonText = null, ...restProps }) {
+    const [openModal, setOpenModal] = useState(false)
 
     return (
         <Tab.Container {...restProps} >
@@ -31,7 +33,7 @@ export function TabContainer({ children, navItems, buttonText = null, ...restPro
                         }
                         {
                             buttonText &&
-                            <Button variant="primary" className="button-action">{buttonText}</Button>
+                            <Button variant="primary" className="button-action" onClick={() => setOpenModal(true)}>{buttonText}</Button>
                         }
                     </Nav>
                 </Col>
@@ -47,6 +49,7 @@ export function TabContainer({ children, navItems, buttonText = null, ...restPro
                     }
                 </Col>
             </Row>
+            <ModalDemo showModal={openModal} handleClose={() => setOpenModal(false)} />
         </Tab.Container>
     )
 }

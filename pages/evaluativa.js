@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Image from "next/image";
 import { Layout } from '../components/Layout';
 import { Banner } from '../components/Banner';
@@ -8,6 +8,7 @@ import { Navigation } from '../components/Navigation';
 import { TextSolutionsevalua } from '../components/TextSolutionsevalua';
 import { CardBennefits } from '../components/CardBennefits';
 import { SectionOurSolutions } from '../components/SectionOurSolutions';
+import { ModalDemo } from '../components/ModalDemo';
 
 //imagenes
 import evaluativaBanner from "../public/images/pages/evaluativa-banner.png";
@@ -19,9 +20,10 @@ const SECTION_SOLUTIONS_TITLE = "Conoce nuestra solución"
 const SECTION_SOLUTIONS_SUBTITLE = '"La sinergia entre las personas, el talento y la tecnología"'
 const SECTION_SOLUTIONS_DESCRIPTION = <>Mediante nuestra Plataforma Evaluativa realizamos el <b>Test de Integridad y Honestidad</b>, filtro importante para prevenir riesgos de contratación.</>;
 
+const text = 'Plataforma de Evaluaciones On-line orientada a crear una experiencia de evaluación digital para medir diversas áreas de los procesos de selección.';
+
 export default function Evaluativa(props) {
-	const text =
-		'Plataforma de Evaluaciones On-line orientada a crear una experiencia de evaluación digital para medir diversas áreas de los procesos de selección.';
+	const [openModal, setOpenModal] = useState(false)
 	return (
 		<div>
 			<Layout>
@@ -30,7 +32,7 @@ export default function Evaluativa(props) {
 				<div className="section-nivel-test">
 					<div className="section-nivel-test__columnOne">
 						<h1>Niveles del Test de Ingridad y Honestidad</h1>
-						<ButtonBlack>Solicita una demo</ButtonBlack>
+						<ButtonBlack onClick={() => setOpenModal(true)}>Solicita una demo</ButtonBlack>
 					</div>
 					<div className="section-nivel-test__columnTwo">
 						<Image src={personIcon} />
@@ -47,6 +49,7 @@ export default function Evaluativa(props) {
 				<CardBennefits />
 				<Navigation prev="seleccion" next="verificacion" />
 			</Layout>
+			<ModalDemo showModal={openModal} handleClose={() => setOpenModal(false)} />
 		</div>
 	);
 }

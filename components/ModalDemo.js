@@ -9,12 +9,38 @@ import Logo from "../public/images/blog/logo-verificativa.png";
 import ExitIcon from "../public/images/pages/exit-icon.svg";
 import PointLeft from "../public/images/page-seleccion/point.svg";
 import PointRight from "../public/images/page-seleccion/point-right.svg";
+import CheckIcon from "../public/images/page-seleccion/check-black-icon.svg";
 
 export const ModalDemo = ({ ...props }) => {
   const [isSuccess, setIsSucces] = useState(false);
 
+  const handleClickSent = () => {
+    setIsSucces(true)
+  }
+
+  const handleClickClose = () => {
+    props.handleClose()
+    setIsSucces(false)
+
+  }
+
   const successForm =
-    <h1>Genial, tu solicitud se realizo con éxito</h1>
+    <div className="demo-modal__content">
+      <div className="demo-modal__content__title">
+        <div className="demo-modal__content__title__point">
+          <Image src={PointLeft} />
+        </div>
+        <div className="demo-modal__content__title__point">
+          <Image src={PointLeft} />
+        </div>
+      </div>
+      <div className="demo-modal__content__msjSuccess">
+        <Image src={CheckIcon} />
+        <h1>Genial, tu solicitud se realizo con éxito</h1>
+        <p>Te enviaremos un mensaje de confirmación a tu correo, para que accedas a tu demo.</p>
+        <ButtonBlack onClick={handleClickClose}>Vamos a la página de inicio</ButtonBlack>
+      </div>
+    </div>
 
   const showForm =
     <div className="demo-modal__content">
@@ -48,50 +74,10 @@ export const ModalDemo = ({ ...props }) => {
           <Input placeholder="Ingresa tu telefono" />
         </div>
         <div className="demo-modal__content__form__button">
-          <ButtonBlack>Enviar datos para solicitar demo</ButtonBlack>
+          <ButtonBlack onClick={handleClickSent}>Enviar datos para solicitar demo</ButtonBlack>
         </div>
       </div>
     </div>
-
-  // <Modal.Body>
-  //   <Image src={logo} />
-  //   <div className="modalBody-detalle">
-  //     <h2>Solicita una demo</h2>
-  //     <div>
-  //       <label for="">Hola, mi nombre es</label>
-  //       <input type="text" placeholder="ingresa tu nombre" />
-  //     </div>
-
-  //     <div>
-  //       <label for="">,actualmete trabajo en</label>
-  //       <input type="text" placeholder="indica tu empresa actual" />
-  //     </div>
-
-  //     <div>
-  //       <label for="">y mi cargo es de</label>
-  //       <input type="text" placeholder="indica tu cargo actual" />
-  //     </div>
-
-  //     <div>
-  //       <label for="" className="email-text">
-  //         , me gustaria recibir una demo a mi correo corporativo
-  //       </label>
-  //       <input type="text" placeholder="ingresa tu email" className="email" />
-  //     </div>
-
-  //     <div>
-  //       <label for="">y este es mi numero telefonico</label>
-  //       <input type="text" placeholder="ingresa tu telefono" />
-  //     </div>
-  //     <input
-  //       type="submit"
-  //       value="Enviar datos para solicitar demo"
-  //       className="btn-modal-detalle"
-  //     />
-  //   </div>
-  // </Modal.Body>
-
-
 
   return (
     <CustomModal
@@ -102,7 +88,7 @@ export const ModalDemo = ({ ...props }) => {
         <div className="demo-modal">
           <div className="demo-modal__header">
             <Image src={Logo} />
-            <Image src={ExitIcon} onClick={props.handleClose} />
+            <Image src={ExitIcon} onClick={handleClickClose} />
           </div>
           {
             isSuccess ?

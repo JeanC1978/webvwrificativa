@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Tab from 'react-bootstrap/Tab';
 import { Layout } from "../components/Layout";
@@ -8,6 +8,7 @@ import { ButtonBlack } from "../components/ButtonBlack";
 import { Textsolutions } from '../components/TextSolutions';
 import { Navigation } from '../components/Navigation';
 import { SectionOurSolutions } from '../components/SectionOurSolutions';
+import { ModalDemo } from '../components/ModalDemo';
 
 //imagenes
 import seleccionBanner from "../public/images/pages/seleccion-banner.png";
@@ -67,6 +68,7 @@ const SECTION_SOLUTIONS_SUBTITLE = '"Potenciamos tu recurso humano con el mejor 
 const SECTION_SOLUTIONS_DESCRIPTION = <>Desarrollamos soluciones innovadoras <b>optimizando tus procesos de reclutamiento y selección</b> a través de la experiencia de nuestro equipo de consultores y nuestras plataformas de innovación tecnológica para elegir al mejor talento.</>;
 
 export default function Seleccion(props) {
+    const [openModal, setOpenModal] = useState(false)
 
     return (
         <Layout>
@@ -81,7 +83,7 @@ export default function Seleccion(props) {
                                 <div className="seleccion-tab-item">
                                     <div className="seleccion-tab-item__columnOne">
                                         <p>{item.description}</p>
-                                        <ButtonBlack>Comunícate con un asesor</ButtonBlack>
+                                        <ButtonBlack onClick={() => setOpenModal(true)}>Comunícate con un asesor</ButtonBlack>
                                     </div>
                                     <div className="seleccion-tab-item__columnTwo">
                                         <div className="seleccion-tab-item__columnTwo__list">
@@ -102,6 +104,7 @@ export default function Seleccion(props) {
                     }
                 </TabVertical>
             </div>
+            <ModalDemo showModal={openModal} handleClose={() => setOpenModal(false)} />
             <Navigation prev="verificacion" next="evaluativa" />
         </Layout>
     )

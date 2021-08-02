@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Link from "next/link";
 //componentes
 import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
-import Button from 'react-bootstrap/Button'
 import { ButtonBlack } from "./ButtonBlack";
+import { ModalDemo } from '../components/ModalDemo';
 
 //images
 import FiveSvg from "../public/images/tabs-img/five.svg";
@@ -21,6 +21,7 @@ import ConsultivaImg from "../public/images/tabs-img/tab-consultiva.png";
 import OperativaImg from "../public/images/tabs-img/tab-operativa.png";
 
 export function TabsOurSolutions(props) {
+    const [openModal, setOpenModal] = useState(false)
 
     const imgFive = <Image src={FiveSvg} alt="tab Five" />
     const imgConsultiva = <Image src={ConsultivaSvg} alt="tab Five" />
@@ -51,7 +52,7 @@ export function TabsOurSolutions(props) {
                                     </div>
                                 </div>
                                 <div className="tab-item-content__description__button">
-                                    <ButtonBlack>Solicita una demo</ButtonBlack>
+                                    <ButtonBlack onClick={() => setOpenModal(true)}>Solicita una demo</ButtonBlack>
                                 </div>
                             </div>
                             <div className="tab-item-content__img">
@@ -72,7 +73,7 @@ export function TabsOurSolutions(props) {
                                     </Link>
                                 </div>
                                 <div className="tab-item-content__description__button">
-                                    <ButtonBlack>Comunicate con un asesor</ButtonBlack>
+                                    <ButtonBlack onClick={() => setOpenModal(true)}>Comunicate con un asesor</ButtonBlack>
                                 </div>
                             </div>
                             <div className="tab-item-content__img">
@@ -93,7 +94,7 @@ export function TabsOurSolutions(props) {
                                     </Link>
                                 </div>
                                 <div className="tab-item-content__description__button">
-                                    <ButtonBlack>Solicita una demo</ButtonBlack>
+                                    <ButtonBlack onClick={() => setOpenModal(true)}>Solicita una demo</ButtonBlack>
                                 </div>
                             </div>
                             <div className="tab-item-content__img">
@@ -103,6 +104,7 @@ export function TabsOurSolutions(props) {
                     </Tab>
                 </Tabs>
             </div>
+            <ModalDemo showModal={openModal} handleClose={() => setOpenModal(false)} />
         </div>
     )
 }

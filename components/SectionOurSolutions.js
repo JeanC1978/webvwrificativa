@@ -1,6 +1,7 @@
 import React from 'react'
 import Image from "next/image";
 import PointSVG from "../public/images/page-seleccion/point.svg";
+import PointRight from "../public/images/page-seleccion/point-right.svg";
 import CheckSVG from "../public/images/page-seleccion/check-icon.svg";
 
 export function SectionOurSolutions({ title, subtitle = null, description, card = null }) {
@@ -31,7 +32,7 @@ export function SectionOurSolutions({ title, subtitle = null, description, card 
                 </div>
             }
             <div className="section-our-solutions__pointFinish">
-                <Image src={PointSVG} />
+                <Image src={PointRight} />
             </div>
 
         </div>

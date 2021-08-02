@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { useState } from 'react'
 import Image from "next/image";
 import Button from 'react-bootstrap/Button'
 import { ButtonBlack } from "./ButtonBlack";
+import { ModalDemo } from '../components/ModalDemo';
 
 //images
 import MenBrown from "../public/images/banner-img/men_brown.png";
@@ -9,11 +10,11 @@ import MenSky from "../public/images/banner-img/men_sky.png";
 import WomenSky from "../public/images/banner-img/women_sky.png";
 import banner from '../public/images/banner-img/banner01.png';
 
-export function BannerHome({ setOpenModal }) {
+export function BannerHome() {
+    const [openModal, setOpenModal] = useState(false)
 
     const handleClick = () => {
-        console.log("hice click")
-        //setOpenModal(true)
+        setOpenModal(true)
     }
 
     return (
@@ -21,7 +22,7 @@ export function BannerHome({ setOpenModal }) {
             <div className="banner__columnOne">
                 <div className="banner__columnOne__content">
                     <h1>Elegir personal confiable, no es cuestión de suerte</h1>
-                    <ButtonBlack handleClick={handleClick} withModal>Solicita una demo</ButtonBlack>
+                    <ButtonBlack onClick={handleClick}>Solicita una demo</ButtonBlack>
                 </div>
             </div>
             <div className="banner__columnTwo">
@@ -44,6 +45,7 @@ export function BannerHome({ setOpenModal }) {
                     </div> */}
                 </div>
             </div>
+            <ModalDemo showModal={openModal} handleClose={() => setOpenModal(false)} />
         </div>
     )
 }

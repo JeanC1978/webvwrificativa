@@ -1,3 +1,4 @@
+import { useState } from 'react'
 import Head from 'next/head';
 import { Card } from '../components/Card';
 // import { fetchAPI } from "../lib/api";
@@ -8,6 +9,7 @@ import { SectionCounter } from '../components/SectionCounter';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
 import { BannerHome } from '../components/BannerHome';
+
 
 export default function Home() {
 	// console.log("articles", articles)
@@ -34,6 +36,7 @@ export default function Home() {
 
 				{/* <Footer /> */}
 			</Layout>
+
 		</div>
 	);
 }
