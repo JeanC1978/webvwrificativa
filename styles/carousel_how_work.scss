@@ -38,6 +38,7 @@ $height_carousel_how_work_movil:630px;
             position: absolute;
             top:15%;
             left: 42%;
+            z-index: 5;
         }
         &__content{
             display: grid;
@@ -64,6 +65,7 @@ $height_carousel_how_work_movil:630px;
                 display: flex;
                 justify-content: flex-end;
                 align-items: center;
+                z-index: 15;
             }
         }
     }
