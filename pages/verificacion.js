@@ -38,7 +38,7 @@ export default function Verificacion() {
 
     return (
         <Layout>
-            <Banner title="Selección" icon={verificacionIcon} description={text} bannerImg={verificacionBanner} />
+            <Banner title="Verificación" icon={verificacionIcon} description={text} bannerImg={verificacionBanner} />
             <SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} description={SECTION_SOLUTIONS_DESCRIPTION} card />
             <div className="verification-tab-container">
                 <div className="verification-tab-container__content">
