@@ -11,6 +11,14 @@
     }
 }
 
+@include mediaMovil(){
+    .section-cards{
+        &__circle{
+           display: none;
+        }
+    }
+}
+
 @include mediaXL(){
     .section-cards{
         &__circle{
