@@ -15,7 +15,6 @@
 
 .section-nivel-test__columnOne{
     margin-right: 25%;
-    
 }
 
 .section-nivel-test__columnTwo, .section-nivel-test__columnThree{
@@ -30,7 +29,12 @@
 }
 
 @include mediaMovil(){
+    
     .section-nivel-test{
+        width: $with_content_movil;
         grid-template-columns: 1fr;
+    }
+    .section-nivel-test__columnOne{
+        margin-right: 20%;
     }
 }

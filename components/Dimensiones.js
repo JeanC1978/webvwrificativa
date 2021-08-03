@@ -2,6 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 
 import isotipoazul from '../public/images/dimensiones/isotipoazul.png';
+import CircleBG from '../public/images/dimensiones/circle-bg.svg';
 import man from '../public/images/dimensiones/man.png';
 import girl from '../public/images/dimensiones/girl.png';
 
@@ -11,6 +12,9 @@ export function Dimensiones(props) {
 			<div className="grilla-dimension">
 				<div className="isotipo">
 					<Image src={isotipoazul} alt="isotipo" />
+				</div>
+				<div className="white-circle">
+					<Image src={CircleBG} layout="fill" objectFit="cover" />
 				</div>
 				<div className="man">
 					<Image src={man} alt="man" />
