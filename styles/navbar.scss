@@ -23,6 +23,9 @@
             display: flex;
             justify-content: flex-start;
             align-items: center;
+            div{
+                cursor: pointer;
+            }
         }
         &__menu{
             width:57vw;

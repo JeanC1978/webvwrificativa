@@ -22,7 +22,7 @@ const MENU_LIST = [
 	{ id: 'inicio', name: 'Inicio', submenu: false, path: '/' },
 	{ id: 'five', name: 'Five', submenu: true, path: '/five' },
 	{ id: 'consultiva', name: 'Consultiva', submenu: false, path: '/consultiva' },
-	{ id: 'operativa', name: 'Operativa', submenu: false, path: '/operativa' },
+	{ id: 'operativa', name: 'Operativa', submenu: false, path: 'https://www.operativa.pe/' },
 	{ id: 'blog', name: 'Blog', submenu: false, path: '/blog' },
 ];
 
@@ -46,8 +46,6 @@ const SUB_MENU_LIST = [
 		img: seleccionLink,
 	},
 ];
-
-const PATH_FIVE = '/five';
 
 export function Menu() {
 	const [showModal, setShowModal] = useState(false);
@@ -82,20 +80,26 @@ export function Menu() {
 	return (
 		<div className="container-menuList">
 			<ul className="menuList">
-				{MENU_LIST.map((item) => (
-					<ActiveLink key={item.id} path={item.path}>
-						{item.path === PATH_FIVE ? (
-							<div className="btn_five" onClick={hanldeShowModal}>
-								<span>{item.name}</span>
-								<Image src={arrowDown} alt="ver submenu"></Image>
-							</div>
-						) : (
-							<Link href={item.path}>
-								<a>{item.name}</a>
-							</Link>
-						)}
-					</ActiveLink>
-				))}
+				{
+					MENU_LIST.map((item) => (
+						<ActiveLink key={item.id} path={item.path}>
+							{item.id === "five" ? (
+								<div className="btn_five" onClick={hanldeShowModal}>
+									<span>{item.name}</span>
+									<Image src={arrowDown} alt="ver submenu"></Image>
+								</div>
+							) : (item.id === "operativa" ? (
+								<Link href={item.path}>
+									<a target="_blank" rel="noopener noreferrer">{item.name}</a>
+								</Link>
+							) :
+								<Link href={item.path}>
+									<a>{item.name}</a>
+								</Link>
+							)
+							}
+						</ActiveLink>
+					))}
 			</ul>
 			<span className="btn_menu">
 				{/* <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
