@@ -31,7 +31,7 @@ export default function Evaluativa(props) {
 				<SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} subtitle={SECTION_SOLUTIONS_SUBTITLE} description={SECTION_SOLUTIONS_DESCRIPTION} />
 				<div className="section-nivel-test">
 					<div className="section-nivel-test__columnOne">
-						<h1>Niveles del Test de Ingridad y Honestidad</h1>
+						<h1 className="title2">Niveles del Test de Integridad y Honestidad</h1>
 						<ButtonBlack onClick={() => setOpenModal(true)}>Solicita una demo</ButtonBlack>
 					</div>
 					<div className="section-nivel-test__columnTwo">

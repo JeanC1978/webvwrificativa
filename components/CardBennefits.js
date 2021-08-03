@@ -1,89 +1,35 @@
 import React from 'react';
 import Image from 'next/image';
-import brain from '../public/images/cardbennefits/brain.svg';
+import { Title } from "./Title";
+
 import desktop from '../public/images/cardbennefits/desktop.svg';
 import human from '../public/images/cardbennefits/human.svg';
+import brain from '../public/images/cardbennefits/brain.svg';
 import clock from '../public/images/cardbennefits/clock.svg';
 import circles from '../public/images/cardbennefits/circles.svg';
+
+const CARDS = [
+	{ id: 0, icon: desktop, description: "Acceso en cualquier momento, por teléfono, celular o pc." },
+	{ id: 0, icon: human, description: "Evaluaciones por adecuaciones de perfil o puesto." },
+	{ id: 0, icon: brain, description: "Reducción de hasta 70% del proceso de trabajo operativo." },
+	{ id: 0, icon: clock, description: "Asistencia y soporte a disposición online las 24 horas." },
+]
 
 export function CardBennefits(props) {
 	return (
 		<div className="section-bennefits">
-			<h1>¿Qué beneficios ofrece Evaluativa?</h1>
-			<div className="container-cardsbennefits">
-				<div className="cardbennefits">
-					<div className="ico-card">
-						<Image
-							src={desktop}
-							alt="desktop"
-							width={50}
-							automatically
-							provided
-							height={50}
-							automatically
-							provided
-						/>
-						<p className="textcard">
-							Como herramientas digitales de innovación tecnológica.
-						</p>
-					</div>
-				</div>
-
-				<div className="cardbennefits">
-					<div className="ico-card">
-						<Image
-							src={human}
-							alt="human"
-							width={50}
-							automatically
-							provided
-							height={50}
-							automatically
-							provided
-						/>
-						<p className="textcard">
-							Mediante la optimización de nuestros procesos en un entorno
-							digital.
-						</p>
-					</div>
-				</div>
-
-				<div className="cardbennefits">
-					<div className="ico-card">
-						<Image
-							src={brain}
-							alt="brain"
-							width={50}
-							automatically
-							provided
-							height={50}
-							automatically
-							provided
-						/>
-						<p className="textcard">
-							En base a la ley de datos personales y políticas de
-							confidencialidad.
-						</p>
-					</div>
-				</div>
-
-				<div className="cardbennefits">
-					<div className="ico-card">
-						<Image
-							src={clock}
-							alt="clock"
-							width={50}
-							automatically
-							provided
-							height={50}
-							automatically
-							provided
-						/>
-						<p className="textcardbennefits">
-							Las 24 horas, soporte técnico y comunicación continua.
-						</p>
-					</div>
-				</div>
+			<Title>¿Qué beneficios ofrece Evaluativa?</Title>
+			<div className="container-cards-bennefits">
+				{
+					CARDS.map(item => (
+						<div className="container-cards-bennefits__card" key={item.id}>
+							<div className="card-ico">
+								<Image src={item.icon} alt="icon" />
+							</div>
+							<p className="card-description">{item.description}</p>
+						</div>
+					))
+				}
 			</div>
 		</div>
 

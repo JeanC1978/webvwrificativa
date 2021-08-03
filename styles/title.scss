@@ -1,0 +1,44 @@
+@import "colors";
+@import "mixins";
+
+.title{
+    color: $color_text_primary;
+    font-weight: 800;
+    line-height: 115%;
+    font-size: 40px;
+}
+
+.title2{
+    color: $color_text_primary;
+    font-weight: 800;
+    line-height: 115%;
+    font-size: 30px;
+}
+
+@include mediaMovil(){
+    .title{
+        font-size: 32px;
+    }
+    .title2{
+        font-size: 30px;
+    }
+    
+}
+
+@include mediaXL(){
+    .title{
+        font-size: 45px;
+    }
+    .title2{
+        font-size: 35px;
+    }
+}
+
+@include mediaXXL(){
+    .title{
+        font-size: 50px;
+    }
+    .title2{
+        font-size: 40px;
+    }
+}

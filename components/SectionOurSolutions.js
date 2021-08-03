@@ -1,5 +1,8 @@
 import React from 'react'
 import Image from "next/image";
+import { Title } from "./Title";
+
+//images
 import PointSVG from "../public/images/page-seleccion/point.svg";
 import PointRight from "../public/images/page-seleccion/point-right.svg";
 import CheckSVG from "../public/images/page-seleccion/check-icon.svg";
@@ -13,7 +16,7 @@ export function SectionOurSolutions({ title, subtitle = null, description, card 
                 <Image src={PointSVG} />
             </div>
             <div className="section-our-solutions__content">
-                <h1>{title}</h1>
+                <Title>{title}</Title>
                 {
                     subtitle &&
                     <h4>{subtitle}</h4>
