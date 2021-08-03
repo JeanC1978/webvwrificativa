@@ -57,56 +57,58 @@ export default function Consultiva() {
         <Layout>
             <Banner title="Consultiva" icon={consultivaIco} description={text} bannerImg={consultivaBanner} />
             <SectionOurSolutions title={SECTION_SOLUTIONS_TITLE} subtitle={SECTION_SOLUTIONS_SUBTITLE} description={SECTION_SOLUTIONS_DESCRIPTION} />
-            <TabVertical title={TITLE} defaultActiveKey="attention">
-                <Tab eventKey="attention" title="Atención al Cliente">
-                    <div className="attention-client-tab">
-                        <TabContainer navItems={ATTENTION_CLIENT_ITEMS} buttonText="Comunícate con un asesor" id="attention-client-tabs" defaultActiveKey="first">
-                            {
-                                ATTENTION_CLIENT_ITEMS.map(item => (
-                                    <Tab.Pane eventKey={item.eventKey} key={item.id}>
-                                        <div className="item-card-tab">
-                                            <div className="item-card-tab__text">
-                                                {
-                                                    item?.subTitle &&
-                                                    <h2 className="subtitle">{item.subTitle}</h2>
-                                                }
-                                                <h1>{item.title}</h1>
-                                                <p>{item.description}</p>
-                                                <p><b>Duracion: </b>{item.duracion}</p>
+            <section className="section-training">
+                <TabVertical title={TITLE} defaultActiveKey="attention">
+                    <Tab eventKey="attention" title="Atención al Cliente">
+                        <div className="attention-client-tab">
+                            <TabContainer navItems={ATTENTION_CLIENT_ITEMS} buttonText="Comunícate con un asesor" id="attention-client-tabs" defaultActiveKey="first">
+                                {
+                                    ATTENTION_CLIENT_ITEMS.map(item => (
+                                        <Tab.Pane eventKey={item.eventKey} key={item.id}>
+                                            <div className="item-card-tab">
+                                                <div className="item-card-tab__text">
+                                                    {
+                                                        item?.subTitle &&
+                                                        <h2 className="subtitle">{item.subTitle}</h2>
+                                                    }
+                                                    <h1>{item.title}</h1>
+                                                    <p>{item.description}</p>
+                                                    <p><b>Duracion: </b>{item.duracion}</p>
+                                                </div>
+                                                <div className="item-card-tab__img">
+                                                    <Image src={item.img} layout="fill" objectFit="cover" />
+                                                </div>
                                             </div>
-                                            <div className="item-card-tab__img">
-                                                <Image src={item.img} layout="fill" objectFit="cover" />
+                                        </Tab.Pane>
+                                    ))
+                                }
+                            </TabContainer>
+                        </div>
+                    </Tab>
+                    <Tab eventKey="skills" title="Habilidades Blandas">
+                        <div className="soft-skills-tab">
+                            <TabContainer navItems={SOFT_SKILLS_ITEMS} id="soft-skilss-tabs" defaultActiveKey="first">
+                                {
+                                    SOFT_SKILLS_ITEMS.map(item => (
+                                        <Tab.Pane eventKey={item.eventKey} key={item.id}>
+                                            <div className="item-card-tab">
+                                                <div className="item-card-tab__text">
+                                                    <h1>{item.title}</h1>
+                                                    <p>{item.description}</p>
+                                                </div>
+                                                <div className="item-card-tab__img">
+                                                    <Image src={item.img} layout="fill" objectFit="cover" />
+                                                </div>
                                             </div>
-                                        </div>
-                                    </Tab.Pane>
-                                ))
-                            }
-                        </TabContainer>
-                    </div>
-                </Tab>
-                <Tab eventKey="skills" title="Habilidades Blandas">
-                    <div className="soft-skills-tab">
-                        <TabContainer navItems={SOFT_SKILLS_ITEMS} id="soft-skilss-tabs" defaultActiveKey="first">
-                            {
-                                SOFT_SKILLS_ITEMS.map(item => (
-                                    <Tab.Pane eventKey={item.eventKey} key={item.id}>
-                                        <div className="item-card-tab">
-                                            <div className="item-card-tab__text">
-                                                <h1>{item.title}</h1>
-                                                <p>{item.description}</p>
-                                            </div>
-                                            <div className="item-card-tab__img">
-                                                <Image src={item.img} layout="fill" objectFit="cover" />
-                                            </div>
-                                        </div>
-                                    </Tab.Pane>
-                                )
-                                )
-                            }
-                        </TabContainer>
-                    </div>
-                </Tab>
-            </TabVertical>
+                                        </Tab.Pane>
+                                    )
+                                    )
+                                }
+                            </TabContainer>
+                        </div>
+                    </Tab>
+                </TabVertical>
+            </section>
             <div className="section_who_expose">
                 {
                     WHO_EXPOSE.map(item => (

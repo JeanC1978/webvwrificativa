@@ -33,9 +33,6 @@
 @include mediaMovil(){
     .section-tabs{
         width: $with_content_movil;
-        h1{
-            font-size: 35px;
-        }
         &__container{
             .nav-tabs{
                 display: grid;

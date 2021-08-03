@@ -8,6 +8,7 @@ import { TabVertical } from "../components/TabVertical";
 import { Textsolutionsblue } from '../components/Textsolutionsblue';
 import { Navigation } from '../components/Navigation';
 import { SectionOurSolutions } from '../components/SectionOurSolutions';
+import { Title } from '../components/Title'
 
 //Images
 import verificacionBanner from "../public/images/pages/verificacion-banner.png";
@@ -43,7 +44,7 @@ export default function Verificacion() {
             <div className="verification-tab-container">
                 <div className="verification-tab-container__content">
                     <div className="verification-tab-container__content__desktop">
-                        <h1>{TITLE}</h1>
+                        <Title>{TITLE}</Title>
                         <TabContainer navItems={SERVICE_VERIFICATIONS_ITEMS} buttonText="Solicita una demo" id="service-verification-tabs" defaultActiveKey="first">
                             {
                                 SERVICE_VERIFICATIONS_ITEMS.map(item => (

@@ -1,6 +1,14 @@
 @import "colors";
 @import "mixins";
 
+section.section-training {
+    margin: 1rem auto;
+    padding: 1rem 0;
+    background: #F1F2F5;
+    border-radius: 0px 140px 0px 0px;
+
+}
+
 .seleccion-tab-container{
     padding: 1rem 0;
     background: $color_backgrey;
