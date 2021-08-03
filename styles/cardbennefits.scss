@@ -5,6 +5,13 @@
 .section-bennefits{
 	width: $with_content;
 	margin: 4rem auto;
+	position: relative;
+	&__circle{
+		position: absolute;
+		top: 5.2rem;
+		left: -7rem;
+		z-index: -1;
+	}
 }
 .container-cards-bennefits {
 	display: grid;
@@ -14,6 +21,7 @@
 		box-shadow: 0px 5px 15px -6px rgba(213, 216, 223, 0.5);
 		border-radius: 10px;
 		padding: 1.5rem;
+		background: #fff;
 	}
 }
 
@@ -21,6 +29,9 @@
 @include mediaMovil(){
 	.section-bennefits{
 		width: $with_content_movil;
+		&__circle{
+			display: none;
+		}
 	}
 	.container-cards-bennefits {
 		width: 100%;

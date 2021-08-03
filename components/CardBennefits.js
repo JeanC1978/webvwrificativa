@@ -6,7 +6,7 @@ import desktop from '../public/images/cardbennefits/desktop.svg';
 import human from '../public/images/cardbennefits/human.svg';
 import brain from '../public/images/cardbennefits/brain.svg';
 import clock from '../public/images/cardbennefits/clock.svg';
-import circles from '../public/images/cardbennefits/circles.svg';
+import Circle from '../public/images/evaluativa/circle-white.svg';
 
 const CARDS = [
 	{ id: 0, icon: desktop, description: "Acceso en cualquier momento, por teléfono, celular o pc." },
@@ -19,6 +19,9 @@ export function CardBennefits(props) {
 	return (
 		<div className="section-bennefits">
 			<Title>¿Qué beneficios ofrece Evaluativa?</Title>
+			<div className="section-bennefits__circle">
+				<Image src={Circle} />
+			</div>
 			<div className="container-cards-bennefits">
 				{
 					CARDS.map(item => (
@@ -31,6 +34,7 @@ export function CardBennefits(props) {
 					))
 				}
 			</div>
+
 		</div>
 
 	);
