@@ -9,6 +9,7 @@ import MenBrown from "../public/images/banner-img/men_brown.png";
 import MenSky from "../public/images/banner-img/men_sky.png";
 import WomenSky from "../public/images/banner-img/women_sky.png";
 import banner from '../public/images/banner-img/banner01.png';
+import Circle from '../public/images/banner-img/circle.svg';
 
 export function BannerHome() {
     const [openModal, setOpenModal] = useState(false)
@@ -23,6 +24,9 @@ export function BannerHome() {
                 <div className="banner__columnOne__content">
                     <h1>Elegir personal confiable, no es cuestión de suerte</h1>
                     <ButtonBlack onClick={handleClick}>Solicita una demo</ButtonBlack>
+                </div>
+                <div className="banner__columnOne__image">
+                    <Image src={Circle} />
                 </div>
             </div>
             <div className="banner__columnTwo">

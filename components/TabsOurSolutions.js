@@ -6,6 +6,7 @@ import Tabs from 'react-bootstrap/Tabs'
 import Tab from 'react-bootstrap/Tab'
 import { ButtonBlack } from "./ButtonBlack";
 import { ModalDemo } from '../components/ModalDemo';
+import { Title } from '../components/Title';
 
 //images
 import FiveSvg from "../public/images/tabs-img/five.svg";
@@ -29,8 +30,8 @@ export function TabsOurSolutions(props) {
 
     return (
         <div className="container-our-solutions">
-            <h1>Conoce nuestras soluciones</h1>
-            <p>Con nuestras herramientas digitales de innovación para HR</p>
+            <Title>Conoce nuestras soluciones</Title>
+            <p className="text-shadow">Con nuestras herramientas digitales de innovación para HR</p>
             <div className="container-our-solutions__tabs">
                 <Tabs defaultActiveKey="five" id="ourSolutions" className="mb-3">
                     <Tab eventKey="five" title={imgFive} tabClassName="nav-five">
@@ -38,7 +39,7 @@ export function TabsOurSolutions(props) {
                             <div className="tab-item-content__description">
                                 <div className="tab-item-content__description__info">
                                     <h4>"Creando sinergia entre las personas, el talento y la tecnología"</h4>
-                                    <p>Plataforma digital para tus procesos de selección, verificación y evaluación de personas</p>
+                                    <p>Plataforma digital para tus procesos de selección, verificación y evaluación de personas.</p>
                                     <div className="tab-item-content__description__info__links">
                                         <Link href="/verificacion">
                                             <Image src={VerificacionSvg} alt="tab Five" />
@@ -65,7 +66,7 @@ export function TabsOurSolutions(props) {
                             <div className="tab-item-content__description">
                                 <div className="tab-item-content__description__info">
                                     <h4>"Tus colaboradores son lso embajadores de tu marca"</h4>
-                                    <p>Potenciamos a tu colaboradores, entrenandolos para ser mas competitivos sumando valor a tu marca</p>
+                                    <p>Potenciamos a tu colaboradores, entrenandolos para ser mas competitivos sumando valor a tu marca.</p>
                                     <div className="tab-item-content__description__links">
                                     </div>
                                     <Link href="/consultiva">
@@ -86,7 +87,7 @@ export function TabsOurSolutions(props) {
                             <div className="tab-item-content__description">
                                 <div className="tab-item-content__description__info">
                                     <h4>"El Match perfecto con tu candidadto ideal"</h4>
-                                    <p>Plataforma tecnológica con IA especializada en reclutamiento masivo de personal operario</p>
+                                    <p>Plataforma tecnológica con IA especializada en reclutamiento masivo de personal operario.</p>
                                     <div className="tab-item-content__description__links">
                                     </div>
                                     <Link href="/consultiva">

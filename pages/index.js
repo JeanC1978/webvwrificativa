@@ -1,5 +1,5 @@
-import { useState } from 'react'
 import Head from 'next/head';
+import Image from 'next/image';
 import { Card } from '../components/Card';
 // import { fetchAPI } from "../lib/api";
 import { Layout } from '../components/Layout';
@@ -9,6 +9,8 @@ import { SectionCounter } from '../components/SectionCounter';
 import { TabsOurSolutions } from '../components/TabsOurSolutions';
 import { CarouselHowWork } from '../components/CarouselHowWork';
 import { BannerHome } from '../components/BannerHome';
+
+import CircleWhite from "../public/images/evaluativa/circle-white.svg";
 
 
 export default function Home() {
@@ -25,7 +27,12 @@ export default function Home() {
 			<Layout>
 				{/* <Navbar /> */}
 				<BannerHome />
-				<Card />
+				<div className="section-cards">
+					<Card />
+					<div className="section-cards__circle">
+						<Image src={CircleWhite} />
+					</div>
+				</div>
 				<TabsOurSolutions />
 				<CarouselHowWork />
 				<SectionCounter />

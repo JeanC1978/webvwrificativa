@@ -1,0 +1,30 @@
+
+@import "mixins";
+
+.section-cards{
+    position: relative;
+    &__circle{
+        position: absolute;
+        top: 11rem;
+        right: 3rem;
+        z-index: -1;
+    }
+}
+
+@include mediaXL(){
+    .section-cards{
+        &__circle{
+            top: 11rem;
+            right: 5rem;
+        }
+    }
+}
+
+@include mediaXXL(){
+    .section-cards{
+        &__circle{
+            top: 11rem;
+            right: 7rem;
+        }
+    }
+}
