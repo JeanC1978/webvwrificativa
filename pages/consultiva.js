@@ -7,8 +7,8 @@ import { Banner } from '../components/Banner';
 import { TabVertical } from '../components/TabVertical';
 import { TabContainer } from '../components/TabContainer';
 import { AvatarWithBg } from '../components/AvatarWithBg';
-import { TextSolutionseconsult } from '../components/TextSolutionseconsult';
 import { SectionOurSolutions } from '../components/SectionOurSolutions';
+import { Title } from '../components/Title';
 
 //Images
 import consultivaBanner from '../public/images/consultiva/consultiva-banner.png';
@@ -181,17 +181,20 @@ export default function Consultiva() {
 					</Tab>
 				</TabVertical>
 			</section>
-			<div className="section_who_expose">
-				{
-					WHO_EXPOSE.map(item => (
-						<div className="section_who_expose__card" key={item.id}>
-							<AvatarWithBg img={item.img} />
-							<h2>{item.name}</h2>
-							<p>{item.description}</p>
-						</div>
-					))
-				}
-			</div>
+			<section className="section_who_expose">
+				<Title>¿Quiénes exponen?</Title>
+				<div className="section_who_expose__cards">
+					{
+						WHO_EXPOSE.map(item => (
+							<div className="section_who_expose__cards__item" key={item.id}>
+								<AvatarWithBg img={item.img} />
+								<h2>{item.name}</h2>
+								<p>{item.description}</p>
+							</div>
+						))
+					}
+				</div>
+			</section>
 		</Layout>
 	)
 }
