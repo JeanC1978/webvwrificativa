@@ -82,12 +82,12 @@ $height_carousel_how_work_movil:630px;
 .prev-icon{
     position: relative;
     top:9%;
-    left: 41rem;
+    left: 0;
 }
 .next-icon{
     position: relative;
     top: 9%;
-    left: 3rem;
+    left: 20%;
 }
 
 @include mediaMovil(){
@@ -130,20 +130,20 @@ $height_carousel_how_work_movil:630px;
             }
         }
     }
-    .prev-icon{
-        top:31%;
-        left: 0.2rem;
-    }
-    .next-icon{
-        top:31%;
-        left: -0.2rem;
-    }
+    // .prev-icon{
+    //     top:31%;
+    //     left: 0.2rem;
+    // }
+    // .next-icon{
+    //     top:31%;
+    //     left: -0.2rem;
+    // }
 }
 
 @include mediaXL(){
-    .prev-icon{
-        left: 49rem;
-    }
+    // .prev-icon{
+    //     left: 49rem;
+    // }
 
     .carousel-item-content{
         &__partOne{
@@ -155,20 +155,20 @@ $height_carousel_how_work_movil:630px;
 }
 
 @media (min-width: 1700px) {
-    .prev-icon{
-        left: 52rem;
-    }
+    // .prev-icon{
+    //     left: 52rem;
+    // }
 }
 @media (min-width: 1800px) {
-    .prev-icon{
-        left: 55rem;
-    }
+    // .prev-icon{
+    //     left: 55rem;
+    // }
 }
 
 @include mediaXXL(){
-    .prev-icon{
-        left: 57rem;
-    }
+    // .prev-icon{
+    //     left: 57rem;
+    // }
 
     .carousel-item-content{
         &__partOne{
