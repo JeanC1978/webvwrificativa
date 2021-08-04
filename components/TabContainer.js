@@ -11,7 +11,7 @@ import { ButtonBlack } from "./ButtonBlack";
 //CSS: tab_container.scss
 import ArrowRightIcon from "../public/images/pages/arrow-right.svg";
 
-export function TabContainer({ children, navItems, buttonText = null, ...restProps }) {
+export function TabContainer({ children, navItems, buttonText = null, buttonSize = null, ...restProps }) {
     const [openModal, setOpenModal] = useState(false)
 
     return (
@@ -33,7 +33,8 @@ export function TabContainer({ children, navItems, buttonText = null, ...restPro
                         }
                         {
                             buttonText &&
-                            <Button variant="primary" className="button-action" onClick={() => setOpenModal(true)}>{buttonText}</Button>
+                            // <Button variant="primary" className="button-action" onClick={() => setOpenModal(true)}>{buttonText}</Button>
+                            <ButtonBlack size={buttonSize} onClick={() => setOpenModal(true)}>{buttonText}</ButtonBlack>
                         }
                     </Nav>
                 </Col>

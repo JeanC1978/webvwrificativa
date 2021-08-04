@@ -1,7 +1,4 @@
 import React, { useState } from 'react';
-import Navbar from 'react-bootstrap/Navbar'
-import Nav from 'react-bootstrap/Nav'
-import Container from 'react-bootstrap/Container'
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -18,9 +15,20 @@ import verificacionLink from '../public/images/menu-icons/verificacion_link.svg'
 import evaluativaLink from '../public/images/menu-icons/evaluativa_link.svg';
 import seleccionLink from '../public/images/menu-icons/seleccion_link.svg';
 
+//CSS: navbar.scss
+
 const MENU_LIST = [
 	{ id: 'inicio', name: 'Inicio', submenu: false, path: '/' },
 	{ id: 'five', name: 'Five', submenu: true, path: '/five' },
+	{ id: 'consultiva', name: 'Consultiva', submenu: false, path: '/consultiva' },
+	{ id: 'operativa', name: 'Operativa', submenu: false, path: 'https://www.operativa.pe/' },
+	{ id: 'blog', name: 'Blog', submenu: false, path: '/blog' },
+];
+const MENU_LIST_MOVIL = [
+	{ id: 'inicio', name: 'Inicio', submenu: false, path: '/' },
+	{ id: 'verificacion', name: 'Verificación', submenu: false, path: '/verificacion' },
+	{ id: 'evaluativa', name: 'Evaluativa', submenu: false, path: '/evaluativa' },
+	{ id: 'seleccion', name: 'Seleccion', submenu: false, path: '/seleccion' },
 	{ id: 'consultiva', name: 'Consultiva', submenu: false, path: '/consultiva' },
 	{ id: 'operativa', name: 'Operativa', submenu: false, path: 'https://www.operativa.pe/' },
 	{ id: 'blog', name: 'Blog', submenu: false, path: '/blog' },
@@ -49,10 +57,15 @@ const SUB_MENU_LIST = [
 
 export function Menu() {
 	const [showModal, setShowModal] = useState(false);
+	const [showMenu, setShowMenu] = useState(false);
 
 	const hanldeShowModal = () => {
 		setShowModal(true);
-	};
+	}
+
+	const handleClickMenu = () => {
+		setShowMenu(prevState => !prevState)
+	}
 
 	const bodyModal = () => (
 		<Modal.Body>
@@ -77,52 +90,66 @@ export function Menu() {
 		</Modal.Body>
 	);
 
+	const getLink = (item) => {
+		switch (item.id) {
+			case "five":
+				return (<div className="btn_five" onClick={hanldeShowModal}>
+					<span>{item.name}</span>
+					<Image src={arrowDown} alt="ver submenu"></Image>
+				</div>)
+			case "operativa":
+				return (
+					<Link href={item.path}>
+						<a target="_blank" rel="noopener noreferrer">{item.name}</a>
+					</Link>
+				)
+			default:
+				return (
+					<Link href={item.path}>
+						<a>{item.name}</a>
+					</Link>
+				)
+		}
+	}
+
 	return (
 		<div className="container-menuList">
-			<ul className="menuList">
+			<ul className={`menuList ${showMenu ? "show_menu" : ""}`}>
 				{
-					MENU_LIST.map((item) => (
-						<ActiveLink key={item.id} path={item.path}>
-							{
-								item.id === "five" ? (
-									<div className="btn_five" onClick={hanldeShowModal}>
-										<span>{item.name}</span>
-										<Image src={arrowDown} alt="ver submenu"></Image>
-									</div>
-								) : (item.id === "operativa" ? (
-									<Link href={item.path}>
-										<a target="_blank" rel="noopener noreferrer">{item.name}</a>
-									</Link>
-								) :
-									<Link href={item.path}>
-										<a>{item.name}</a>
-									</Link>
-								)
-							}
-						</ActiveLink>
-					))}
+					showMenu ?
+						MENU_LIST_MOVIL.map((item) => (
+							<ActiveLink key={item.id} path={item.path}>
+								{
+									getLink(item)
+								}
+							</ActiveLink>
+						)) :
+						MENU_LIST.map((item) => (
+							<ActiveLink key={item.id} path={item.path}>
+								{
+									getLink(item)
+								}
+								{/* {
+									item.id === "five" ? (
+										<div className="btn_five" onClick={hanldeShowModal}>
+											<span>{item.name}</span>
+											<Image src={arrowDown} alt="ver submenu"></Image>
+										</div>
+									) : (item.id === "operativa" ? (
+										<Link href={item.path}>
+											<a target="_blank" rel="noopener noreferrer">{item.name}</a>
+										</Link>
+									) :
+										<Link href={item.path}>
+											<a>{item.name}</a>
+										</Link>
+									)
+								} */}
+							</ActiveLink>
+						))
+				}
 			</ul>
-			<span className="btn_menu">
-				{/* <Navbar collapseOnSelect expand="xl" bg="dark" variant="dark">
-					<Container>
-						<Navbar.Brand href="#home">React-Bootstrap</Navbar.Brand>
-						<Navbar.Toggle aria-controls="responsive-navbar-nav" />
-						<Navbar.Collapse id="responsive-navbar-nav">
-							<Nav className="me-auto">
-
-							</Nav>
-							<Nav>
-								<Nav.Link href="#features">Features</Nav.Link>
-								<Nav.Link href="#pricing">Pricing</Nav.Link>
-								<Nav.Link href="#deets">More deets</Nav.Link>
-								<Nav.Link eventKey={2} href="#memes">
-									Dank memes
-								</Nav.Link>
-							</Nav>
-						</Navbar.Collapse>
-					</Container>
-				</Navbar> */}
-
+			<span className="btn_menu" onClick={handleClickMenu}>
 				<Image src={menuIco} alt="Menu"></Image>
 			</span>
 			<CustomModal

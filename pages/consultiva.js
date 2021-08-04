@@ -129,7 +129,7 @@ export default function Consultiva() {
 				<TabVertical title={TITLE} defaultActiveKey="attention">
 					<Tab eventKey="attention" title="Atención al Cliente">
 						<div className="attention-client-tab">
-							<TabContainer navItems={ATTENTION_CLIENT_ITEMS} buttonText="Comunícate con un asesor" id="attention-client-tabs" defaultActiveKey="first">
+							<TabContainer navItems={ATTENTION_CLIENT_ITEMS} buttonSize="sm" buttonText="Comunícate con un asesor" id="attention-client-tabs" defaultActiveKey="first">
 								{
 									ATTENTION_CLIENT_ITEMS.map(item => (
 										<Tab.Pane eventKey={item.eventKey} key={item.id}>

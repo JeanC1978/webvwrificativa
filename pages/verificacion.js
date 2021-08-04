@@ -91,7 +91,7 @@ export default function Verificacion() {
 				<div className="verification-tab-container__content">
 					<div className="verification-tab-container__content__desktop">
 						<Title>{TITLE}</Title>
-						<TabContainer navItems={SERVICE_VERIFICATIONS_ITEMS} buttonText="Solicita una demo" id="service-verification-tabs" defaultActiveKey="first">
+						<TabContainer navItems={SERVICE_VERIFICATIONS_ITEMS} buttonSize="md" buttonText="Solicita una demo" id="service-verification-tabs" defaultActiveKey="first">
 							{
 								SERVICE_VERIFICATIONS_ITEMS.map(item => (
 									<Tab.Pane eventKey={item.eventKey} key={item.id}>

@@ -2,17 +2,14 @@
 @import "mixins";
 @import "variables";
 
-// .navbar{
-//     height:$height_navbar;
-//     display: flex;
     .navbar__main{
         z-index: 20;
         width:75vw;
         height:$height_navbar;
         background-color:transparent;
         
-        position: absolute;
-        top:0;
+        position: fixed;
+        // top:0;
         margin: 0 auto;
         left: 0;
         right: 0;
@@ -34,7 +31,6 @@
             align-items: center;
         }
     }
-// }
 
 .container-menuList{
     height: 100%;
@@ -77,9 +73,13 @@
     display: none;
 }
 
+.show_menu{
+    top: 93px;
+}
+
 @include mediaMovil() {
-    // .navbar{
-        .navbar__main{
+    .navbar__main{
+            position: fixed;
             background-color: $color_base;
             width:100vw;
             display: flex;
@@ -90,18 +90,44 @@
                 width: 150px;
                 height: 23px;
             }
-        }
-    // }
+    }
     .container-menuList{
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .menuList{
-        display: none;
-    }
     .btn_menu{
-        display: block;
+        display: inline-flex;
+    }
+    
+    .menuList{
+        position: fixed;
+        width: 100vw;
+        height: calc(100% - 93px);
+        left:0px;
+        bottom: -100vh;
+        background:#fff;
+        transition: all .4s;
+        flex-direction: column;
+        &__item{
+            width: 105%;
+            display: flex;
+            justify-content: center;
+            margin: 0 1rem;
+            &.active_link{
+                background:$color_blue;
+                color:#fff;
+            }
+            a{
+                width: 100%;
+                height: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 24px;
+
+            }
+        }
     }
    
 }
