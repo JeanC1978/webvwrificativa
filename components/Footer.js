@@ -25,7 +25,6 @@ export function Footer(props) {
 					automatically
 					provided
 					height={50}
-					automatically
 					provided
 				/>
 			</div>
@@ -34,7 +33,7 @@ export function Footer(props) {
 				Elegir personal confiable, no es <br></br> cuestión de suerte
 			</div>
 			<div className="redes">
-				<a href="https://www.facebook.com/VerificativaSAC/" target="_blank">
+				<a href="https://www.facebook.com/VerificativaSAC/" target="_blank" rel="noopener noreferrer">
 					<Image
 						src={fb}
 						alt="facebook"
@@ -42,7 +41,6 @@ export function Footer(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 				</a>
@@ -50,6 +48,7 @@ export function Footer(props) {
 				<a
 					href="https://www.linkedin.com/company/verificativa-sac/?originalSubdomain=pe"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<Image
 						src={linkedin}
@@ -58,7 +57,6 @@ export function Footer(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 				</a>
@@ -66,6 +64,7 @@ export function Footer(props) {
 				<a
 					href="https://www.youtube.com/channel/UC0EinzTeh6T6kU0kaNvqGPw/featured"
 					target="_blank"
+					rel="noopener noreferrer"
 				>
 					<Image
 						src={youtube}
@@ -74,7 +73,6 @@ export function Footer(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 				</a>
@@ -121,7 +119,6 @@ export function Footer(props) {
 							automatically
 							provided
 							height={25}
-							automatically
 							provided
 						/>
 
@@ -136,7 +133,6 @@ export function Footer(props) {
 							automatically
 							provided
 							height={25}
-							automatically
 							provided
 						/>
 
@@ -153,7 +149,6 @@ export function Footer(props) {
 					automatically
 					provided
 					height={25}
-					automatically
 					provided
 				/>
 

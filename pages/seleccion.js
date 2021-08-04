@@ -29,13 +29,13 @@ const SELECTION_TYPE_COMMAND_TAB = [
     {
         id: "1", eventKey: "first", title: "Gerenciales Head Hunting", description: "Enfocado en la búsqueda directa de ejecutivos de alta gerencia, jefaturas y posiciones especializadas.", img: ImgOne,
         list: [
-            { text: "Análisis del perfil del puesto" },
-            { text: "Entendimiento de la cultura organizacional" },
-            { text: "Reclutamiento 4.0" },
-            { text: "Verificación de personal" },
-            { text: "Assessment center" },
-            { text: "Entrevista por competencias" },
-            { text: "Informe de terna final" },
+            { id: "ab", text: "Análisis del perfil del puesto" },
+            { id: "ac", text: "Entendimiento de la cultura organizacional" },
+            { id: "ad", text: "Reclutamiento 4.0" },
+            { id: "ae", text: "Verificación de personal" },
+            { id: "af", text: "Assessment center" },
+            { id: "ag", text: "Entrevista por competencias" },
+            { id: "ah", text: "Informe de terna final" },
         ]
     },
     {
@@ -88,7 +88,7 @@ export default function Seleccion(props) {
                                     <div className="seleccion-tab-item__columnTwo">
                                         <div className="seleccion-tab-item__columnTwo__list">
                                             {item.list.map((subItem) => (
-                                                <div className="item-list">
+                                                <div className="item-list" key={subItem.id}>
                                                     <Image src={CheckIcon} />
                                                     <p>{subItem.text}</p>
                                                 </div>

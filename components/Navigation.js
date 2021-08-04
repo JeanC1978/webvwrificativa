@@ -22,12 +22,12 @@ export function Navigation({ prev, next }) {
 
     return (
         <div className="navigation">
-            <Link href={`/${prev}`}>
+            <Link href={`/${prev}`} passHref>
                 <div className="navigation__prev">
                     <h3>{getNavigation(prev)}</h3>
                 </div>
             </Link>
-            <Link href={`/${next}`}>
+            <Link href={`/${next}`} passHref>
                 <div className="navigation__next">
                     <h3>{getNavigation(next)}</h3>
                 </div>

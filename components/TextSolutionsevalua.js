@@ -24,7 +24,6 @@ export function TextSolutionsevalua(props) {
 					automatically
 					provided
 					height={130}
-					automatically
 					provided
 				/>
 			</div>

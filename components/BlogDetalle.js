@@ -6,7 +6,6 @@ import facebook from "../public/images/blog/facebook-icon.svg";
 import twitter from "../public/images/blog/twitter.svg";
 import linkendin from "../public/images/blog/linkendin.svg";
 import img_detalle from "../public/images/blog/blog-detalle.png";
-import Demo from "../components/SolicitaDemo";
 const BlogDetalle = () => {
   return (
     <>

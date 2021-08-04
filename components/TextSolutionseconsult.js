@@ -23,7 +23,6 @@ export function TextSolutionseconsult(props) {
 					automatically
 					provided
 					height={130}
-					automatically
 					provided
 				/>
 			</div>
@@ -35,7 +34,6 @@ export function TextSolutionseconsult(props) {
 					automatically
 					provided
 					height={130}
-					automatically
 					provided
 				/>
 			</div>

@@ -25,7 +25,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						automatically
 						provided
 					/>
 				</div>
@@ -38,7 +37,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						automatically
 						provided
 					/>
 				</div>
@@ -54,7 +52,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						automatically
 						provided
 					/>
 				</div>
@@ -66,7 +63,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						automatically
 						provided
 					/>
 				</div>
@@ -78,7 +74,7 @@ export function SliderCliente(props) {
 						nextLabel={null}
 						prevIcon={previewIcon}
 						prevLabel={null}
-						// bsPrefix="carrousel-comments"
+					// bsPrefix="carrousel-comments"
 					>
 						<Carousel.Item>
 							<div className="carrousel-main">

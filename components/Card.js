@@ -19,7 +19,6 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 					<h2>Usamos plataformas ágiles</h2>
@@ -36,7 +35,6 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 					<h2>
@@ -58,7 +56,6 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 					<h2>
@@ -81,7 +78,6 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						automatically
 						provided
 					/>
 					<h2>
