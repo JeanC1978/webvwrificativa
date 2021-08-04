@@ -76,8 +76,7 @@ const text =
 const SECTION_SOLUTIONS_TITLE = 'Conoce nuestra solución';
 const SECTION_SOLUTIONS_DESCRIPTION = (
 	<>
-		Contamos con más de <b>1'000.000.00</b> de consultas realizadas a nivel
-		nacional, a través de nuestros Filtros de Verificación.
+		Contamos con más de <b>1&apos;000.000.00</b> de consultas realizadas a nivel nacional, a través de nuestros Filtros de Verificación.
 	</>
 );
 
@@ -99,7 +98,7 @@ export default function Verificacion() {
 											<h2>Verificaciónes {item.id == 1 ? "de" : ""}</h2>
 											<h1>{item.title}</h1>
 											<div>
-												<Image src={item.img} />
+												<Image src={item.img} alt="" />
 											</div>
 											<p>{item.description}</p>
 										</div>
@@ -117,7 +116,7 @@ export default function Verificacion() {
 											<h2>Verificaciónes {item.id == 1 ? "de" : ""}</h2>
 											<h1>{item.title}</h1>
 											<div>
-												<Image src={item.img} />
+												<Image src={item.img} alt="image" />
 											</div>
 											<p>{item.description}</p>
 										</div>

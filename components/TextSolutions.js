@@ -23,8 +23,6 @@ export function Textsolutions(props) {
 					automatically
 					provided
 					height={130}
-					automatically
-					provided
 				/>
 			</div>
 			<div className="twopointderecha">
@@ -35,8 +33,6 @@ export function Textsolutions(props) {
 					automatically
 					provided
 					height={130}
-					automatically
-					provided
 				/>
 			</div>
 		</div>

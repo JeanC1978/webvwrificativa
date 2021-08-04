@@ -46,16 +46,16 @@ const BlogS = ({ titulo }) => {
             <div className="post-container-2">
 
                 {items.map((e, index) => {
-                    
+
                     return (
                         <div className="item-post" key={index}>
-                            <Image src={e.imagen}/>
+                            <Image src={e.imagen} alt="" />
                             {/* <article className={`item-${e.item}`}></article> */}
 
                             <p className="p">{e.titulo}</p>
                             <div className={`avatar${index}`}>
 
-                                <img src="https://placeimg.com/52/52/people" alt="" className="_avatar" />
+                                <Image src="https://placeimg.com/52/52/people" alt="" className="_avatar" />
                                 <div className="_avat">
                                     <p>{e.nombre}</p>
                                     <h6>{e.fecha}</h6>

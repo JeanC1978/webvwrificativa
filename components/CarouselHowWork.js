@@ -21,14 +21,14 @@ export function CarouselHowWork(props) {
                     nextLabel={null}
                     prevLabel={null}
                     indicators={true}
-                    nextIcon={<div className="next-icon"><Image src={ArrowRightIcon} /></div>}
-                    prevIcon={<div className="prev-icon"><Image src={ArrowLeftIcon} /></div>}
+                    nextIcon={<div className="next-icon"><Image src={ArrowRightIcon} alt="" /></div>}
+                    prevIcon={<div className="prev-icon"><Image src={ArrowLeftIcon} alt="" /></div>}
                 >
                     <Carousel.Item>
                         <div className="carousel-item-content">
                             <div className="carousel-item-content__partOne">
                                 <div className="carousel-item-content__partOne__circleImg">
-                                    <Image src={CircleSvg} />
+                                    <Image src={CircleSvg} alt="" />
                                 </div>
                                 <div className="carousel-item-content__partOne__content">
                                     <div className="carousel-item-content__partOne__content__text">
@@ -42,7 +42,7 @@ export function CarouselHowWork(props) {
                             </div>
                             <div className="carousel-item-content__partTwo">
                                 <div className="carousel-item-content__partTwo__logo">
-                                    <Image src={VerificaIcon} />
+                                    <Image src={VerificaIcon} alt="" />
                                 </div>
                                 <div className="carousel-item-content__partTwo__text">
                                     <h2>Verifica datos</h2>
@@ -55,7 +55,7 @@ export function CarouselHowWork(props) {
                         <div className="carousel-item-content">
                             <div className="carousel-item-content__partOne">
                                 <div className="carousel-item-content__partOne__circleImg">
-                                    <Image src={CircleSvg} />
+                                    <Image src={CircleSvg} alt="" />
                                 </div>
                                 <div className="carousel-item-content__partOne__content">
                                     <div className="carousel-item-content__partOne__content__text">
@@ -70,7 +70,7 @@ export function CarouselHowWork(props) {
                             </div>
                             <div className="carousel-item-content__partTwo">
                                 <div className="carousel-item-content__partTwo__logo">
-                                    <Image src={ReclutaIcon} />
+                                    <Image src={ReclutaIcon} alt="" />
                                 </div>
                                 <div className="carousel-item-content__partTwo__text">
                                     <h2>Recluta y selecciona</h2>
@@ -84,7 +84,7 @@ export function CarouselHowWork(props) {
                         <div className="carousel-item-content">
                             <div className="carousel-item-content__partOne">
                                 <div className="carousel-item-content__partOne__circleImg">
-                                    <Image src={CircleSvg} />
+                                    <Image src={CircleSvg} alt="" />
                                 </div>
                                 <div className="carousel-item-content__partOne__content">
                                     <div className="carousel-item-content__partOne__content__text">
@@ -99,7 +99,7 @@ export function CarouselHowWork(props) {
                             </div>
                             <div className="carousel-item-content__partTwo">
                                 <div className="carousel-item-content__partTwo__logo">
-                                    <Image src={ReclutaIcon} />
+                                    <Image src={ReclutaIcon} alt="" />
                                 </div>
                                 <div className="carousel-item-content__partTwo__text">
                                     <h2>Evalúa por áreas</h2>

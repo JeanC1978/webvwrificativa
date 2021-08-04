@@ -9,7 +9,7 @@ export function Textsolutionsblue(props) {
 		<div className="textcontainerblue">
 			<p className="p1b">Conoce nuestra solución</p>
 			<p className="p2b">
-				Contamos con más de 1'000.000.00 de consultas realizadas a nivel nacional, a través de nuestros Filtros de Verificación.
+				Contamos con más de 1&apos;000.000.00 de consultas realizadas a nivel nacional, a través de nuestros Filtros de Verificación.
 			</p>
 			<div className="containerblue">
 				<div className="checks">
@@ -20,7 +20,6 @@ export function Textsolutionsblue(props) {
 						automatically
 						provided
 						height={100}
-						provided
 					/>
 				</div>
 				<p className="p4b">
@@ -37,7 +36,6 @@ export function Textsolutionsblue(props) {
 					automatically
 					provided
 					height={130}
-					provided
 				/>
 			</div>
 			<div className="twopointder">
@@ -48,7 +46,6 @@ export function Textsolutionsblue(props) {
 					automatically
 					provided
 					height={130}
-					provided
 				/>
 			</div>
 		</div>

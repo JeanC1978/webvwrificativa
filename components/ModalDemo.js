@@ -28,14 +28,14 @@ export const ModalDemo = ({ ...props }) => {
     <div className="demo-modal__content">
       <div className="demo-modal__content__title">
         <div className="demo-modal__content__title__point">
-          <Image src={PointLeft} />
+          <Image src={PointLeft} alt="" />
         </div>
         <div className="demo-modal__content__title__point">
-          <Image src={PointLeft} />
+          <Image src={PointLeft} alt="" />
         </div>
       </div>
       <div className="demo-modal__content__msjSuccess">
-        <Image src={CheckIcon} />
+        <Image src={CheckIcon} alt="" />
         <h1>Genial, tu solicitud se realizo con éxito</h1>
         <p>Te enviaremos un mensaje de confirmación a tu correo, para que accedas a tu demo.</p>
         <ButtonBlack onClick={handleClickClose}>Vamos a la página de inicio</ButtonBlack>
@@ -46,13 +46,13 @@ export const ModalDemo = ({ ...props }) => {
     <div className="demo-modal__content">
       <div className="demo-modal__content__title">
         <div className="demo-modal__content__title__point">
-          <Image src={PointLeft} />
+          <Image src={PointLeft} alt="" />
         </div>
         <div className="demo-modal__content__title__text">
           <h1>Solicita una demo</h1>
         </div>
         <div className="demo-modal__content__title__point">
-          <Image src={PointRight} />
+          <Image src={PointRight} alt="" />
         </div>
       </div>
       <div className="demo-modal__content__form">
@@ -87,8 +87,8 @@ export const ModalDemo = ({ ...props }) => {
       <Modal.Body>
         <div className="demo-modal">
           <div className="demo-modal__header">
-            <Image src={Logo} />
-            <Image src={ExitIcon} onClick={handleClickClose} />
+            <Image src={Logo} alt="" />
+            <Image src={ExitIcon} onClick={handleClickClose} alt="" />
           </div>
           {
             isSuccess ?

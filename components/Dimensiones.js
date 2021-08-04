@@ -14,7 +14,7 @@ export function Dimensiones(props) {
 					<Image src={isotipoazul} alt="isotipo" />
 				</div>
 				<div className="white-circle">
-					<Image src={CircleBG} layout="fill" objectFit="cover" />
+					<Image src={CircleBG} layout="fill" objectFit="cover" alt="" />
 				</div>
 				<div className="man">
 					<Image src={man} alt="man" />

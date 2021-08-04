@@ -27,7 +27,7 @@ export function Banner({ title = "Selección", description = text, icon, bannerI
                         <h1>{title}</h1>
                     </div>
                     <p>{description}</p>
-                    <div><Image src={ArrowDownIcon} /></div>
+                    <div><Image src={ArrowDownIcon} alt="" /></div>
                 </div>
                 <div className="banner-main__columnTwo">
                     <div className="banner-main__columnTwo__bg"></div>
@@ -36,7 +36,7 @@ export function Banner({ title = "Selección", description = text, icon, bannerI
                     </div>
                     <div className="banner-main__columnTwo__button" onClick={() => setIsActive(true)}>
                         <h4>Por qué elegirnos</h4>
-                        <Image src={PlusIcon} />
+                        <Image src={PlusIcon} alt="" />
                     </div>
                 </div>
                 {

@@ -16,7 +16,7 @@ export function BannerBlog({ title = null, icon, buttonGoBack = null }) {
                 {
                     title &&
                     <div className="banner-blog__columnOne__title">
-                        <Image src={icon} />
+                        <Image src={icon} alt="" />
                         <h1>{title}</h1>
                     </div>
                 }
@@ -24,7 +24,7 @@ export function BannerBlog({ title = null, icon, buttonGoBack = null }) {
                     buttonGoBack &&
                     <div className="banner-blog__columnOne__containerButton">
                         <div className="banner-blog__columnOne__containerButton__goBack" onClick={handleGoBack}>
-                            <Image src={ArrowLeftIcon} />
+                            <Image src={ArrowLeftIcon} alt="" />
                             <p>Volver</p>
                         </div>
                     </div>

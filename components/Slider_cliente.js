@@ -25,7 +25,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						provided
 					/>
 				</div>
 
@@ -37,7 +36,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						provided
 					/>
 				</div>
 
@@ -52,7 +50,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						provided
 					/>
 				</div>
 				<div className="comilla2">
@@ -63,7 +60,6 @@ export function SliderCliente(props) {
 						automatically
 						provided
 						height={100}
-						provided
 					/>
 				</div>
 

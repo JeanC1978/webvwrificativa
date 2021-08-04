@@ -23,7 +23,6 @@ export function TextSolutionseconsult(props) {
 					automatically
 					provided
 					height={130}
-					provided
 				/>
 			</div>
 			<div className="twopointderechatsc">
@@ -32,7 +31,6 @@ export function TextSolutionseconsult(props) {
 					alt="pointder"
 					width={120}
 					automatically
-					provided
 					height={130}
 					provided
 				/>

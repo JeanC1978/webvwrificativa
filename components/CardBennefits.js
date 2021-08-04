@@ -20,7 +20,7 @@ export function CardBennefits(props) {
 		<div className="section-bennefits">
 			<Title>¿Qué beneficios ofrece Evaluativa?</Title>
 			<div className="section-bennefits__circle">
-				<Image src={Circle} />
+				<Image src={Circle} alt="" />
 			</div>
 			<div className="container-cards-bennefits">
 				{

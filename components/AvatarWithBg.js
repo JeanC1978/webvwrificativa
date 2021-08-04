@@ -6,7 +6,7 @@ export function AvatarWithBg({ img }) {
 
     return (
         <div className="avatar-container">
-            <Image src={img} />
+            <Image src={img} alt="" />
         </div>
     )
 }

@@ -144,7 +144,7 @@ export default function Consultiva() {
 													<p><b>Duracion: </b>{item.duracion}</p>
 												</div>
 												<div className="item-card-tab__img">
-													<Image src={item.img} layout="fill" objectFit="cover" />
+													<Image src={item.img} alt="" layout="fill" objectFit="cover" />
 												</div>
 											</div>
 										</Tab.Pane>
@@ -169,7 +169,7 @@ export default function Consultiva() {
 													</p>
 												</div>
 												<div className="item-card-tab__img">
-													<Image src={item.img} layout="fill" objectFit="cover" />
+													<Image src={item.img} alt="" layout="fill" objectFit="cover" />
 												</div>
 											</div>
 										</Tab.Pane>

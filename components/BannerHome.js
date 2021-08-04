@@ -27,10 +27,10 @@ export function BannerHome() {
                     <ButtonBlack onClick={handleClick}>Solicita una demo</ButtonBlack>
                 </div>
                 <div className="banner__columnOne__image">
-                    <Image src={Circle} />
+                    <Image src={Circle} alt="" />
                 </div>
                 <div className="banner__columnOne__imageMovil">
-                    <Image src={CircleMovil} />
+                    <Image src={CircleMovil} alt="" />
                 </div>
             </div>
             <div className="banner__columnTwo">

@@ -19,7 +19,6 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 					<h2>Usamos plataformas ágiles</h2>
 					<p>Como herramientas digitales de innovación tecnológica.</p>
@@ -35,11 +34,9 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 					<h2>
-						Reducimos <br></br> tiempo y<br></br>
-						costos
+						Reducimos <br></br> tiempo y<br></br> costos
 					</h2>
 					<p>
 						Mediante la optimización de nuestros procesos en un entorno digital.
@@ -56,15 +53,12 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 					<h2>
-						Protegemos el<br></br>
-						uso de información
+						Protegemos el<br></br>uso de información
 					</h2>
 					<p>
-						En base a la ley de datos personales y políticas de
-						confidencialidad.
+						En base a la ley de datos personales y políticas de confidencialidad.
 					</p>
 				</div>
 			</div>
@@ -78,7 +72,6 @@ export function Card(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 					<h2>
 						Brindamos soporte y <br></br>atención

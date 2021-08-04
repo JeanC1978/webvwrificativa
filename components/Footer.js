@@ -25,7 +25,6 @@ export function Footer(props) {
 					automatically
 					provided
 					height={50}
-					provided
 				/>
 			</div>
 
@@ -41,7 +40,6 @@ export function Footer(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 				</a>
 
@@ -57,7 +55,6 @@ export function Footer(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 				</a>
 
@@ -73,7 +70,6 @@ export function Footer(props) {
 						automatically
 						provided
 						height={50}
-						provided
 					/>
 				</a>
 			</div>
@@ -98,7 +94,7 @@ export function Footer(props) {
 						Consultiva
 					</li>
 					<li className="t-bold">
-						<a href="https://www.operativa.pe/" target="_blank">
+						<a href="https://www.operativa.pe/" target="_blank" rel="noopener noreferrer">
 							Operativa
 						</a>
 					</li>
@@ -119,7 +115,6 @@ export function Footer(props) {
 							automatically
 							provided
 							height={25}
-							provided
 						/>
 
 						<ul className="t-thin">(01) 247-2829 / 923 890 165</ul>
@@ -133,7 +128,6 @@ export function Footer(props) {
 							automatically
 							provided
 							height={25}
-							provided
 						/>
 
 						<ul className="t-thin">Jr. Alfonso Ugarte 235, Of.103, Barranco</ul>
@@ -149,7 +143,6 @@ export function Footer(props) {
 					automatically
 					provided
 					height={25}
-					provided
 				/>
 
 				<ul className="t-thin">

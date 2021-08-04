@@ -38,12 +38,8 @@ export function TabsOurSolutions(props) {
 						<div className="tab-item-content">
 							<div className="tab-item-content__description">
 								<div className="tab-item-content__description__info">
-									<h4>
-										"Creando sinergia entre las personas, el talento y la tecnología"
-									</h4>
-									<p>
-										Plataforma digital para tus procesos de selección, verificación y evaluación de personas
-									</p>
+									<h4>&quot;Creando sinergia entre las personas, el talento y la tecnología&quot;</h4>
+									<p>Plataforma digital para tus procesos de selección, verificación y evaluación de personas</p>
 									<div className="tab-item-content__description__info__links">
 										<Link href="/verificacion" passHref>
 											<Image src={VerificacionSvg} alt="tab Five" />
@@ -71,12 +67,10 @@ export function TabsOurSolutions(props) {
 						<div className="tab-item-content">
 							<div className="tab-item-content__description">
 								<div className="tab-item-content__description__info">
-									<h4>"Tus colaboradores son los embajadores de tu marca"</h4>
-									<p>
-										Potenciamos a tu colaboradores, entrenándolos para ser más competitivos sumando valor a tu marca
-									</p>
+									<h4>&quot;Tus colaboradores son los embajadores de tu marca&quot;</h4>
+									<p>Potenciamos a tu colaboradores, entrenándolos para ser más competitivos sumando valor a tu marca</p>
 									<div className="tab-item-content__description__links"></div>
-									<Link href="/consultiva">
+									<Link href="/consultiva" passHref>
 										<Image src={SeeMoreSvg} alt="ver más" />
 									</Link>
 								</div>
@@ -95,10 +89,8 @@ export function TabsOurSolutions(props) {
 						<div className="tab-item-content">
 							<div className="tab-item-content__description">
 								<div className="tab-item-content__description__info">
-									<h4>"El Match perfecto con tu candidadto ideal"</h4>
-									<p>
-										Plataforma tecnológica con IA especializada en reclutamiento masivo de personal operario
-									</p>
+									<h4>&quot;El Match perfecto con tu candidadto ideal&quot;</h4>
+									<p>Plataforma tecnológica con IA especializada en reclutamiento masivo de personal operario</p>
 									<div className="tab-item-content__description__links"></div>
 									<Link href="/consultiva" passHref>
 										<Image src={SeeMoreSvg} alt="ver más" />

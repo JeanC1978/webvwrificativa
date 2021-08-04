@@ -24,7 +24,6 @@ export function TextSolutionsevalua(props) {
 					automatically
 					provided
 					height={130}
-					provided
 				/>
 			</div>
 			<div className="twopointderecha">
@@ -35,8 +34,6 @@ export function TextSolutionsevalua(props) {
 					automatically
 					provided
 					height={130}
-					automatically
-					provided
 				/>
 			</div>
 		</div>

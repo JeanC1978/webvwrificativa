@@ -25,7 +25,7 @@ export function TabContainer({ children, navItems, buttonText = null, buttonSize
                                     <Nav.Link eventKey={item.eventKey}>
                                         <div className="nav-item-text">
                                             {item.title}
-                                            <Image src={ArrowRightIcon} />
+                                            <Image src={ArrowRightIcon} alt="" />
                                         </div>
                                     </Nav.Link>
                                 </Nav.Item>

@@ -13,7 +13,7 @@ export function SectionOurSolutions({ title, subtitle = null, description, card 
 	return (
 		<div className={`section-our-solutions ${card ? 'grid-card' : ''}`}>
 			<div className="section-our-solutions__pointStart">
-				<Image src={PointSVG} />
+				<Image src={PointSVG} alt="" />
 			</div>
 			<div className="section-our-solutions__content">
 				<Title>{title}</Title>
@@ -27,7 +27,7 @@ export function SectionOurSolutions({ title, subtitle = null, description, card 
 				card &&
 				<div className="section-our-solutions__card">
 					<div className="section-our-solutions__card__icon">
-						<Image src={CheckSVG} />
+						<Image src={CheckSVG} alt="" />
 					</div>
 					<div className="section-our-solutions__card__text">
 						<p>Nuestros servicios se encuentran contemplados dentro de nuestro Marco Jurídico basado en la <b>Ley Protección de Datos Personales Nº 29733</b> como respaldo y garantía para protección de nuestros clientes.</p>
@@ -35,7 +35,7 @@ export function SectionOurSolutions({ title, subtitle = null, description, card 
 				</div>
 			}
 			<div className="section-our-solutions__pointFinish">
-				<Image src={PointRight} />
+				<Image src={PointRight} alt="" />
 			</div>
 
 		</div>

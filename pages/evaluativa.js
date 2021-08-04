@@ -52,7 +52,7 @@ export default function Evaluativa(props) {
 						<ButtonBlack onClick={() => setOpenModal(true)}>Solicita una demo</ButtonBlack>
 					</div>
 					<div className="section-nivel-test__columnTwo">
-						<Image src={personIcon} />
+						<Image src={personIcon} alt="" />
 						<h2>Nivel Ejecutivo</h2>
 						<p>
 							Test especializado para candidatos con cargos ejecutivos, mando
@@ -60,7 +60,7 @@ export default function Evaluativa(props) {
 						</p>
 					</div>
 					<div className="section-nivel-test__columnThree">
-						<Image src={operarioIcon} />
+						<Image src={operarioIcon} alt="" />
 						<h2>Nivel Operario</h2>
 						<p>
 							Test especializado para candidatos con cargos operativos, consta

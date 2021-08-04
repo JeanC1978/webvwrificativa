@@ -89,13 +89,13 @@ export default function Seleccion(props) {
                                         <div className="seleccion-tab-item__columnTwo__list">
                                             {item.list.map((subItem) => (
                                                 <div className="item-list" key={subItem.id}>
-                                                    <Image src={CheckIcon} />
+                                                    <Image src={CheckIcon} alt="" />
                                                     <p>{subItem.text}</p>
                                                 </div>
                                             ))}
                                         </div>
                                         <div className="seleccion-tab-item__columnTwo__img">
-                                            <Image src={item.img} layout="fill" objectFit="cover" />
+                                            <Image src={item.img} layout="fill" objectFit="cover" alt="" />
                                         </div>
                                     </div>
                                 </div>

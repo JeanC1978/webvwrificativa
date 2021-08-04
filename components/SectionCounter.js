@@ -23,7 +23,7 @@ export function SectionCounter(props) {
     return (
         <div className="section-counter" ref={elementRef}>
             <div className="section-counter__img">
-                <Image src={CounterImg} />
+                <Image src={CounterImg} alt="" />
             </div>
             <div className="section-counter__content">
                 <div >

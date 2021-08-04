@@ -30,7 +30,7 @@ export default function Home() {
 				<div className="section-cards">
 					<Card />
 					<div className="section-cards__circle">
-						<Image src={CircleWhite} />
+						<Image src={CircleWhite} alt="" />
 					</div>
 				</div>
 				<TabsOurSolutions />

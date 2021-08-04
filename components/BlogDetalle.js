@@ -14,13 +14,13 @@ const BlogDetalle = () => {
           <h2 className="titulo-post">
             Superpoderes para gestionar y resolver un conflicto
           </h2>
-          <Image src={img_detalle} className="img-detalle" />
+          <Image src={img_detalle} className="img-detalle" alt="" />
 
           <div className="texto1">
             <div className="avatar">
-              <img
+              <Image
                 src="https://placeimg.com/52/52/people"
-                alt=""
+                alt="foto"
                 className="_avatar"
               />
               <div className="_avat avatar_detalle">
@@ -63,7 +63,7 @@ const BlogDetalle = () => {
           </p>
           <p className="parrafo-1">
             En HRider ayudamos a que los profesionales de RR.HH. tengan esos
-            "rayos X" que necesitan para ver qué ocurre bajo la superficie. En
+            {"rayos X"} que necesitan para ver qué ocurre bajo la superficie. En
             un abrir y cerrar los ojos es posible realizar una evaluación de
             clima laboral en la que añadiríamos un apartado de preguntas
             abiertas, donde los empleados pueden (de manera anónima) poner de
@@ -91,13 +91,13 @@ const BlogDetalle = () => {
           <h5>Compartir en:</h5>
           <div className="redes-icon">
             <div className="icon">
-              <Image src={facebook} className="icon" />
+              <Image src={facebook} className="icon" alt="" />
             </div>
             <div className="icon">
-              <Image src={twitter} className="icon" />
+              <Image src={twitter} className="icon" alt="" />
             </div>
             <div className="icon">
-              <Image src={linkendin} className="icon" />
+              <Image src={linkendin} className="icon" alt="" />
             </div>
           </div>
         </div>

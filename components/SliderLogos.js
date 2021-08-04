@@ -19,58 +19,58 @@ export function SliderLogos(props) {
 						<Image src={alicorp} alt="alicorp" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={bmw} />
+						<Image src={bmw} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={citibank} />
+						<Image src={citibank} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={jockey} />
+						<Image src={jockey} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={ripley} />
+						<Image src={ripley} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={sodexo} />
+						<Image src={sodexo} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={alicorp} />
+						<Image src={alicorp} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={bmw} />
+						<Image src={bmw} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={citibank} />
+						<Image src={citibank} alt="" />
 					</div>
 
 					{/* doubled */}
 
 					<div className="logos-continuo">
-						<Image src={alicorp} />
+						<Image src={alicorp} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={bmw} />
+						<Image src={bmw} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={citibank} />
+						<Image src={citibank} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={jockey} />
+						<Image src={jockey} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={ripley} />
+						<Image src={ripley} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={sodexo} />
+						<Image src={sodexo} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={alicorp} />
+						<Image src={alicorp} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={bmw} />
+						<Image src={bmw} alt="" />
 					</div>
 					<div className="logos-continuo">
-						<Image src={citibank} />
+						<Image src={citibank} alt="" />
 					</div>
 				</div>
 			</div>

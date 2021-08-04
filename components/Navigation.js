@@ -10,11 +10,11 @@ export function Navigation({ prev, next }) {
     const getNavigation = (data) => {
         switch (data) {
             case "verificacion":
-                return <Image src={VerificacionIcon} />
+                return <Image src={VerificacionIcon} alt="" />
             case "evaluativa":
-                return <Image src={EvaluativaIcon} />
+                return <Image src={EvaluativaIcon} alt="" />
             case "seleccion":
-                return <Image src={SeleccionIcon} />
+                return <Image src={SeleccionIcon} alt="" />
             default:
                 return "Home"
         }
