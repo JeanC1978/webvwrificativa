@@ -5,7 +5,6 @@ import { Banner } from '../components/Banner';
 import { Dimensiones } from '../components/Dimensiones';
 import { ButtonBlack } from '../components/ButtonBlack';
 import { Navigation } from '../components/Navigation';
-import { TextSolutionsevalua } from '../components/TextSolutionsevalua';
 import { CardBennefits } from '../components/CardBennefits';
 import { SectionOurSolutions } from '../components/SectionOurSolutions';
 import { ModalDemo } from '../components/ModalDemo';

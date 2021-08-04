@@ -15,8 +15,8 @@ export default function Consultiva(props) {
             <BannerBlog title="Ideas, notas y más" icon={NoteIcon} />
 
             <div className="cotainer-blog">
-                <BlogSec_1 />
-                <BlogSec_2 titulo='¿Quienes Exponen?' />
+                {/* <BlogSec_1 />
+                <BlogSec_2 titulo='¿Quienes Exponen?' /> */}
             </div>
         </Layout>
     )
