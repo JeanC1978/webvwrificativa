@@ -70,15 +70,19 @@ $height_carousel_how_work_movil:630px;
         }
     }
     &__partTwo{
-        width: 75%;
-        margin: auto;
+        width: 100%;
         text-align: left;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 0 5rem;
+        margin-top: 2rem;
     }
 }
 .prev-icon{
     position: relative;
     top:9%;
-    left: 40rem;
+    left: 41rem;
 }
 .next-icon{
     position: relative;
