@@ -28,7 +28,7 @@ const MENU_LIST_MOVIL = [
 	{ id: 'inicio', name: 'Inicio', submenu: false, path: '/' },
 	{ id: 'verificacion', name: 'Verificación', submenu: false, path: '/verificacion' },
 	{ id: 'evaluativa', name: 'Evaluativa', submenu: false, path: '/evaluativa' },
-	{ id: 'seleccion', name: 'Seleccion', submenu: false, path: '/seleccion' },
+	{ id: 'seleccion', name: 'Selección', submenu: false, path: '/seleccion' },
 	{ id: 'consultiva', name: 'Consultiva', submenu: false, path: '/consultiva' },
 	{ id: 'operativa', name: 'Operativa', submenu: false, path: 'https://www.operativa.pe/' },
 	{ id: 'blog', name: 'Blog', submenu: false, path: '/blog' },

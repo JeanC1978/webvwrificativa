@@ -113,16 +113,15 @@
 		display: none;
 	}
 	.contactoymail {
-		grid-column: 2/13;
-		grid-row: 6/6;
+		grid-column: 2/12;
+		grid-row: 5/8;
 	}
 	.redes {
 		grid-row: 11/11;
 	}
 	.mail {
 		grid-column: 2 /10;
-		grid-row: 8/8;
-		margin-top: -0.1em;
+		grid-row: 9/10;
 	}
 }
 
@@ -133,12 +132,9 @@
 	.containersecciones {
 		display: none;
 	}
-	.contactoymail {
-		grid-column: 2/6;
-		grid-row: 5/7;
-	}
+	// .contactoymail {
+	// 	grid-column: 2/12;
+	// 	grid-row: 5/7;
+	// }
 
-	.mail {
-		margin-top: 5em;
-	}
 }

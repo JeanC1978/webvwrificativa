@@ -29,7 +29,7 @@ export function Footer(props) {
 			</div>
 
 			<div className="slogan">
-				Elegir personal confiable, no es <br></br> cuestión de suerte
+				Elegir personal confiable, no es cuestión de suerte
 			</div>
 			<div className="redes">
 				<a href="https://www.facebook.com/VerificativaSAC/" target="_blank" rel="noopener noreferrer">
