@@ -1,7 +1,8 @@
 import React from "react";
 import Image from "next/image";
 import { ButtonBlack } from "./ButtonBlack";
-import BlogSec_2 from "../components/BlogSec_2";
+// import BlogSec_2 from "../components/BlogSec_2";
+import { BlogPostList } from '../components/BlogPostList';
 import facebook from "../public/images/blog/facebook-icon.svg";
 import twitter from "../public/images/blog/twitter.svg";
 import linkendin from "../public/images/blog/linkendin.svg";
@@ -102,7 +103,8 @@ const BlogDetalle = () => {
           </div>
         </div>
       </div>
-      <BlogSec_2 titulo="Te puede interesar" />
+      {/* <BlogSec_2 titulo="Te puede interesar" /> */}
+      <BlogPostList title="Te puede interesar" />
       {/* <Demo /> */}
       <ButtonBlack>Solicita una demo</ButtonBlack>
     </>
