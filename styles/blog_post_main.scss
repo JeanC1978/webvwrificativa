@@ -1,4 +1,5 @@
 @import "variables";
+@import "mixins";
 
 .blog-post-main{
     height: 80vh;
@@ -56,4 +57,40 @@
     h4{
         font-size: 18px;
     }
+}
+
+@include mediaMovil(){
+    .blog-post-main{
+        grid-template-columns: 1fr;
+        grid-auto-flow: 1fr 1fr 1fr 1fr;
+    }
+    .blog-post-1{
+        grid-row: 1/ 2;
+        grid-column: 1/2;
+        h4{
+            font-size: 24px;
+        }
+    }
+    .blog-post-2{
+        grid-row: 2/3;
+        grid-column: 1/2;
+        h4{
+            font-size: 18px;
+        }
+    }
+    .blog-post-3{
+        grid-row: 3/4;
+        grid-column: 1/2;
+        h4{
+            font-size: 18px;
+        }
+    }
+    .blog-post-4{
+        grid-row: 4/5;
+        grid-column: 1/2;
+        h4{
+            font-size: 18px;
+        }
+    }
+
 }

@@ -235,6 +235,13 @@
 }
 
 @include mediaMovil() {
+  .container-blog-posts{
+    width: $with_content_movil;
+  }
+
+
+
+
   .post-container {
     display: flex;
     flex-direction: column;

@@ -1,5 +1,6 @@
 @import "variables";
 @import "colors";
+@import "mixins";
 
 .section-card-posts{
     width: $with_content;
@@ -14,7 +15,7 @@
         display: grid;
         grid-auto-flow: row;
         &__img{
-            height: 13vw;
+            height: 25vh;
             position: relative;
             div{
                 border-radius: 10px;
@@ -25,6 +26,27 @@
             line-height: 115%;
             font-weight: bold;
             font-size: 16px;
+        }
+    }
+}
+
+@include mediaMovil(){
+    .section-card-posts{
+        width: $with_content_movil;
+    }
+
+    .card-posts{
+        width: 100%;
+        overflow-y: scroll;
+        overscroll-behavior-x: contain;
+        scroll-snap-type: x mandatory;
+        &__item{
+            width: 80vw;
+            scroll-snap-align: center;
+            padding-left:1rem;
+            &__img{
+                height: 20vh;
+            }
         }
     }
 }
