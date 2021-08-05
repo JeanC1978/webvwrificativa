@@ -1,0 +1,30 @@
+@import "variables";
+@import "colors";
+
+.section-card-posts{
+    width: $with_content;
+    margin: 0 auto 4rem auto;
+}
+
+.card-posts{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 1rem;
+    &__item{
+        display: grid;
+        grid-auto-flow: row;
+        &__img{
+            height: 13vw;
+            position: relative;
+            div{
+                border-radius: 10px;
+            }
+        }
+        h4{
+            color: $color_text_primary;
+            line-height: 115%;
+            font-weight: bold;
+            font-size: 16px;
+        }
+    }
+}
