@@ -4,7 +4,7 @@ import { useRouter } from 'next/router'
 const PATH_FIVE = "/five"
 const SUB_MENU_FIVE = ["/evaluativa", "/seleccion", "/verificacion"]
 
-export function ActiveLink({ children, path }) {
+export function ActiveLink({ children, path, ...props }) {
     const router = useRouter()
 
     const classes = () => {
@@ -16,7 +16,7 @@ export function ActiveLink({ children, path }) {
     }
 
     return (
-        <li className={`menuList__item ${classes()}`}>
+        <li className={`menuList__item ${classes()}`} {...props}>
             {children}
         </li>
     )

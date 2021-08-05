@@ -63,6 +63,10 @@ export function Menu() {
 		setShowModal(true);
 	}
 
+	const handleCloseMenu = () => {
+		setShowMenu(false);
+	}
+
 	const handleClickMenu = () => {
 		setShowMenu(prevState => !prevState)
 	}
@@ -118,7 +122,7 @@ export function Menu() {
 				{
 					showMenu ?
 						MENU_LIST_MOVIL.map((item) => (
-							<ActiveLink key={item.id} path={item.path}>
+							<ActiveLink key={item.id} path={item.path} onClick={handleCloseMenu}>
 								{
 									getLink(item)
 								}

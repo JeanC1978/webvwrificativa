@@ -27,26 +27,23 @@
 .Texclient {
 	display: flex;
 	justify-content: center;
-	padding-top: 20px;
-	font-size: 32px;
-	font-weight: 700;
 	grid-column: 4/10;
-	grid-row: 1/2;
+	grid-row: 2/3;
 	z-index: 15;
 }
 
 .comilla1 {
-	grid-column: 4/5;
+	grid-column: 3/4;
 	grid-row: 8/9;
 }
 
 .comilla2 {
-	grid-column: 9/9;
+	grid-column: 10/11;
 	grid-row: 9/10;
 }
 
 .Carrouselc {
-	grid-column: 3/11;
+	grid-column: 2/12;
 	grid-row: 3/11;
 }
 
@@ -76,15 +73,11 @@ Image.carousel-item {
 		height: 297px;
 		margin: 0 auto;
 	}
-	// &__carrousel-main__nextIcon {
-	// 	overflow: solid;
-	// }
-
-	// &__carrousel-main__nextIcon :hover {
-	// 	overflow: solid;
-	// }
 
 	&__description {
+		margin: 0 11rem;
+		position: relative;
+		top:-10vh;
 		h3 {
 			margin-bottom: 0;
 		}
@@ -93,12 +86,14 @@ Image.carousel-item {
 			color: $color_t2grey;
 			font-weight: 500;
 		}
-		position: relative;
-		top: -6rem;
 	}
 }
 
-@media (max-width: 600px) {
+@include mediaMovil(){
+	.content-slider-cliente{
+		height: 680px;
+	}
+
 	.pointiz {
 		grid-column: 3/5;
 		grid-row: 4/6;
@@ -110,13 +105,12 @@ Image.carousel-item {
 	}
 
 	.Texclient {
-		display: flex;
-		justify-content: center;
-		padding-top: 20px;
-		font-size: 32px;
-		font-weight: 700;
 		grid-column: 2/12;
-		grid-row: 1/1;
+		grid-row: 2/4;
+		text-align: center;
+		h1{
+			margin:0;
+		}
 	}
 
 	.comilla1 {
@@ -126,7 +120,7 @@ Image.carousel-item {
 
 	.comilla2 {
 		grid-column: 9/11;
-		grid-row: 10/11;
+		grid-row: 12/13;
 	}
 
 	.Carrouselc {
@@ -147,13 +141,12 @@ Image.carousel-item {
 			margin: 0 auto;
 		}
 		&__description {
+			margin: 0;
 			h3 {
 				margin-bottom: 0;
 			}
 			h4 {
 				margin-top: 0;
-				// margin-left: 20px;
-				// margin-right: 20px;
 				color: $color_t2grey;
 				font-weight: 500;
 			}
@@ -161,8 +154,16 @@ Image.carousel-item {
 				width: 75%;
 				display: inline-block;
 			}
-			position: relative;
-			top: -5rem;
 		}
 	}
+
+	//Button next
+	.Carrouselc .carousel .carousel-control-next{
+		top:4rem;
+	}
+
+	.Carrouselc .carousel .carousel-control-prev{
+		top:4rem;
+	}
+
 }
